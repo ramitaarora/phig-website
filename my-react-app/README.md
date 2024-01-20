@@ -36,6 +36,8 @@ Alternatively, you can simply visit my [Deployed Link]().
 > - [Express.js npm](https://www.npmjs.com/package/express)
 > - react-icons & mui
 > - google fonts
+> - npm install @emotion/react
+> - npm install @emotion/styled
 
 ## Screenshots and Walkthrough
 
