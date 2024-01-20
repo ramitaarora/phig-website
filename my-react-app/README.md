@@ -34,6 +34,8 @@ Alternatively, you can simply visit my [Deployed Link]().
 > [Node.js](https://nodejs.org/en/)
 > - [Mongoose npm](https://www.npmjs.com/package/mongoose)
 > - [Express.js npm](https://www.npmjs.com/package/express)
+> - react-icons & mui
+> - google fonts
 
 ## Screenshots and Walkthrough
 
