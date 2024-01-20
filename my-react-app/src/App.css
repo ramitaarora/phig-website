@@ -63,7 +63,7 @@ nav {
 }
 
 .primary-button {
-  padding: 0.9rem 1.75rem;
+  padding: 0.5rem 1.5rem;
   background-color: #348659;
   background-image: linear-gradient(to left, #348659, #80b899);
   outline: none;
@@ -114,7 +114,7 @@ nav {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/PHIG_spring_2023_butterfly_habitat_1.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./assets/PHIG_spring_2023_butterfly_habitat_1.png");
 
   /* Set a specific height */
   height: 80%;
@@ -129,7 +129,7 @@ nav {
   text-align: left;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   color: white;
   display: flex;
@@ -137,31 +137,35 @@ nav {
   align-items: flex-start;
 }
 .primary-heading {
-  font-size: clamp(2rem, 5vw, 4rem);
-  color: #4c4c4c;
+  font-weight: 400;
+  color: #ffffff;
   /* line-height: 5rem; */
   max-width: 600px;
 }
 .primary-text {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size:medium;
+  font-weight: 400;
   max-width: 500px;
-  color: #6a6a6a;
+  color: #ffffff;
   margin: 1.5rem 0rem;
+  line-height: 1.75rem;
 }
 .secondary-button {
-  padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  padding: 0.9rem 1.75rem;
+  background-color: #348659;
+  background-image: linear-gradient(to left, #348659, #80b899);
   outline: none;
   border: none;
-  border-radius: 5rem;
+  border-radius: 8.5px;
+  color: white;
   font-size: 1.1rem;
   cursor: pointer;
-  font-weight: 600;
-  color: white;
+  font-weight: 400;
   transition: 0.2s;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem;
 }
 .secondary-button svg {
   margin-left: 0.75rem;
