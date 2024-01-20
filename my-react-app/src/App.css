@@ -39,36 +39,43 @@ nav {
 .nav-entire-container{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:space-between;
   background-color: #081821;
+  padding-right: 8%;
 }
 .nav-logo-container {
   padding: 1rem;
-  padding-left: 3rem;
 }
 .navbar-menu-container {
   display: none;
 }
 .navbar-links-container{
   display: flex;
+  align-items: center;
 }
+/*.navlinks-excluding-button {
+  
+}*/
 .navbar-links-container a {
   margin-right: 3rem;
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
   font-weight: 400;
+  margin: 10px;
 }
+
 .primary-button {
   padding: 0.9rem 1.75rem;
   background-color: #348659;
-  background-image: linear-gradient(to right, #348659, white);
+  background-image: linear-gradient(to left, #348659, #80b899);
   outline: none;
   border: none;
-  border-radius: 5rem;
+  border-radius: 8.5px;
+  color: white;
   font-size: 1.1rem;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   transition: 0.2s;
 }
 .navbar-cart-icon {

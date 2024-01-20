@@ -42,10 +42,13 @@ const Navbar = () => {
         <img src={Logo} alt='PHIG Logo' />
         </div>
         <div className="navbar-links-container">
+        <div className="navlinks-excluding-button">
           <a href="">About Us</a>
           <a href="">Our Approach</a>
           <a href="">News</a>
           <a href="">Get Involved</a>
+          </div>
+          <button className="primary-button">Donate</button>
         </div>
         </div>
         <div className="navbar-menu-container">
