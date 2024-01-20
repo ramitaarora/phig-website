@@ -31,9 +31,6 @@ body {
 /* NAVIGATION BAR CSS */
 
 nav {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
   min-height: 90px;
 }
 .nav-entire-container{
@@ -89,16 +86,26 @@ nav {
   cursor: pointer;
 }
 .home-banner-container {
-  position: relative;
-  display: flex;
-  padding-top: 3rem;
+  margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      height: 100vh;
+      overflow: hidden; /* Prevent vertical scrollbar due to the fixed height */
 }
-.home-bannerImage-container {
-  position: absolute;
+.bgImg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('./assets/PHIG_spring_2023_butterfly_habitat_1.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /*position: absolute;
   top: -100px;
   right: -170px;
   z-index: -2;
-  max-width: 700px;
+  max-width: 700px;*/
 }
 .home-image-section {
   max-width: 600px;
@@ -333,6 +340,19 @@ nav {
   display: flex;
   align-items: center;
   font-weight: 600;
+}
+
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 500px) {
+  .navbar-links-container {
+    display: none; /* Hide links on larger screens */
+  }
+
+  .navbar-menu-container {
+    display: block; /* Show the menu button on smaller screens */
+  }
 }
 
 @media (max-width: 1000px) {
