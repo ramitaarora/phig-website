@@ -1,9 +1,16 @@
+/* GENERAL CSS */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inria Sans', sans-serif;
   font-family: 'Inter', sans-serif;
+  /* 
+  light: 300
+  reg: 400
+  bold: 700
+  */
 }
 img {
   max-width: 100%;
@@ -11,38 +18,51 @@ img {
 }
 .App {
   min-height: 100vh;
-  width: 85vw;
-  max-width: 1900px;
+  width: 100vw;
   margin: 0rem auto;
 }
 body {
   max-width: 100%;
   overflow-x: hidden;
-}
-
-body {
   background-color: #f6f6f6;
 }
 
+
+/* NAVIGATION BAR CSS */
+
 nav {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  min-height: 90px;
+}
+.nav-entire-container{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 90px;
+  background-color: #081821;
+}
+.nav-logo-container {
+  padding: 1rem;
+  padding-left: 3rem;
 }
 .navbar-menu-container {
   display: none;
 }
+.navbar-links-container{
+  display: flex;
+}
 .navbar-links-container a {
   margin-right: 3rem;
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 .primary-button {
   padding: 0.9rem 1.75rem;
-  background-color: white;
+  background-color: #348659;
+  background-image: linear-gradient(to right, #348659, white);
   outline: none;
   border: none;
   border-radius: 5rem;

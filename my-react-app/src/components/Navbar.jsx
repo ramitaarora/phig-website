@@ -37,14 +37,16 @@ const Navbar = () => {
 
     return (
         <nav>
+        <div className="nav-entire-container">
         <div className="nav-logo-container">
         <img src={Logo} alt='PHIG Logo' />
         </div>
         <div className="navbar-links-container">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Testimonials</a>
-          <a href="">Contact</a>
+          <a href="">About Us</a>
+          <a href="">Our Approach</a>
+          <a href="">News</a>
+          <a href="">Get Involved</a>
+        </div>
         </div>
         <div className="navbar-menu-container">
           <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
