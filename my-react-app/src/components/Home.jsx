@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import BannerBackground from "../assets/PHIG_spring_2023_butterfly_habitat_1.png"
+// import BannerBackground from "../assets/PHIG_spring_2023_butterfly_habitat_1.png"
 
 const Home = () => {
   return (
