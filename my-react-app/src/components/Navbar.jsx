@@ -9,31 +9,31 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
-import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
+// import HomeIcon from "@mui/icons-material/Home";
+// import InfoIcon from "@mui/icons-material/Info";
+// import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
+// import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 
 const Navbar = () => {
-    const [openMenu, setOpenMenu] = useState(false);
-  const menuOptions = [
-    {
-      text: "About Us",
-      icon: <HomeIcon />,
-    },
-    {
-      text: "Our Approach",
-      icon: <InfoIcon />,
-    },
-    {
-      text: "News",
-      icon: <CommentRoundedIcon />,
-    },
-    {
-      text: "Get Involved",
-      icon: <PhoneRoundedIcon />,
-    },
-  ]
+//     const [openMenu, setOpenMenu] = useState(false);
+//   const menuOptions = [
+//     {
+//       text: "About Us",
+//       icon: <HomeIcon />,
+//     },
+//     {
+//       text: "Our Approach",
+//       icon: <InfoIcon />,
+//     },
+//     {
+//       text: "News",
+//       icon: <CommentRoundedIcon />,
+//     },
+//     {
+//       text: "Get Involved",
+//       icon: <PhoneRoundedIcon />,
+//     },
+//   ]
 
     return (
         <nav>
@@ -51,7 +51,7 @@ const Navbar = () => {
           <button className="primary-button">Donate</button>
         </div>
         </div>
-        <div className="navbar-menu-container">
+        {/* <div className="navbar-menu-container">
           <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
         </div>
         <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
@@ -73,7 +73,7 @@ const Navbar = () => {
             </List>
             <Divider />
           </Box>
-        </Drawer>
+        </Drawer> */}
       </nav>
   )
 }

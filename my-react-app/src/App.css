@@ -92,7 +92,7 @@ nav {
       height: 100vh;
       overflow: hidden; /* Prevent vertical scrollbar due to the fixed height */
 }
-.bgImg {
+/* .bgImg {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -106,16 +106,34 @@ nav {
   right: -170px;
   z-index: -2;
   max-width: 700px;*/
-}
+/* } */
 .home-image-section {
   max-width: 600px;
   flex: 1;
 }
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/PHIG_spring_2023_butterfly_habitat_1.png");
+
+  /* Set a specific height */
+  height: 80%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 .home-text-section {
-  flex: 1;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
 }
 .primary-heading {
