@@ -1,11 +1,10 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from '../components/Navbar'
 // import BannerBackground from "../assets/PHIG_spring_2023_butterfly_habitat_1.png"
 
 const Home = () => {
   return (
     <div className='home-container'>
-        <Navbar />
         <div className='home-banner-container'>
             <div className='hero-image'>
                 {/* <img className='bgImg' src={BannerBackground} alt='PHIG Spring Butterfly Habitat' /> */}

@@ -1,6 +1,6 @@
 import { css } from '@emotion/css'
-import Navbar from './Navbar';
-import SearchResult from './SearchResult';
+import Navbar from '../components/Navbar';
+import SearchResult from '../components/SearchResult';
 
 const exampleResults = [
     {
@@ -26,7 +26,6 @@ const exampleResults = [
 export default function VolunteerPage() {
     return (
         <div>
-            <Navbar />
 
             <header>
                 <div id="header-image" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('./images/forest-banner.png'); height: 400px; width: 100vw; background-position: center; background-repeat: no-repeat; background-size: cover;`}>
