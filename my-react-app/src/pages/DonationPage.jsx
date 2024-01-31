@@ -10,10 +10,13 @@ export default function DonationPage() {
 
             <div id="quick-donate" className={css`border-radius: 50% 50% 0 0; display: flex; justify-content: space-evenly; border-radius: 20% 20% 0 0; position: relative; top: -105px; background-color: white;`}>
                 <div id="quick-donate-image">
-                    <img src="./" alt="" />
-                    <p>placeholder</p>
+                    <div id="tag" className={css`background-color: darkgreen; color: white; padding: 10px 15px; border-radius: 10px; position: relative; left: -250px; top: 30px; transform: rotate(350deg);`}>
+                        <p>$10 donated =</p>
+                        <p>1 new stage</p>
+                    </div>
+                    <img src="./images/seed-grows.png" alt="seed-grows" className={css`height: 200px; margin-top: 150px;`}/>
                 </div>
-                <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 5px 5px 5px lightgrey; text-align: center; position: relative; top: -20px; background-color: white;`}>
+                <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 5px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white;`}>
                     <h2 className={css`margin: 10px;`}>Join #PHIG</h2>
                     <div id="quick-form-buttons" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;`}>
                         <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$1</button>
