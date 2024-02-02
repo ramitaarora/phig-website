@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { css } from '@emotion/css';
 import DonateResult from '../components/DonateResult';
 
@@ -57,6 +58,40 @@ const sampleResults = [
 ]
 
 export default function DonationPage() {
+    const [searchResults, setSearchResults] = useState(sampleResults);
+    const [input, setInput] = useState('')
+
+    const setAll = (event) => {
+        event.preventDefault();
+        setSearchResults(sampleResults);
+    }
+
+    const setMaterials = (event) => {
+        event.preventDefault();
+        setSearchResults(sampleResults.filter(result => result.type === 'Material'));
+    }
+
+    const setTools = (event) => {
+        event.preventDefault();
+        setSearchResults(sampleResults.filter(result => result.type === 'Tool'));
+    }
+
+    const setPlants = (event) => {
+        event.preventDefault();
+        setSearchResults(sampleResults.filter(result => result.type === 'Plant'));
+    }
+
+    const handleSearch = (event) => {
+        event.preventDefault();
+        if (input.length > 1) {
+            setSearchResults(sampleResults.filter(result => result.name.toLowerCase().includes(input.toLowerCase()) || result.type.toLowerCase().includes(input.toLowerCase()) ));
+        }
+        else {
+            setSearchResults(sampleResults);
+        }
+        
+    }
+
     return (
         <section id="donation-page">
             <header className={css`height: 400px; width: 100%; background-color: #081821; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 60px; margin-bottom: 30px;`}>
@@ -125,23 +160,26 @@ export default function DonationPage() {
 
                 <div id="filter-materials" className={css`display: flex; justify-content: space-between; align-items: center; margin: 50px 40px;`}>
                     <div id="filter-materials-buttons" className={css`display: flex; width: 40%;`}>
-                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>All</button>
-                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Materials</button>
-                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Tools</button>
-                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Price</button>
+                        <button onClick={setAll} className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>All</button>
+                        <button onClick={setMaterials} className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Materials</button>
+                        <button onClick={setTools} className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Tools</button>
+                        <button onClick={setPlants} className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Price</button>
                     </div>
-                    <form id="filter-materials-search" className={css`display: flex; width: 40%;`}>
-                        <input type="text" placeholder="Search" className={css`background-color: none; border: none; border: 1px solid lightgrey; width: 100%; padding: 10px 5px; border-radius: 5px;`}/>
-                        <input type="submit" name="search" value="search"/>
+                    <form id="filter-materials-search" className={css`display: flex; width: 40%;`} onChange={handleSearch}>
+                        <input type="text" placeholder="Search" value={input} onChange={event => setInput(event.target.value)} className={css`background-color: none; border: none; border: 1px solid lightgrey; width: 100%; padding: 10px 5px; border-radius: 5px;`}/>
                     </form>
                 </div>
 
                 <div id="materials-results" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly;`}>
-                    {sampleResults.map((result, index) => 
+                    {searchResults.length ? (
+                        searchResults.map((result, index) => (
                         <div key={"result-" + index}>
                             <DonateResult name={result.name} subtitle={result.subtitle} picture={result.picture} description={result.description} />
                         </div>
-                    )}
+                        ))) : (
+                        <p>No results found.</p>
+                        )
+                    }
                 </div>
             </div>
 
