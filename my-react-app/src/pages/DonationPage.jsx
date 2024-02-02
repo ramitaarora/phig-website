@@ -122,20 +122,20 @@ export default function DonationPage() {
             <div id="donate-materials">
                 <h2>Or Help By Donating Tools & Materials!</h2>
 
-                <div id="filter-materials">
-                    <div id="filter-materials-buttons">
-                        <button>All</button>
-                        <button>Materials</button>
-                        <button>Tools</button>
-                        <button>Price</button>
+                <div id="filter-materials" className={css`display: flex; justify-content: space-between; margin: 50px;`}>
+                    <div id="filter-materials-buttons" className={css`display: flex; justify-content: space-evenly; width: 40%;`}>
+                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>All</button>
+                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Materials</button>
+                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Tools</button>
+                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Price</button>
                     </div>
-                    <form id="filter-materials-search">
-                        <input type="text" placeholder="Search" />
-                        <input type="submit" />
+                    <form id="filter-materials-search" className={css`width: 30%; display: flex;`}>
+                        <input type="text" placeholder="Search" className={css`background-color: none; border: none; border: 1px solid lightgrey; width: 100%; padding: 10px 5px; border-radius: 5px;`}/>
+                        <input type="submit" value="search"/>
                     </form>
                 </div>
 
-                <div id="materials-results" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly;`}>
+                <div id="materials-results" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; margin: 10px;`}>
                     {sampleResults.map((result, index) => 
                         <div key={"result-" + index}>
                             <DonateResult name={result.name} subtitle={result.subtitle} picture={result.picture} description={result.description} />
