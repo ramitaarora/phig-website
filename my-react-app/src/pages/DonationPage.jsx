@@ -58,21 +58,21 @@ const sampleResults = [
 
 export default function DonationPage() {
     return (
-        <section id="donation-page" className={css`background-color: white;`}>
+        <section id="donation-page">
             <header className={css`height: 400px; width: 100%; background-color: #081821; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 60px; margin-bottom: 30px;`}>
-                <h1>Donate and watch your PHIG tree grow!</h1>
-                <p>Our volunteer team is growing every day and helping you learn ways to keep our planet healthy. Plant with us and track our progress!</p>
+                <h1 className={css`position: relative; top: -50px;`}>Donate and watch your PHIG tree grow!</h1>
+                <p className={css`position: relative; top: -50px;`}>Our volunteer team is growing every day and helping you learn ways to keep our planet healthy. Plant with us and track our progress!</p>
             </header>
 
             <div id="quick-donate" className={css`border-radius: 50% 50% 0 0; display: flex; justify-content: space-evenly; border-radius: 20% 20% 0 0; position: relative; top: -105px; background-color: white;`}>
                 <div id="quick-donate-image">
-                    <div id="tag" className={css`background-color: darkgreen; color: white; padding: 10px 15px; border-radius: 10px; position: relative; left: -250px; top: 30px; transform: rotate(350deg);`}>
+                    <div id="tag" className={css`background-color: darkgreen; color: white; padding: 10px 15px; border-radius: 10px; position: relative; left: -250px; top: 35px; transform: rotate(350deg); text-align: center; width: fit-content;`}>
                         <p>$10 donated =</p>
                         <p>1 new stage</p>
                     </div>
                     <img src="./images/seed-grows.png" alt="seed-grows" className={css`height: 200px; margin-top: 150px;`}/>
                 </div>
-                <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 5px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white;`}>
+                <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 0px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white;`}>
                     <h2 className={css`margin: 10px;`}>Join #PHIG</h2>
                     <div id="quick-form-buttons" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;`}>
                         <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$1</button>
@@ -82,12 +82,12 @@ export default function DonationPage() {
                         <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$25</button>
                         <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$50</button>
                     </div>
-                    <input type="number" placeholder='Custom amount' className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 3px;`} />
+                    <input type="text" placeholder='Custom amount' className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 3px;`} />
                     <input type="submit" value="Next" className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 10px; margin: 20px auto; background-color: darkgreen; color: white;`} />
                 </form>
             </div>
 
-            <div id="other-donations" className={css`padding: 50px; background-color: white;`}>
+            <div id="other-donations" className={css`padding: 0 50px; background-color: white; margin-top: 0;`}>
                 <div id="other-donations-container" className={css`background-color: #E9FEFF; width: 60%; margin: 0 auto;`}>
                     <h2 className={css`text-align: center; border-bottom: 1px solid lightgrey; padding: 20px;`}>Other Ways to Give</h2>
 
@@ -119,23 +119,24 @@ export default function DonationPage() {
                 </div>
             </div>
 
-            <div id="donate-materials">
-                <h2>Or Help By Donating Tools & Materials!</h2>
+            <div id="donate-materials" className={css`margin: 50px auto;`}>
+                <h2 className={css`text-align: center;`}>Or Help By Donating</h2>
+                <h2 className={css`text-align: center;`}>Tools & Materials!</h2>
 
-                <div id="filter-materials" className={css`display: flex; justify-content: space-between; margin: 50px;`}>
-                    <div id="filter-materials-buttons" className={css`display: flex; justify-content: space-evenly; width: 40%;`}>
-                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>All</button>
-                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Materials</button>
-                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Tools</button>
-                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Price</button>
+                <div id="filter-materials" className={css`display: flex; justify-content: space-between; align-items: center; margin: 50px 40px;`}>
+                    <div id="filter-materials-buttons" className={css`display: flex; width: 40%;`}>
+                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>All</button>
+                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Materials</button>
+                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Tools</button>
+                        <button className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Price</button>
                     </div>
-                    <form id="filter-materials-search" className={css`width: 30%; display: flex;`}>
+                    <form id="filter-materials-search" className={css`display: flex; width: 40%;`}>
                         <input type="text" placeholder="Search" className={css`background-color: none; border: none; border: 1px solid lightgrey; width: 100%; padding: 10px 5px; border-radius: 5px;`}/>
-                        <input type="submit" value="search"/>
+                        <input type="submit" name="search" value="search"/>
                     </form>
                 </div>
 
-                <div id="materials-results" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; margin: 10px;`}>
+                <div id="materials-results" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly;`}>
                     {sampleResults.map((result, index) => 
                         <div key={"result-" + index}>
                             <DonateResult name={result.name} subtitle={result.subtitle} picture={result.picture} description={result.description} />
