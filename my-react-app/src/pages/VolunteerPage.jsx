@@ -1,5 +1,4 @@
 import { css } from '@emotion/css'
-import Navbar from '../components/Navbar';
 import SearchResult from '../components/SearchResult';
 
 const exampleResults = [

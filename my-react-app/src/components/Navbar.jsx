@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import Logo from "../assets/Logo.png"
+import { Link } from 'react-router-dom';
 // import { HiOutlineBars3 } from "react-icons/hi2"
 // import Box from "@mui/material/Box";
 // import Drawer from "@mui/material/Drawer";
@@ -39,16 +40,16 @@ const Navbar = () => {
         <nav>
         <div className="nav-entire-container">
         <div className="nav-logo-container">
-        <img src={Logo} alt='PHIG Logo' />
+        <Link to='/'><img src={Logo} alt='PHIG Logo' /></Link>
         </div>
         <div className="navbar-links-container">
         <div className="navlinks-excluding-button">
           <a href="">About Us</a>
           <a href="">Our Approach</a>
           <a href="">News</a>
-          <a href="">Get Involved</a>
+          <Link to='./volunteer'>Get Involved</Link>
           </div>
-          <button className="primary-button">Donate</button>
+          <button className="primary-button"><Link to='/donate'>Donate</Link></button>
         </div>
         </div>
         {/* <div className="navbar-menu-container">
