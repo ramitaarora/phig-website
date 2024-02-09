@@ -7,6 +7,8 @@ import Error from './pages/Error';
 import Home from './pages/Home';
 import VolunteerPage from './pages/VolunteerPage';
 import DonationPage from './pages/DonationPage';
+import ResourcesPage from './pages/ResourcesPage';
+import WebsiteResources from './pages/WebsiteResources';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +19,8 @@ root.render(
           <Route index element={<Home />} />
           <Route path="/volunteer" element={<VolunteerPage />} />
           <Route path="/donate" element={<DonationPage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/resources/websites" element={<WebsiteResources />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
