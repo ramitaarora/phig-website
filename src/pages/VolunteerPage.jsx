@@ -9,7 +9,7 @@ const exampleResults = [
         status: "ONGOING",
         place: "In-Person",
         location: "California",
-        image: './images/volunteer-sample-1.png'
+        image: '/images/volunteer-sample-1.png'
     },
     {
         title: "UX/UI Designer",
@@ -18,7 +18,7 @@ const exampleResults = [
         status: "COMPLETED",
         place: "Remote",
         location: "California",
-        image: './images/volunteer-sample-2.png'
+        image: '/images/volunteer-sample-2.png'
     }
 ]
 
