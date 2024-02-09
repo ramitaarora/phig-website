@@ -10,7 +10,7 @@ export default function ResourcesPage() {
                 <p>In-depth guides and resources to help you along your journey</p>
             </header>
 
-            <div id="resources" className={css`display:flex; flex-wrap: wrap; justify-content: space-evenly;`}>
+            <div id="resources" className={css`display:flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; text-align: center;`}>
 
                 <Link to='/resources/websites'>
                     <div id="resource-button">
