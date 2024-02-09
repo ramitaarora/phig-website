@@ -14,28 +14,28 @@ export default function ResourcesPage() {
 
                 <Link to='/resources/websites'>
                     <div id="resource-button">
-                        <img src="./images/resources/website.png" alt="websites" />
+                        <img src="/images/resources/website.png" alt="websites" />
                         <p>Websites</p>
                     </div>
                 </Link>
 
                 <Link>
                     <div id="resource-button">
-                        <img src="./images/resources/book.png" alt="books-cds" />
+                        <img src="/images/resources/book.png" alt="books-cds" />
                         <p>Books and CD's</p>
                     </div>
                 </Link>
 
                 <Link>
                     <div id="resource-button">
-                        <img src="./images/resources/class.png" alt="classes" />
+                        <img src="/images/resources/class.png" alt="classes" />
                         <p>Classes</p>
                     </div>
                 </Link>
 
                 <Link>
                     <div id="resource-button">
-                        <img src="./images/resources/plant.png" alt="nurseries" />
+                        <img src="/images/resources/plant.png" alt="nurseries" />
                         <p>Nurseries</p>
                     </div>
                 </Link>

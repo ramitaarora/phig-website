@@ -6,52 +6,52 @@ const sampleResults = [
     {
         name: 'Pruning Shears',
         subtitle: 'S: Standard',
-        picture: './images/donation/pruning-shears.jpeg',
+        picture: '/images/donation/pruning-shears.jpeg',
         type: 'Tool',
     },
     {
         name: 'Screwdriver',
         subtitle: 'S: Standard',
-        picture: './images/donation/screwdrivers.png',
+        picture: '/images/donation/screwdrivers.png',
         type: 'Tool'
     },
     {
         name: 'Redwood Lumber',
         subtitle: 'S: 1x12, 2x12, 4x12',
-        picture: './images/donation/redwood-lumber.jpeg',
+        picture: '/images/donation/redwood-lumber.jpeg',
         type: 'Material'
     },
     {
         name: 'Nails',
         subtitle: 'S: Mixed',
-        picture: './images/donation/nails.jpeg',
+        picture: '/images/donation/nails.jpeg',
         type: 'Tool'
     },
     {
         name: 'California Onion Grass',
         subtitle: 'Melica californica',
-        picture: './images/donation/california-onion-grass.jpeg',
+        picture: '/images/donation/california-onion-grass.jpeg',
         type: 'Plant',
         description: 'A member of the Poaceae family, this species is native to Oregon and California, thriving in diverse habitats from mountain forests to coastal grasslands. In California, it predominantly occurs in the Coast Ranges and Sierra foothills.'
     },
     {
         name: 'Beschorneria',
         subtitle: 'Beschorneria yuccoides',
-        picture: './images/donation/beschorneria.jpeg',
+        picture: '/images/donation/beschorneria.jpeg',
         type: 'Plant',
         description: 'Beschorneria yuccoides, akin to Yuccas, is an evergreen perennial with strap-shaped gray-green leaves, up to 2 ft. long. In late spring, it produces pinkish-red flower stalks reaching 3-7 ft. Heat and drought-tolerant, it adds bold architectural appeal with striking foliage and exotic flower spikes.'
     },
     {
         name: 'Checkerbloom',
         subtitle: 'Sidalcea malviflora',
-        picture: './images/donation/checkerbloom.jpeg',
+        picture: '/images/donation/checkerbloom.jpeg',
         type: 'Plant',
         description: 'A common perennial herb in the Malvaceae family native to Northern, Southern, and Central California, thriving in dry flats up to 7,500 feet. With palmate leaves and deep pink flowers on a spike, it tolerates diverse soils, preferring damp winters and dry summers. Often grown from seed, it can behave like an annual.'
     },
     {
         name: 'Goldenrod',
         subtitle: 'Solidago californica',
-        picture: './images/donation/goldenrod.jpeg',
+        picture: '/images/donation/goldenrod.jpeg',
         type: 'Plant',
         description: 'California Goldenrod, a native perennial herb, flourishes in open grassy areas across California (0-7500 feet). With vibrant yellow flowers during dormant periods, it attracts birds and pollinators. Ideal for central oak woodlands, it prefers wet winters/springs, tolerates extra water, but may spread aggressively. Exercise caution with planting space.'
     }
@@ -141,7 +141,7 @@ export default function DonationPage() {
                         <div id="other-right" className={css`display: flex; width: 50%; padding: 50px;`}>
                             <div id="right-image">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fillRule="black" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                    <path fillRule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
                                 </svg>
                             </div>
                             <div id="right-text" className={css`margin: 0 50px 0 20px;`}>
