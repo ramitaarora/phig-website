@@ -1,4 +1,5 @@
 import { css } from '@emotion/css';
+import WebsiteResource from '../components/WebsiteResource';
 
 const websiteResources = [
     {
@@ -41,7 +42,11 @@ export default function WebsiteResources() {
             </header>
 
             <main className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly;`}>
-
+                {websiteResources.map((resource, index) =>
+                    <div key={index} className={css`width: 45%; margin: 20px; border: 1px solid lightgrey; padding: 30px;`}>
+                        <WebsiteResource name={resource.name} description={resource.description} image={resource.image} link={resource.link} />
+                    </div>
+                )}
             </main>
         </div>
     )
