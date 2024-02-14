@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="navlinks-excluding-button">
           <a href="">About Us</a>
           <a href="">Our Approach</a>
-          <a href="">News</a>
+          <Link to="./news">News</Link>
           <Link to='./volunteer'>Get Involved</Link>
           </div>
           <button className="primary-button"><Link to='/donate'>Donate</Link></button>
