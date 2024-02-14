@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { css } from '@emotion/css'
-import SearchResult from '../components/SearchResult';
+import VolunteerResult from '../components/VolunteerResult';
 
 const exampleResults = [
     {
@@ -10,7 +10,7 @@ const exampleResults = [
         status: "ONGOING",
         place: "In-Person",
         location: "California",
-        image: '/images/volunteer-sample-1.png'
+        image: '/images/volunteer/volunteer-sample-1.png'
     },
     {
         title: "UX/UI Designer",
@@ -19,7 +19,7 @@ const exampleResults = [
         status: "COMPLETED",
         place: "Remote",
         location: "California",
-        image: '/images/volunteer-sample-2.png'
+        image: '/images/volunteer/volunteer-sample-2.png'
     }
 ]
 
@@ -114,7 +114,7 @@ export default function VolunteerPage() {
         <div>
 
             <header>
-                <div id="header-image" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('./images/forest-banner.png'); height: 400px; width: 100vw; background-position: center; background-repeat: no-repeat; background-size: cover;`}>
+                <div id="header-image" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('./images/volunteer/volunteer-header.jpeg'); height: 400px; width: 100vw; background-position: top; background-repeat: no-repeat; background-size: cover;`}>
                     <div id="header-text" className={css`text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; color: white; height: 300px; width: 100vw;`}>
                         <h1>Join Us!</h1>
                         <h2>🌱 Animals need nature, and we need each other 🌿</h2>
@@ -132,11 +132,11 @@ export default function VolunteerPage() {
                         <p><b>Gardening Tips:</b> Share your gardening expertise and tips with a global audience. Help beginners kickstart their green journey and guide seasoned gardeners toward more sustainable practices.</p>
                     </div>
                     <div id="volunteer-right" className={css`height: 100%; object-fit: cover; object-position: center; overflow: hidden;`}>
-                        <img src="./images/volunteers.png" alt="volunteers" />
+                        <img src="./images/volunteer/volunteers.png" alt="volunteers" />
                     </div>
                 </section>
 
-                <section id="get-involved" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('./images/forest-banner.png'); color: white; padding: 50px; display: flex; flex-direction: column; justify-content: space-between; height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover;`}>
+                <section id="get-involved" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('./images/volunteer/volunteer-banner.png'); color: white; padding: 50px; display: flex; flex-direction: column; justify-content: space-between; height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover;`}>
                     <h2>How to Get Involved:</h2>
                     <p>Ready to dig in? Select your favorite cause and let us know how you'd like to contribute. Whether you're a seasoned gardener, a nature enthusiast, or someone eager to make a positive impact, there's a place for you in our community.</p>
                     <p>Let's grow a sustainable future together! 🌍🌻</p>
@@ -188,7 +188,7 @@ export default function VolunteerPage() {
 
                                 {results.map((result, index) =>
                                     <div key={index}>
-                                        <SearchResult result={result} index={index}/>
+                                        <VolunteerResult result={result} index={index}/>
                                     </div>
                                 )}
 
