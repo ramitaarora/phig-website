@@ -24,7 +24,7 @@ root.render(
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/resources/websites" element={<WebsiteResources />} />
           <Route path="/news" element={<NewsPage />} />
-          <Route path="/article" element={<ArticlePage />} />
+          <Route path="/news/:articleID" element={<ArticlePage />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
