@@ -26,8 +26,8 @@ export default function Footer() {
                 <div id="footer-social">
                     <h2>Social Media</h2>
                     <div className={css`display: flex; align-items: center; justify-content: space-evenly;`}>
-                        <img src="/images/facebook.svg" alt="facebook"/>
-                        <img src="/images/envelope.svg" alt="facebook"/>
+                        <img src="/images/footer/facebook.svg" alt="facebook"/>
+                        <img src="/images/footer/envelope.svg" alt="facebook"/>
                     </div>
                 </div>
             </div>
