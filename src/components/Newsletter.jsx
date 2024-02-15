@@ -6,7 +6,7 @@ export default function Newsletter() {
             <div id="newsletter-left" className={css`height: 300px; display: flex; flex-direction: column; justify-content: space-evenly; padding: 50px;`}>
                 <h2>Stay tuned.</h2>
                 <p>Subscribe to our newsletter for cool gardening tips, news, and other useful resources.</p>
-                <div id="newsletter-icons" className={css`display: flex; justify-content: space-evenly;`}>
+                <div id="newsletter-icons" className={css`display: flex; justify-content: space-evenly; flex-wrap: wrap;`}>
                     <div id="each-icon" className={css`display: flex; justify-content: space-evenly;`}>
                         <img src="/images/newsletter/tips.png" alt="tips" className={css`height: 20px;`}/>
                         <p>Garden Tips</p>

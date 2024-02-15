@@ -4,52 +4,51 @@ import blogPosts from '../assets/data/blogPosts';
 
 export default function ArticlePage() {
     const [ID, setID] = useState(useParams())
-    const [title, setTitle] = useState('Title');
-    const [author, setAuthor] = useState('Author');
-    const [date, setDate] = useState('Date');
-    const [image, setImage] = useState('');
-    const [tags, setTags] = useState([])
+    const [post, setPost] = useState();
+    // const [title, setTitle] = useState('Title');
+    // const [author, setAuthor] = useState('Author');
+    // const [date, setDate] = useState('Date');
+    // const [image, setImage] = useState('');
+    // const [caption, setCaption] = useState('')
+    // const [tags, setTags] = useState([])
     const [content, setContent] = useState();
 
     useEffect(() => {
-        const post = blogPosts.find(post => post.id == ID.articleID);
+        const findPost = blogPosts.find(post => post.id == ID.articleID);
         // console.log(post);
-        if (post) {
-            setTitle(post.title);
-            setAuthor(post.author);
-            setDate(post.date);
-            setTags(post.tags);
-            setImage(post.image);
+        if (findPost) {
+            setPost(findPost);
 
             fetch(`/blog/${ID.articleID}.txt`)
-            .then(data => data.text())
-            .then(text => {
-                const postArray = (text.split('\n')).filter(item => item !== "");
-                setContent(postArray);
-            })
+                .then(data => data.text())
+                .then(text => {
+                    const postArray = (text.split('\n')).filter(item => item !== "");
+                    setContent(postArray);
+                })
         }
     }, [ID])
 
     return (
         <div>
-            <header>
-                <h1>{title}</h1>
-                <h2>By: {author}</h2>
-                {tags ? tags.map((tag, index) =>
+            { post ? (
+                <header>
+                    <h1>{post.title}</h1>
+                    <h2>By: {post.author}</h2>
+                    <p>{post.date}</p>
+                    {post.tags.length ? post.tags.map((tag, index) =>
                     <p key={index}>{tag}</p>
                 ) : null}
-                <p>{date}</p>
-                <img src={image} alt={title} />
-                <p>Image caption</p>
-            </header>
+                    <img src={post.image} alt={post.title} />
+                    <p>Image: {post.caption}</p>
+                </header>
+            ) : null}
 
             <article>
                 {content ? content.map((paragraph, index) =>
                     <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
                 ) : null}
             </article>
-
-
         </div>
+
     )
 }
