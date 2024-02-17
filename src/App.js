@@ -4,10 +4,12 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 function App() {
+  const [cart, setCart] = useState([]);
+  
   return (
     <div className="App">
       <Navbar />
-      <Outlet />
+      <Outlet/>
       <Footer />
     </div>
   );

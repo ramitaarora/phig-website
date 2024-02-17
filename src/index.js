@@ -11,6 +11,7 @@ import ResourcesPage from './pages/ResourcesPage';
 import WebsiteResources from './pages/WebsiteResources';
 import NewsPage from './pages/NewsPage';
 import ArticlePage from './pages/ArticlePage';
+import PaymentPage from './pages/PaymentPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -21,6 +22,7 @@ root.render(
           <Route index element={<Home />} />
           <Route path="/volunteer" element={<VolunteerPage />} />
           <Route path="/donate" element={<DonationPage />} />
+          <Route path="/pay" element={<PaymentPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/resources/websites" element={<WebsiteResources />} />
           <Route path="/news" element={<NewsPage />} />
