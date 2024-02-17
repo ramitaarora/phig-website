@@ -2,8 +2,8 @@ import { css } from '@emotion/css';
 
 export default function Newsletter() {
     return (
-        <div className={css`display: flex; height: 300px; justify-content: center;`}>
-            <div id="newsletter-left" className={css`height: 300px; display: flex; flex-direction: column; justify-content: space-evenly; padding: 50px;`}>
+        <div className={css`display: flex; height: 300px; width: 70vw; justify-content: center; margin: 20px auto; border: 1px solid #63D79C;`}>
+            <div id="newsletter-left" className={css`width: 40vw; height: 300px; display: flex; flex-direction: column; justify-content: space-evenly; padding: 50px;`}>
                 <h2>Stay tuned.</h2>
                 <p>Subscribe to our newsletter for cool gardening tips, news, and other useful resources.</p>
                 <div id="newsletter-icons" className={css`display: flex; justify-content: space-evenly; flex-wrap: wrap;`}>
