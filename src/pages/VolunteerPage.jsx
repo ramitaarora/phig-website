@@ -110,11 +110,15 @@ export default function VolunteerPage() {
         }
     }
 
+    const clearResults = (event) => {
+        setResults(exampleResults);
+    }
+
     return (
         <div>
 
             <header>
-                <div id="header-image" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('./images/volunteer/volunteer-header.jpeg'); height: 400px; width: 100vw; background-position: top; background-repeat: no-repeat; background-size: cover;`}>
+                <div id="header-image" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('./images/volunteer/volunteer-header.jpeg'); height: 400px; width: 100vw; background-position: top; background-repeat: no-repeat; background-size: cover;`}>
                     <div id="header-text" className={css`text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; color: white; height: 300px; width: 100vw;`}>
                         <h1>Join Us!</h1>
                         <h2>🌱 Animals need nature, and we need each other 🌿</h2>
@@ -179,11 +183,11 @@ export default function VolunteerPage() {
                                 </div>
                             </div>
 
-                            <input type="reset" value="Clear Filters" className={css`margin-top: 20px; background-color: #081821; color: white; padding: 8px; border: 1px solid #081821; border-radius: 10px; cursor: pointer;`}/>
+                            <input type="reset" value="Clear Filters" onClick={clearResults} className={css`margin-top: 20px; background-color: #081821; color: white; padding: 8px; border: 1px solid #081821; border-radius: 10px; cursor: pointer;`}/>
                         </form>
 
                         <div id="search-results">
-                            <h3>Showing # Results</h3>
+                            <h3>Showing {results.length} Results</h3>
                             <div id="results-container">
 
                                 {results.map((result, index) =>
