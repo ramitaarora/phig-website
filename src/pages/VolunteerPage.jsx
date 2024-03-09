@@ -1,30 +1,10 @@
 import { useState } from 'react';
 import { css } from '@emotion/css'
 import VolunteerResult from '../components/VolunteerResult';
-
-const exampleResults = [
-    {
-        title: "Pruner",
-        time: "8:00 AM - 5:00PM",
-        description: "Please join us when several volunteer activities are taking place: composting, pruning, weeding, planting, creating seasonal wildlife habitat and improving our beds.",
-        status: "ONGOING",
-        place: "In-Person",
-        location: "California",
-        image: '/images/volunteer/volunteer-sample-1.png'
-    },
-    {
-        title: "UX/UI Designer",
-        time: "We'll work with your schedule",
-        description: "Design and update our website to reflect what we do and attract more visitors.",
-        status: "COMPLETED",
-        place: "Remote",
-        location: "California",
-        image: '/images/volunteer/volunteer-sample-2.png'
-    }
-]
+import volunteerOpps from '../data/volunteerOpps.json';
 
 export default function VolunteerPage() {
-    const [results, setResults] = useState(exampleResults);
+    const [results, setResults] = useState(volunteerOpps);
     const [inputValue, setInputValue] = useState('')
 
     const handleFilter = (event) => {
@@ -40,7 +20,7 @@ export default function VolunteerPage() {
                     setResults([])
                 }
             } else {
-                setResults(exampleResults);
+                setResults(volunteerOpps);
             }
         }
         if (event.target.name === 'remote-work') {
@@ -53,7 +33,7 @@ export default function VolunteerPage() {
                     setResults([])
                 }
             } else {
-                setResults(exampleResults);
+                setResults(volunteerOpps);
             }
         }
         if (event.target.name === 'inperson-work') {
@@ -66,7 +46,7 @@ export default function VolunteerPage() {
                     setResults([])
                 }
             } else {
-                setResults(exampleResults);
+                setResults(volunteerOpps);
             }
         }
         if (event.target.name === 'ui-ux') {
@@ -79,7 +59,7 @@ export default function VolunteerPage() {
                     setResults([])
                 }      
             } else {
-                setResults(exampleResults);
+                setResults(volunteerOpps);
             }
         }
         if (event.target.name === 'composter') {
@@ -92,7 +72,7 @@ export default function VolunteerPage() {
                     setResults([])
                 }      
             } else {
-                setResults(exampleResults);
+                setResults(volunteerOpps);
             }
         }
         if (event.target.name === 'work-participant') {
@@ -105,13 +85,13 @@ export default function VolunteerPage() {
                     setResults([])
                 }      
             } else {
-                setResults(exampleResults);
+                setResults(volunteerOpps);
             }
         }
     }
 
     const clearResults = (event) => {
-        setResults(exampleResults);
+        setResults(volunteerOpps);
     }
 
     return (

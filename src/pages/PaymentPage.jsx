@@ -1,9 +1,9 @@
 export default function PaymentPage() {
     const divStyle = {
-        position: "relative", 
-        overflow: "hidden", 
-        width: "100%", 
-        height: "1200px", 
+        position: "relative",
+        overflow: "hidden",
+        width: "100%",
+        height: "1200px",
         paddingTop: "100%"
     }
 
@@ -19,8 +19,10 @@ export default function PaymentPage() {
     }
 
     return (
-        <div style={divStyle}>
-            <iframe title='Donation form powered by Zeffy' style={frameStyle} src='https://www.zeffy.com/en-US/embed/donation-form/cfa8c571-734f-443a-a3b8-5b0a30ba0618' allowpaymentrequest allowtransparency="true"></iframe>
+        <div>
+            <div style={divStyle}>
+                <iframe title='Donation form powered by Zeffy' style={frameStyle} src='https://www.zeffy.com/en-US/embed/donation-form/cfa8c571-734f-443a-a3b8-5b0a30ba0618' allowpaymentrequest allowtransparency="true"></iframe>
+            </div>
         </div>
     )
 }

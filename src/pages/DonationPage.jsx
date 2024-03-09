@@ -1,93 +1,40 @@
 import { useState } from 'react';
 import { css } from '@emotion/css';
+import { Link } from 'react-router-dom';
 import DonateResult from '../components/DonateResult';
-
-const sampleResults = [
-    {
-        name: 'Pruning Shears',
-        subtitle: 'S: Standard',
-        picture: '/images/donation/pruning-shears.jpeg',
-        type: 'Tool',
-    },
-    {
-        name: 'Screwdriver',
-        subtitle: 'S: Standard',
-        picture: '/images/donation/screwdrivers.png',
-        type: 'Tool'
-    },
-    {
-        name: 'Redwood Lumber',
-        subtitle: 'S: 1x12, 2x12, 4x12',
-        picture: '/images/donation/redwood-lumber.jpeg',
-        type: 'Material'
-    },
-    {
-        name: 'Nails',
-        subtitle: 'S: Mixed',
-        picture: '/images/donation/nails.jpeg',
-        type: 'Tool'
-    },
-    {
-        name: 'California Onion Grass',
-        subtitle: 'Melica californica',
-        picture: '/images/donation/california-onion-grass.jpeg',
-        type: 'Plant',
-        description: 'A member of the Poaceae family, this species is native to Oregon and California, thriving in diverse habitats from mountain forests to coastal grasslands. In California, it predominantly occurs in the Coast Ranges and Sierra foothills.'
-    },
-    {
-        name: 'Beschorneria',
-        subtitle: 'Beschorneria yuccoides',
-        picture: '/images/donation/beschorneria.jpeg',
-        type: 'Plant',
-        description: 'Beschorneria yuccoides, akin to Yuccas, is an evergreen perennial with strap-shaped gray-green leaves, up to 2 ft. long. In late spring, it produces pinkish-red flower stalks reaching 3-7 ft. Heat and drought-tolerant, it adds bold architectural appeal with striking foliage and exotic flower spikes.'
-    },
-    {
-        name: 'Checkerbloom',
-        subtitle: 'Sidalcea malviflora',
-        picture: '/images/donation/checkerbloom.jpeg',
-        type: 'Plant',
-        description: 'A common perennial herb in the Malvaceae family native to Northern, Southern, and Central California, thriving in dry flats up to 7,500 feet. With palmate leaves and deep pink flowers on a spike, it tolerates diverse soils, preferring damp winters and dry summers. Often grown from seed, it can behave like an annual.'
-    },
-    {
-        name: 'Goldenrod',
-        subtitle: 'Solidago californica',
-        picture: '/images/donation/goldenrod.jpeg',
-        type: 'Plant',
-        description: 'California Goldenrod, a native perennial herb, flourishes in open grassy areas across California (0-7500 feet). With vibrant yellow flowers during dormant periods, it attracts birds and pollinators. Ideal for central oak woodlands, it prefers wet winters/springs, tolerates extra water, but may spread aggressively. Exercise caution with planting space.'
-    }
-]
+import donations from '../data/donations.json';
 
 export default function DonationPage() {
-    const [searchResults, setSearchResults] = useState(sampleResults);
+    const [searchResults, setSearchResults] = useState(donations);
     const [input, setInput] = useState('')
 
     const setAll = (event) => {
         event.preventDefault();
-        setSearchResults(sampleResults);
+        setSearchResults(donations);
     }
 
     const setMaterials = (event) => {
         event.preventDefault();
-        setSearchResults(sampleResults.filter(result => result.type === 'Material'));
+        setSearchResults(donations.filter(result => result.type === 'Material'));
     }
 
     const setTools = (event) => {
         event.preventDefault();
-        setSearchResults(sampleResults.filter(result => result.type === 'Tool'));
+        setSearchResults(donations.filter(result => result.type === 'Tool'));
     }
 
     const setPlants = (event) => {
         event.preventDefault();
-        setSearchResults(sampleResults.filter(result => result.type === 'Plant'));
+        setSearchResults(donations.filter(result => result.type === 'Plant'));
     }
 
     const handleSearch = (event) => {
         event.preventDefault();
         if (input.length > 1) {
-            setSearchResults(sampleResults.filter(result => result.name.toLowerCase().includes(input.toLowerCase()) || result.type.toLowerCase().includes(input.toLowerCase()) ));
+            setSearchResults(donations.filter(result => result.name.toLowerCase().includes(input.toLowerCase()) || result.type.toLowerCase().includes(input.toLowerCase()) ));
         }
         else {
-            setSearchResults(sampleResults);
+            setSearchResults(donations);
         }
         
     }
@@ -118,7 +65,7 @@ export default function DonationPage() {
                         <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$50</button>
                     </div>
                     <input type="text" placeholder='Custom amount' className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 3px;`} />
-                    <input type="submit" value="Next" className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 10px; margin: 20px auto; background-color: darkgreen; color: white;`} />
+                    <Link to="/pay"><input type="submit" value="Next" className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 10px; margin: 20px auto; background-color: darkgreen; color: white;`} /></Link>
                 </form>
             </div>
 

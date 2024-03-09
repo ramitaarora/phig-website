@@ -1,11 +1,12 @@
 import { css } from '@emotion/css'
+import { Link } from 'react-router-dom';
 
 export default function VolunteerResult({ result, index }) {
     return (
         <div id={"each-result-" + index} className={css`display: flex; height: 250px; width: 700px; margin: 10px; background: lightgrey;`}>
 
             <div id="result-img-container" className={css`height: 100%; width: 35%; object-fit: cover; object-position: center; overflow: hidden;`}>
-                <img src={result.image} alt="result-image" />
+                <img src={result.image} alt="result" />
             </div>
 
 
@@ -13,7 +14,7 @@ export default function VolunteerResult({ result, index }) {
 
                 <div id="result-corner" className={css`float: right; margin: 0 20px; height: 70px; width: 25%; display: flex; flex-direction: column; justify-content: space-evenly;`}>
                     <div id="each-corner-stat" className={css`display: flex; justify-content: flex-start; align-items: center;`}>
-                        <img src={result.status === "COMPLETED" ? './images/volunteer/red-circle.svg' : './images/volunteer/green-circle.svg'} alt="status" />
+                        <img src={result.status === "COMPLETED" ? './images/volunteer/red-circle.svg' : './images/volunteer/green-circle.svg'} alt="status-dot" />
                         <p className={css`margin-left: 5px;`}>{result.status}</p>
                     </div>
                     <div id="each-corner-stat" className={css`display: flex; justify-content: flex-start; align-items: center;`}>
@@ -33,15 +34,11 @@ export default function VolunteerResult({ result, index }) {
                         <p className={css`margin-top: 10px; font-size: 80%;`}>{result.description}</p>
                     </div>
                     <div id="result-buttons" className={css`margin: 20px auto; width: 75%;  display: flex; justify-content: space-evenly; align-items: center;`}>
-                        <button className={css`padding: 5px; color: white; background-color: darkgreen; border: 1px solid darkgreen; border-radius: 5px; cursor: pointer;`}>Apply Now</button>
+                        <Link to="/volunteer/application"><button className={css`padding: 5px; color: white; background-color: darkgreen; border: 1px solid darkgreen; border-radius: 5px; cursor: pointer;`}>Apply Now</button></Link>
                         <p>See Details</p>
                     </div>
 
                 </div>
-
-
-
-
             </div>
         </div>
     )

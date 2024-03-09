@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { css } from '@emotion/css';
-import blogPosts from '../assets/data/blogPosts';
+import blogPosts from '../data/blogPosts';
 
 export default function ArticlePage() {
     const [ID, setID] = useState(useParams())

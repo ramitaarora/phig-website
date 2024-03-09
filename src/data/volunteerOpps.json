@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Pruner",
+        "time": "8:00 AM - 5:00PM",
+        "description": "Please join us when several volunteer activities are taking place: composting, pruning, weeding, planting, creating seasonal wildlife habitat and improving our beds.",
+        "status": "ONGOING",
+        "place": "In-Person",
+        "location": "California",
+        "image": "/images/volunteer/volunteer-sample-1.png"
+    },
+    {
+        "title": "UX/UI Designer",
+        "time": "We'll work with your schedule",
+        "description": "Design and update our website to reflect what we do and attract more visitors.",
+        "status": "COMPLETED",
+        "place": "Remote",
+        "location": "California",
+        "image": "/images/volunteer/volunteer-sample-2.png"
+    }
+]
