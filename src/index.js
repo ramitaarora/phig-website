@@ -12,7 +12,7 @@ import WebsiteResources from './pages/WebsiteResources';
 import NewsPage from './pages/NewsPage';
 import ArticlePage from './pages/ArticlePage';
 import PaymentPage from './pages/PaymentPage';
-import VolunteerApplication from './components/VolunteerApplication';
+import VolunteerApplication from './pages/VolunteerApplication';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
