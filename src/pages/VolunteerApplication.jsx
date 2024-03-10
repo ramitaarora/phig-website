@@ -1,12 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { css } from '@emotion/css';
 import { Link } from 'react-router-dom';
 import volunteerOpps from '../data/volunteerOpps.json';
 
 import emailjs from '@emailjs/browser';
-const serviceID = process.env.REACT_APP_SERVICE_ID;
-const templateID = process.env.REACT_APP_TEMPLATE_ID;
-const publicKey = process.env.REACT_APP_KEY;
 
 export default function VolunteerApplication() {
     const [name, setName] = useState('');
@@ -19,9 +16,10 @@ export default function VolunteerApplication() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+
         let templateParams = {
             from_name: name,
-            message: {
+            message: JSON.stringify({
                 name: name,
                 email: email,
                 phone: phone,
@@ -29,12 +27,12 @@ export default function VolunteerApplication() {
                 age: age,
                 time: time,
                 project_interested_in: project,
-            },
+            }),
             reply_to: email
         }
         console.log(templateParams);
-        
-        emailjs.send(serviceID, templateID, templateParams, publicKey)
+
+        emailjs.send('service_s5i9a9x', 'template_yvx6i8y', templateParams, 'N1SNnkrtd7PFG6MOL')
         .then(
             (response) => {
               console.log('SUCCESS!', response.status, response.text);
