@@ -44,7 +44,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-links-container">
         <div className="navlinks-excluding-button">
-          <a href="">About Us</a>
+          <Link to="/about">About Us</Link>
           <a href="">Our Approach</a>
           <Link to="/news">News</Link>
           <Link to='/volunteer'>Get Involved</Link>
