@@ -1,0 +1,213 @@
+.Resources_Img{
+
+    width: 61.98px;
+    height: 61.98px;
+    margin: 20px;
+    padding: 12px;
+    background-color: white;
+    border-radius: 50%;
+    overflow: visible;
+    /* top: 539.38px;
+    left: 188.35px; */
+}
+
+
+.Website_Resourses{
+    
+    padding: 20px; 
+    background: linear-gradient(136.71deg, #A7E5F8 -7.42%, rgba(60, 164, 197, 0.89) 53.84%, rgba(19, 80, 100, 0.94) 109.95%);
+    width: 156.67px;
+    height: 156.67px;
+    top: 498px;
+    left: 131px;
+    border-radius: 14.78px;
+    
+}
+.Website_Resourses .Web{
+
+    color: white;
+    height: 33.11px;
+    top: 603.83px;
+    left: 138.69px;
+    margin-top: -10px;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: center; 
+    
+}
+
+.Book{
+
+    padding: 20px;
+    background: linear-gradient(136.71deg, #6BC689 -7.42%, rgba(75, 121, 112, 0.89) 53.84%, rgba(55, 59, 93, 0.94) 109.95%);
+    width: 156.67px;
+    height: 156.67px;
+    top: 498px;
+    left: 353.88px;
+    border-radius: 14.78px;
+
+}
+
+.Book .Books{
+
+    color: white;
+    height: 33.11px;
+    top: 603.83px;
+    left: 138.69px;
+    margin-top: -10px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: center; 
+
+} 
+
+.Classes{
+
+    background: linear-gradient(136.71deg, #EA37A4 -7.42%, rgba(234, 60, 107, 0.89) 53.84%, rgba(234, 67, 54, 0.94) 109.95%);
+    padding: 20px;
+    width: 156.67px;
+    height: 156.67px;
+    top: 498px;
+    left: 353.88px;
+    border-radius: 14.78px;
+
+}
+
+.Classes .Class{
+
+    color: white;
+    height: 33.11px;
+    top: 603.83px;
+    left: 138.69px;
+    margin-top: -10px;
+    font-family: Inter;
+    font-size: 15.3px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: center; 
+
+}
+.Nurseries{
+
+    background: linear-gradient(136.71deg, #87D4BA -7.42%, rgba(100, 171, 178, 0.89) 53.84%, rgba(68, 132, 171, 0.94) 109.95%);
+    padding: 20px;
+    width: 156.67px;
+    height: 156.67px;
+    top: 498px;
+    left: 353.88px;
+    border-radius: 14.78px;
+
+}
+
+.Nurseries .Nursery{
+
+    color: white;
+    height: 33.11px;
+    top: 603.83px;
+    left: 138.69px;
+    margin-top: -10px;
+    font-family: Inter;
+    font-size: 15.3px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+}
+
+/* started editing suggestions component  */
+
+.emailclass{
+
+    border: 1px solid #C6C6C6;
+    background: #FFFFFF;
+    width: 525px;
+    height: 35px;
+    top: 1191px;
+    left: 72px;
+    border: 1px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    padding: 10px;
+    padding-left: 20px;
+    text-align: left; 
+
+}
+
+.suggestclass{
+
+    width: 558.63px;
+    height: 56.06px;
+    top: 1050px;
+    left: -24px;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+}
+
+.thoughtclass{
+
+    width: 339px;
+    height: 39px;
+    top: 1099px;
+    left: 72px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #909090;
+    margin-top: -20px;
+
+}
+
+.textareaclass{
+
+    margin-top: 10px;
+    width: 525px;
+    height: 108px;
+    top: 1254px;
+    left: 72px;
+    border: 1px ;
+    background: #FFFFFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    padding: 10px;
+    padding-left: 20px;
+    text-align: left; 
+
+}
+
+.submitclass{
+
+    width: 75px;
+    height: 40px;
+    border: 1px ;
+    /* background: linear-gradient(136.71deg, #6BC689 -7.42%, rgba(75, 121, 112, 0.89) 53.84%, rgba(12, 83, 19, 0.94) 109.95%); */
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0.03em;
+    text-align: center; 
+    border-radius: 8%;
+
+}

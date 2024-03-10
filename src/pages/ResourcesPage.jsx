@@ -12,31 +12,31 @@ export default function ResourcesPage() {
 
             <div id="resources" className={css`display:flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; text-align: center;`}>
 
-                <Link to='/resources/websites'>
-                    <div id="resource-button">
-                        <img src="/images/resources/website.png" alt="websites" />
-                        <p>Websites</p>
+                <Link to='/resources/websites' className={css`text-decoration: none; color: inherit;`}>
+                    <div id="resource-button" className = "Website_Resourses">
+                        <img className = "Resources_Img" src="/images/resources/website.png" alt="websites" />
+                        <p className = "Web" >Websites</p>
                     </div>
                 </Link>
 
-                <Link>
-                    <div id="resource-button">
-                        <img src="/images/resources/book.png" alt="books-cds" />
-                        <p>Books and CD's</p>
+                <Link className={css`text-decoration: none; color: inherit;`}>
+                    <div id="resource-button" className="Book">
+                        <img className = "Resources_Img" src="/images/resources/book.png" alt="books-cds" />
+                        <p className = "Books">Books and CD's</p>
                     </div>
                 </Link>
 
-                <Link>
-                    <div id="resource-button">
-                        <img src="/images/resources/class.png" alt="classes" />
-                        <p>Classes</p>
+                <Link className={css`text-decoration: none; color: inherit;`}>
+                    <div id="resource-button" className = "Classes">
+                        <img className = "Resources_Img" src="/images/resources/class.png" alt="classes" />
+                        <p className = "Class">Classes</p>
                     </div>
                 </Link>
 
-                <Link>
-                    <div id="resource-button">
-                        <img src="/images/resources/plant.png" alt="nurseries" />
-                        <p>Nurseries</p>
+                <Link className={css`text-decoration: none; color: inherit;`}>
+                    <div id="resource-button" className = "Nurseries">
+                        <img className = "Resources_Img" src="/images/resources/plant.png" alt="nurseries" />
+                        <p className = "Nursery">Nurseries</p>
                     </div>
                 </Link>
 
