@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { css } from '@emotion/css';
 import { Link } from 'react-router-dom';
 import volunteerOpps from '../data/volunteerOpps.json';

@@ -9,18 +9,18 @@ export default function Footer() {
                 <div id="about-nav">
                     <h2>About PHIG</h2>
                     <ul>
-                        <li>About Us</li>
-                        <li>History</li>
-                        <li>Contact</li>
+                        <Link to="/about" className={css`text-decoration: none; color: white;`}><li>About Us</li></Link>
+                        <Link to="/about" className={css`text-decoration: none; color: white;`}><li>History</li></Link>
+                        <Link to="/about#contact" className={css`text-decoration: none; color: white;`}><li>Contact</li></Link>
                     </ul>
                 </div>
 
                 <div id="get-involved">
                     <h2>Get Involved</h2>
                     <ul>
-                        <li>Ways to Help</li>
-                        <Link to="/donate"><li>Donate</li></Link>
-                        <Link to="/volunteer"><li>Volunteer</li></Link>
+                        <Link to="/volunteer" className={css`text-decoration: none; color: white;`}><li>Ways to Help</li></Link>
+                        <Link to="/donate" className={css`text-decoration: none; color: white;`}><li>Donate</li></Link>
+                        <Link to="/volunteer" className={css`text-decoration: none; color: white;`}><li>Volunteer</li></Link>
                     </ul>
                 </div>
 
