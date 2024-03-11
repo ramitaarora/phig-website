@@ -19,15 +19,11 @@ export default function VolunteerApplication() {
 
         let templateParams = {
             from_name: name,
-            message: JSON.stringify({
-                name: name,
-                email: email,
-                phone: phone,
-                preferred_contact_method: preferredContact,
-                age: age,
-                time: time,
-                project_interested_in: project,
-            }),
+            phone_number: phone,
+            preferred_contact_method: preferredContact,
+            age: age,
+            time: time,
+            project_interested_in: project,
             reply_to: email
         }
         console.log(templateParams);
@@ -35,10 +31,19 @@ export default function VolunteerApplication() {
         emailjs.send('service_s5i9a9x', 'template_yvx6i8y', templateParams, 'N1SNnkrtd7PFG6MOL')
         .then(
             (response) => {
-              console.log('SUCCESS!', response.status, response.text);
+              // console.log('SUCCESS!', response.status, response.text);
+              alert('Email sent! We will get back to you shortly.');
+              setName('');
+              setEmail('');
+              setPhone('');
+              setPreferredContact('');
+              setAge('');
+              setTime('');
+              setProject('');
             },
             (error) => {
-              console.log('FAILED...', error);
+              // console.log('FAILED...', error);
+              alert('Error: Email not sent!');
             },
           );
     }
@@ -56,11 +61,11 @@ export default function VolunteerApplication() {
                 <p>How should we contact you?</p>
                 <div className={css`display: flex; justify-content: space-around; align-items: center;`}>
                     <div>
-                        <input type="radio" id="phone" name="contact" value="phone" onClick={event => setPreferredContact(event.target.value)}/>
+                        <input type="radio" id="phone" name="contact" value="Phone" onClick={event => setPreferredContact(event.target.value)}/>
                         <label htmlFor="phone">Phone</label>
                     </div>
                     <div>
-                        <input type="radio" id="email" name="contact" value="email" onClick={event => setPreferredContact(event.target.value)}/>
+                        <input type="radio" id="email" name="contact" value="Email" onClick={event => setPreferredContact(event.target.value)}/>
                         <label htmlFor="email">Email</label>
                     </div>
                 </div>
