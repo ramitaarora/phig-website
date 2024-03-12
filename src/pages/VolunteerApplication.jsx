@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { css } from '@emotion/css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import volunteerOpps from '../data/volunteerOpps.json';
 
 import emailjs from '@emailjs/browser';
 
 export default function VolunteerApplication() {
+    const navigate = useNavigate()
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
@@ -13,39 +14,61 @@ export default function VolunteerApplication() {
     const [age, setAge] = useState('');
     const [time, setTime] = useState('');
     const [project, setProject] = useState('');
+    const [errorMessage, setErrorMessage] = useState([])
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        setErrorMessage([]);
 
-        let templateParams = {
-            from_name: name,
-            phone_number: phone,
-            preferred_contact_method: preferredContact,
-            age: age,
-            time: time,
-            project_interested_in: project,
-            reply_to: email
+        const testEmail = (/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i).test(email);
+        const testPhone = (/^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/i).test(phone);
+        
+        if (!testEmail) {
+            setErrorMessage(pre => [...pre, "Please check your email and try again."]);
         }
-        console.log(templateParams);
 
-        emailjs.send('service_s5i9a9x', 'template_yvx6i8y', templateParams, 'N1SNnkrtd7PFG6MOL')
-        .then(
-            (response) => {
-              // console.log('SUCCESS!', response.status, response.text);
-              alert('Email sent! We will get back to you shortly.');
-              setName('');
-              setEmail('');
-              setPhone('');
-              setPreferredContact('');
-              setAge('');
-              setTime('');
-              setProject('');
-            },
-            (error) => {
-              // console.log('FAILED...', error);
-              alert('Error: Email not sent!');
-            },
-          );
+        if (!testPhone) {
+            setErrorMessage(pre => [...pre, "Please check your phone number and try again."]);
+        }
+
+        if (age > 100 || age < 1) {
+            setErrorMessage(pre => [...pre, "Please check your age and try again."])
+        }
+
+        if (testEmail && testPhone && age < 100 && age > 1) {
+            let templateParams = {
+                from_name: name,
+                phone_number: phone,
+                preferred_contact_method: preferredContact,
+                age: age,
+                time: time,
+                project_interested_in: project,
+                reply_to: email
+            }
+            console.log(templateParams);
+
+            emailjs.send('service_s5i9a9x', 'template_yvx6i8y', templateParams, 'N1SNnkrtd7PFG6MOL')
+            .then(
+                (response) => {
+                // console.log('SUCCESS!', response.status, response.text);
+                navigate('/volunteer/confirmation', { replace: true });
+                setName('');
+                setEmail('');
+                setPhone('');
+                setPreferredContact('');
+                setAge('');
+                setTime('');
+                setProject('');
+                },
+                (error) => {
+                // console.log('FAILED...', error);
+                alert('Error: Email not sent!');
+                },
+            );
+        }
+        
+
+
     }
 
     return (
@@ -79,7 +102,7 @@ export default function VolunteerApplication() {
                 <div className={css`display: flex; justify-content: space-between; align-items: center;`}>
                     <div className={css`display: flex; flex-direction: column;`}>
                         <label htmlFor="age">Age</label>
-                        <input type="text" id="age" placeholder="Age" value={age} onChange={event => setAge(event.target.value)} />
+                        <input type="text" id="age" placeholder="Age" value={age} onChange={event => setAge(event.target.value)} required/>
                     </div>
                     <div className={css`display: flex; flex-direction: column;`}>
                         <label htmlFor="availability">When are you open?</label>
@@ -96,6 +119,14 @@ export default function VolunteerApplication() {
                 </select>
 
                 <input type="submit" />
+                <div id="error-messages">
+                    {errorMessage.length ? (
+                        errorMessage.map((message, index) => 
+                            <p key={index}>{message}</p>
+                        )
+                    ) : null}
+                </div>
+
                 <Link to="/volunteer#search-opportunities">Previous</Link>
             </form>
         </div>

@@ -13,6 +13,7 @@ import NewsPage from './pages/NewsPage';
 import ArticlePage from './pages/ArticlePage';
 import PaymentPage from './pages/PaymentPage';
 import VolunteerApplication from './pages/VolunteerApplication';
+import ConfirmationPage from './pages/ConfirmationPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,6 +30,7 @@ root.render(
           <Route path="/news" element={<NewsPage />} />
           <Route path="/news/:articleID" element={<ArticlePage />} />
           <Route path="/volunteer/application" element={<VolunteerApplication />} />
+          <Route path="/volunteer/confirmation" element={<ConfirmationPage />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
