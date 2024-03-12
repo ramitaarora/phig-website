@@ -110,6 +110,11 @@ h3 {
     width: 45vw;
 }
 
+.weather-station {
+    width: 100%;
+    height: 80vh;
+}
+
 @media (max-width: 850px) {
     #newsletter-icons {
         columns: 1;
