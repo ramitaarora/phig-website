@@ -46,7 +46,7 @@ export default function VolunteerApplication() {
                 reply_to: email
             }
 
-            emailjs.send('service_s5i9a9x', 'template_yvx6i8y', templateParams, 'N1SNnkrtd7PFG6MOL')
+            emailjs.send('service', 'template', templateParams, 'public')
             .then(
                 (response) => {
                 // console.log('SUCCESS!', response.status, response.text);
