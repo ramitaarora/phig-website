@@ -45,7 +45,6 @@ export default function VolunteerApplication() {
                 project_interested_in: project,
                 reply_to: email
             }
-            console.log(templateParams);
 
             emailjs.send('service_s5i9a9x', 'template_yvx6i8y', templateParams, 'N1SNnkrtd7PFG6MOL')
             .then(
@@ -62,13 +61,10 @@ export default function VolunteerApplication() {
                 },
                 (error) => {
                 // console.log('FAILED...', error);
-                alert('Error: Email not sent!');
+                setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at phig@gmail.com."]);
                 },
             );
         }
-        
-
-
     }
 
     return (
