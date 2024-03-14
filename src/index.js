@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Error from './pages/Error';
 import Home from './pages/Home';
-import About from './pages/About';
+import AboutPage from './pages/AboutPage';
 import VolunteerPage from './pages/VolunteerPage';
 import DonationPage from './pages/DonationPage';
 import ResourcesPage from './pages/ResourcesPage';
@@ -14,7 +14,8 @@ import NewsPage from './pages/NewsPage';
 import ArticlePage from './pages/ArticlePage';
 import PaymentPage from './pages/PaymentPage';
 import VolunteerApplication from './pages/VolunteerApplication';
-import ConfirmationPage from './pages/ConfirmationPage';
+import ConfirmationPageVolunteer from './pages/ConfirmationPageVolunteer';
+import ConfirmationPageContact from './pages/ConfirmationPageContact';
 import EventsPage from './pages/EventsPage';
 import WeatherStation from './pages/WeatherStation';
 
@@ -28,13 +29,14 @@ root.render(
           <Route path="/volunteer" element={<VolunteerPage />} />
           <Route path="/donate" element={<DonationPage />} />
           <Route path="/pay" element={<PaymentPage />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/resources/websites" element={<WebsiteResources />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/news/:articleID" element={<ArticlePage />} />
           <Route path="/volunteer/application" element={<VolunteerApplication />} />
-          <Route path="/volunteer/confirmation" element={<ConfirmationPage />} />
+          <Route path="/volunteer/confirmation" element={<ConfirmationPageVolunteer />} />
+          <Route path="/about/confirmation" element={<ConfirmationPageContact />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path='/station' element={<WeatherStation />} />
         </Route>

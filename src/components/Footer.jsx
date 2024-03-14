@@ -28,7 +28,7 @@ export default function Footer() {
                     <h2>Social Media</h2>
                     <div className={css`display: flex; align-items: center; justify-content: space-evenly;`}>
                         <a href="https://www.facebook.com/Pleasant-Hill-Instructional-Garden-PHIG-115550191840821/"><img src="/images/footer/facebook.svg" alt="facebook"/></a>
-                        <a href="mailto:phigarden@gmail.com"><img src="/images/footer/envelope.svg" alt="facebook"/></a>
+                        <a href="mailto:phigarden@gmail.com"><img src="/images/footer/envelope.svg" alt="email"/></a>
                     </div>
                 </div>
             </div>
