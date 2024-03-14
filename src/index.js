@@ -12,6 +12,9 @@ import WebsiteResources from './pages/WebsiteResources';
 import NewsPage from './pages/NewsPage';
 import ArticlePage from './pages/ArticlePage';
 import PaymentPage from './pages/PaymentPage';
+import VolunteerApplication from './pages/VolunteerApplication';
+import ConfirmationPage from './pages/ConfirmationPage';
+import EventsPage from './pages/EventsPage';
 import WeatherStation from './pages/WeatherStation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -28,6 +31,9 @@ root.render(
           <Route path="/resources/websites" element={<WebsiteResources />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/news/:articleID" element={<ArticlePage />} />
+          <Route path="/volunteer/application" element={<VolunteerApplication />} />
+          <Route path="/volunteer/confirmation" element={<ConfirmationPage />} />
+          <Route path="/events" element={<EventsPage />} />
           <Route path='/station' element={<WeatherStation />} />
         </Route>
         <Route path="*" element={<Error />} />

@@ -1,7 +1,7 @@
 import { css } from '@emotion/css';
 import { Link } from 'react-router-dom';
 import Newsletter from '../components/Newsletter';
-import blogPosts from '../assets/data/blogPosts';
+import blogPosts from '../data/blogPosts.json';
 
 export default function NewsPage() {
     return (

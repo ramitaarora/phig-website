@@ -1,4 +1,5 @@
-import { css } from '@emotion/css'
+import { css } from '@emotion/css';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -8,26 +9,26 @@ export default function Footer() {
                 <div id="about-nav">
                     <h2>About PHIG</h2>
                     <ul>
-                        <li>About Us</li>
-                        <li>History</li>
-                        <li>Contact</li>
+                        <Link to="/about" className={css`text-decoration: none; color: white;`}><li>About Us</li></Link>
+                        <Link to="/about" className={css`text-decoration: none; color: white;`}><li>History</li></Link>
+                        <Link to="/about#contact" className={css`text-decoration: none; color: white;`}><li>Contact</li></Link>
                     </ul>
                 </div>
 
                 <div id="get-involved">
                     <h2>Get Involved</h2>
                     <ul>
-                        <li>Ways to Help</li>
-                        <li>Donate</li>
-                        <li>Volunteer</li>
+                        <Link to="/volunteer" className={css`text-decoration: none; color: white;`}><li>Ways to Help</li></Link>
+                        <Link to="/donate" className={css`text-decoration: none; color: white;`}><li>Donate</li></Link>
+                        <Link to="/volunteer" className={css`text-decoration: none; color: white;`}><li>Volunteer</li></Link>
                     </ul>
                 </div>
 
                 <div id="footer-social">
                     <h2>Social Media</h2>
                     <div className={css`display: flex; align-items: center; justify-content: space-evenly;`}>
-                        <img src="/images/footer/facebook.svg" alt="facebook"/>
-                        <img src="/images/footer/envelope.svg" alt="facebook"/>
+                        <a href="https://www.facebook.com/Pleasant-Hill-Instructional-Garden-PHIG-115550191840821/"><img src="/images/footer/facebook.svg" alt="facebook"/></a>
+                        <a href="mailto:phigarden@gmail.com"><img src="/images/footer/envelope.svg" alt="facebook"/></a>
                     </div>
                 </div>
             </div>
