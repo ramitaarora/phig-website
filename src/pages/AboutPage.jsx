@@ -10,6 +10,7 @@ const AboutPage = () => {
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
+    const [country, setCountry] = useState('');
     const [text, setText] = useState('');
     const [message, setMessage] = useState('');
 
@@ -33,7 +34,7 @@ const AboutPage = () => {
         }
 
         if (testEmail && testPhone) {
-            setMessage(`\nName: ${fullName} \nEmail: ${email} \nPhone: ${phone} \nMessage: ${text}`);
+            setMessage(`\nName: ${fullName} \nEmail: ${email} \nPhone: ${phone} \nCountry of Residence: ${country} \nMessage: ${text}`);
 
             let templateParams = {
                 from_name: fullName,
@@ -127,7 +128,7 @@ const AboutPage = () => {
                     </div>
                     <div>
                         <label htmlFor="country">Country of Residence  </label>
-                        <select id="country" name="country">
+                        <select id="country" name="country" value={country} onChange={e => setCountry(e.target.value)} required>
                             <option value="USA">USA</option>
                             <option value="UK">UK</option>
                             <option value="India">India</option>
