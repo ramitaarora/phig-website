@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { css } from '@emotion/css';
 import blogPosts from '../data/blogPosts';
 
 export default function ArticlePage() {
@@ -24,29 +23,29 @@ export default function ArticlePage() {
     }, [ID])
 
     return (
-        <div className={css`margin: 30px 200px;`}>
+        <div id="article">
             {post ? (
                 <div>
-                    <header className={css`height: 250px; display: flex; flex-direction: column; justify-content: center; line-height: 40px;`}>
+                    <header className='article-header'>
                         <h1>{post.title}</h1>
-                        <h2>By: {post.author}</h2>
-                        <p>{post.date}</p>
+                        <h2 className="article-metadata">By: {post.author}</h2>
+                        <p className="article-metadata">{post.date}</p>
                     </header>
-                    <div className={css`margin: 20px 0; display: flex;`}>
+                    <div className='article-tags'>
                         {post.tags.length ? post.tags.map((tag, index) =>
-                            <p key={index} className={css`padding: 10px; background-color: #F3F3F3; width: fit-content; border-radius: 10px; margin-right: 10px;`}>{tag}</p>
+                            <p key={index} className='article-tag'>{tag}</p>
                         ) : null}
                     </div>
                     <div>
                         <img src={post.image} alt={post.title} />
-                        <p>Image: {post.caption}</p>
+                        <p className='article-image-caption'>Image: {post.caption}</p>
                     </div>
                 </div>
             ) : null}
 
-            <article className={css`margin: 100px 0; line-height: 30px;`} >
+            <article id="article-content">
                 {content ? content.map((paragraph, index) =>
-                    <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} className={css`margin: 30px 0;`} />
+                    <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
                 ) : null}
             </article>
         </div>

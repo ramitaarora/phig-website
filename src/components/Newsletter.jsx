@@ -1,5 +1,3 @@
-import { css } from '@emotion/css';
-
 export default function Newsletter() {
     return (
         <div className="newsletter">
@@ -8,19 +6,19 @@ export default function Newsletter() {
                 <p>Subscribe to our newsletter for cool gardening tips, news, and other useful resources.</p>
                 <ul id='newsletter-icons'>
                     <li>
-                        <img src="/images/newsletter/tips.png" alt="tips" className={css`height: 20px;`}/>
+                        <img src="/images/newsletter/tips.png" alt="tips"/>
                         <p>Garden Tips</p>
                     </li>
                     <li>
-                        <img src="/images/newsletter/tutorials.png" alt="tutorials" className={css`height: 20px;`}/>
+                        <img src="/images/newsletter/tutorials.png" alt="tutorials"/>
                         <p>Tutorials</p>
                     </li>
                     <li>
-                        <img src="/images/newsletter/news.png" alt="news" className={css`height: 20px;`}/>
+                        <img src="/images/newsletter/news.png" alt="news"/>
                         <p>News</p>
                     </li>
                     <li>
-                        <img src="/images/newsletter/inspiration.png" alt="inspiration" className={css`height: 20px;`}/>
+                        <img src="/images/newsletter/inspiration.png" alt="inspiration"/>
                         <p>Inspiration</p>
                     </li>
                 </ul>
