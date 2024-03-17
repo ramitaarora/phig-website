@@ -61,7 +61,7 @@ h3 {
     width: 100%;
 }
 
-.news-feed-title {
+.news-feed-title, .news-feed-title h3 {
     color: var(--primary-color);
     font-family: 'Inter', sans-serif;
     margin: 0 0 20px 60px;
@@ -71,26 +71,6 @@ h3 {
     color: var(--primary-color);
     margin: 0 0 60px 60px;
 }
-
-/*
-.article
-className={css`margin: 30px 200px;`}
-
-header
-className={css`height: 250px; display: flex; flex-direction: column; justify-content: center; line-height: 40px;`}
-
-tag div
-className={css`margin: 20px 0; display: flex;`}
-
-tag
-className={css`padding: 10px; background-color: #F3F3F3; width: fit-content; border-radius: 10px; margin-right: 10px;`}
-
-article
-className={css`margin: 100px 0; line-height: 30px;`} 
-
-content p
- className={css`margin: 30px 0;`} 
-*/
 
 #article {
     margin: 130px 25vw;
@@ -102,7 +82,7 @@ content p
     gap: 20px;
 }
 
-.article-metadata {
+.article-metadata, .article-metadata h2 {
     font-family: 'Inter';
     font-size: 22px;
     font-weight: 300;
