@@ -23,24 +23,12 @@ body {
     font-size: 20px;
 }
 
-h2 {
-    color: var(--h2-color);
-    font-family: 'Inria Serif', serif;
-    font-size: 32px;
-}
-
-h3 {
-    color: var(--h3-color);
-    font-family: 'Kanit', sans-serif;
-    font-size: 24px;
-}
-
 #news-feed-header {
     text-align: center;
     margin: 30px 0;
 }
 
-.news-feed-heading-1 {
+#news-feed-header > h1 {
     color: var(--h1-color);
     font-family: 'Inria Serif', serif;
     font-size: 48px;
@@ -61,7 +49,7 @@ h3 {
     width: 100%;
 }
 
-.news-feed-title, .news-feed-title h3 {
+.news-feed-title {
     color: var(--primary-color);
     font-family: 'Inter', sans-serif;
     margin: 0 0 20px 60px;
@@ -82,10 +70,18 @@ h3 {
     gap: 20px;
 }
 
-.article-metadata, .article-metadata h2 {
+.article-header > h1 {
+    color: var(--h1-color);
+}
+
+.article-metadata {
     font-family: 'Inter';
     font-size: 22px;
     font-weight: 300;
+}
+
+h2.article-metadata {
+    color: var(--h2-color);
 }
 
 .article-tags {

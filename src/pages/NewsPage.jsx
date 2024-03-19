@@ -6,7 +6,7 @@ export default function NewsPage() {
     return (
         <div>
             <header id="news-feed-header">
-                <h1 className="news-feed-heading-1">News Feed</h1>
+                <h1>News Feed</h1>
             </header>
 
             <section id="news-feed">
