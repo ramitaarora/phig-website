@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/phig-website/static/css/main.f3e5f8c0.css",
-    "main.js": "/phig-website/static/js/main.826f407d.js",
-    "static/media/PHIG_spring_2023_butterfly_habitat_1.png": "/phig-website/static/media/PHIG_spring_2023_butterfly_habitat_1.0e2f6d0f814ea7d8be86.png",
-    "static/media/newsletter-image.jpeg": "/phig-website/static/media/newsletter-image.700dfff0d03b875ab83c.jpeg",
-    "static/media/Logo.png": "/phig-website/static/media/Logo.0ceb34f7786d219f25b7.png",
-    "index.html": "/phig-website/index.html",
-    "main.f3e5f8c0.css.map": "/phig-website/static/css/main.f3e5f8c0.css.map",
-    "main.826f407d.js.map": "/phig-website/static/js/main.826f407d.js.map"
+    "main.css": "/static/css/main.8f5d8ca9.css",
+    "main.js": "/static/js/main.3fe2284a.js",
+    "static/media/PHIG_spring_2023_butterfly_habitat_1.png": "/static/media/PHIG_spring_2023_butterfly_habitat_1.0e2f6d0f814ea7d8be86.png",
+    "static/media/newsletter-image.jpeg": "/static/media/newsletter-image.700dfff0d03b875ab83c.jpeg",
+    "static/media/Logo.png": "/static/media/Logo.0ceb34f7786d219f25b7.png",
+    "index.html": "/index.html",
+    "main.8f5d8ca9.css.map": "/static/css/main.8f5d8ca9.css.map",
+    "main.3fe2284a.js.map": "/static/js/main.3fe2284a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3e5f8c0.css",
-    "static/js/main.826f407d.js"
+    "static/css/main.8f5d8ca9.css",
+    "static/js/main.3fe2284a.js"
   ]
 }
