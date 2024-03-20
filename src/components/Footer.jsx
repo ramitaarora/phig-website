@@ -37,7 +37,7 @@ export default function Footer() {
                 <p>925-482-6670</p>
                 <p>Tax-exempt 501 (c)(3)</p>
                 <p>Pictures courtesy of Monika Olsen</p>
-                <p>© Pleasant Hill Instructional Garden 2021</p>
+                <p>© Pleasant Hill Instructional Garden 2024</p>
             </div>
         </footer>
     );
