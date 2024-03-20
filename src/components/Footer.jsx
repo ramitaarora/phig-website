@@ -11,7 +11,7 @@ export default function Footer() {
                     <ul>
                         <Link to="/about" className={css`text-decoration: none; color: white;`}><li>About Us</li></Link>
                         <Link to="/about" className={css`text-decoration: none; color: white;`}><li>History</li></Link>
-                        <Link to="/about#contact" className={css`text-decoration: none; color: white;`}><li>Contact</li></Link>
+                        <Link to="/about#contact-form" className={css`text-decoration: none; color: white;`}><li>Contact</li></Link>
                     </ul>
                 </div>
 
@@ -29,6 +29,8 @@ export default function Footer() {
                     <div className={css`display: flex; align-items: center; justify-content: space-evenly;`}>
                         <a href="https://www.facebook.com/Pleasant-Hill-Instructional-Garden-PHIG-115550191840821/"><img src="/images/footer/facebook.svg" alt="facebook"/></a>
                         <a href="mailto:phigarden@gmail.com"><img src="/images/footer/envelope.svg" alt="email"/></a>
+                        <a href="https://www.instagram.com/phill_garden/"><img src="/images/footer/instagram.svg" alt="instagram"/></a>
+                        <a href="https://twitter.com/PHGarden"><img src="/images/footer/twitter-x.svg" alt="twitter"/></a>
                     </div>
                 </div>
             </div>
