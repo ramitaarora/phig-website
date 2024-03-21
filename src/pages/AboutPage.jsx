@@ -42,24 +42,24 @@ const AboutPage = () => {
             }
             navigate('/about/confirmation', { replace: true });
 
-            // emailjs.send('service', 'template', templateParams, 'public')
-            // .then(
-            //     (response) => {
-            //     // console.log('SUCCESS!', response.status, response.text);
-            //     navigate('/about/confirmation', { replace: true });
-            //     setFirstName('');
-            //     setLastName('');
-            //     setFullName('');
-            //     setEmail('');
-            //     setPhone('');
-            //     setText('');
-            //     setMessage('');
-            //     },
-            //     (error) => {
-            //     // console.log('FAILED...', error);
-            //     setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at phig@gmail.com."]);
-            //     },
-            // );
+            emailjs.send('service', 'template', templateParams, 'public')
+            .then(
+                (response) => {
+                // console.log('SUCCESS!', response.status, response.text);
+                navigate('/about/confirmation', { replace: true });
+                setFirstName('');
+                setLastName('');
+                setFullName('');
+                setEmail('');
+                setPhone('');
+                setText('');
+                setMessage('');
+                },
+                (error) => {
+                // console.log('FAILED...', error);
+                setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at phig@gmail.com."]);
+                },
+            );
         }
     }
 
