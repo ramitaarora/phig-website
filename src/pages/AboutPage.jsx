@@ -10,9 +10,8 @@ const AboutPage = () => {
     const [fullName, setFullName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
-    const [country, setCountry] = useState('');
+    const [country, setCountry] = useState('USA');
     const [text, setText] = useState('');
-    const [message, setMessage] = useState('');
 
     useEffect(() => {
         setFullName(firstName + ' ' + lastName);
@@ -34,15 +33,13 @@ const AboutPage = () => {
         }
 
         if (testEmail && testPhone) {
-            setMessage(`\nName: ${fullName} \nEmail: ${email} \nPhone: ${phone} \nCountry of Residence: ${country} \nMessage: ${text}`);
 
             let templateParams = {
                 from_name: fullName,
-                message: message
+                message: `\nName: ${fullName} \nEmail: ${email} \nPhone: ${phone} \nCountry of Residence: ${country} \nMessage: ${text}`,
             }
-            navigate('/about/confirmation', { replace: true });
 
-            emailjs.send('service', 'template', templateParams, 'public')
+            emailjs.send(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_TEMPLATE_KEY, templateParams, process.env.REACT_APP_PUBLIC_KEY)
             .then(
                 (response) => {
                 // console.log('SUCCESS!', response.status, response.text);
@@ -53,7 +50,6 @@ const AboutPage = () => {
                 setEmail('');
                 setPhone('');
                 setText('');
-                setMessage('');
                 },
                 (error) => {
                 // console.log('FAILED...', error);
