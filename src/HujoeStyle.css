@@ -211,3 +211,45 @@
     border-radius: 8%;
 
 }
+.websiteresourseimage{
+    margin: 50px;
+    margin-left: -17px;
+    margin-top: 40px;
+    height: 95px;
+    width: 380px;
+}   
+.learnmore {
+    font-size: smaller;
+    color: #97C159;
+    margin-top: 18px;
+    text-decoration: none; /* Remove the default underline */
+    border-bottom: 1px solid #97C159; /* Add a bottom border */
+    padding-bottom: 2px; 
+}
+
+.arrow {
+    font-size: smaller;
+    border: solid #97C159;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 4px;
+    transform: rotate(-45deg);
+   -webkit-transform: rotate(-45deg);
+}
+.description{
+    font-size: smaller;
+    margin: 10px;
+    margin-left: -2px;
+    margin-top: 25px;
+}
+.title{
+    font-size:medium;
+}
+.header{
+    margin-top: 110px;
+    margin-bottom: -150px;
+    text-align: center;
+    
+
+}
