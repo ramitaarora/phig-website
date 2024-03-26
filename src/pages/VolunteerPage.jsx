@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { css } from '@emotion/css'
 import VolunteerResult from '../components/VolunteerResult';
 import volunteerOpps from '../data/volunteerOpps.json';
@@ -7,25 +7,32 @@ export default function VolunteerPage() {
     const [results, setResults] = useState(volunteerOpps);
     const [inputValue, setInputValue] = useState('')
 
-    const handleFilter = (event) => {
-        event.preventDefault();
-
-        if (event.target.id === 'search') {
-            if (inputValue.length) {
-                const newResults = results.filter(result => result.title.toLowerCase().includes(inputValue) || result.description.toLowerCase().includes(inputValue));
-                if (newResults.length) {
-                    setResults(newResults);
-                }
-                else {
-                    setResults([])
-                }
-            } else {
-                setResults(volunteerOpps);
-            }
+    useEffect(() => {
+        if (inputValue === '') {
+            setResults(volunteerOpps);
         }
+    }, [inputValue])
+
+    const handleSearch = (event) => {
+        event.preventDefault();
+        if (inputValue.length) {
+            const newResults = results.filter(result => result.title.toLowerCase().includes(inputValue.toLowerCase()) || result.description.toLowerCase().includes(inputValue.toLowerCase()) || result.place.toLowerCase().includes(inputValue.toLowerCase()) || result.location.toLowerCase().includes(inputValue.toLowerCase()));
+            if (newResults.length) {
+                setResults(newResults);
+            }
+            else {
+                setResults([])
+            }
+        } else {
+            setResults(volunteerOpps);
+        }
+    }
+
+    const handleFilter = (event) => {
         if (event.target.name === 'remote-work') {
             if (event.target.checked) {
                 const newResults = results.filter(result => result.place === 'Remote');
+                console.log(newResults);
                 if (newResults.length) {
                     setResults(newResults);
                 }
@@ -90,7 +97,7 @@ export default function VolunteerPage() {
         }
     }
 
-    const clearResults = (event) => {
+    const clearResults = () => {
         setResults(volunteerOpps);
     }
 
@@ -128,7 +135,7 @@ export default function VolunteerPage() {
 
                 <section id="search-opportunities" className={css`display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 50px auto;`}>
                     <h2>Search for Opportunities</h2>
-                    <form id="search" className={css`display: flex; justify-content: space-evenly; margin: 30px auto;`} onSubmit={handleFilter}>
+                    <form id="search" className={css`display: flex; justify-content: space-evenly; margin: 30px auto;`} onSubmit={handleSearch}>
                         <input type="text" value={inputValue} onChange={event => setInputValue(event.target.value)}/>
                         <input type="submit" />
                     </form>
@@ -138,11 +145,11 @@ export default function VolunteerPage() {
                             <div id="work-format">
                                 <h3 className={css`border-bottom: 1px solid lightgrey; margin: 20px 0; padding: 10px 0;`}>Work Format</h3>
                                 <div className={css`margin: 10px 0;`}>
-                                    <input type="checkbox" name="remote-work" className={css`margin: 0 10px;`} onChange={handleFilter}/>
+                                    <input type="checkbox" name="remote-work" className={css`margin: 0 10px;`} onClick={handleFilter}/>
                                     <label htmlFor='remote-work'>Remote Work</label>
                                 </div>
                                 <div className={css`margin: 10px 0;`}>
-                                    <input type="checkbox" name="inperson-work" className={css`margin: 0 10px;`} onChange={handleFilter}/>
+                                    <input type="checkbox" name="inperson-work" className={css`margin: 0 10px;`} onClick={handleFilter}/>
                                     <label htmlFor='inperson-work'>In-Person Work</label>
                                 </div>
                             </div>
@@ -150,15 +157,15 @@ export default function VolunteerPage() {
                             <div id="activity-type">
                                 <h3 className={css`border-bottom: 1px solid lightgrey; margin: 20px 0; padding: 10px 0;`}>Volunteer Activity Type</h3>
                                 <div className={css`margin: 10px 0;`}>
-                                    <input type="checkbox" name="ui-ux" className={css`margin: 0 10px;`} onChange={handleFilter}/>
+                                    <input type="checkbox" name="ui-ux" className={css`margin: 0 10px;`} onClick={handleFilter}/>
                                     <label htmlFor='ui-ux'>UI/UX Designer</label>
                                 </div>
                                 <div className={css`margin: 10px 0;`}>
-                                    <input type="checkbox" name="composter" className={css`margin: 0 10px;`} onChange={handleFilter}/>
+                                    <input type="checkbox" name="composter" className={css`margin: 0 10px;`} onClick={handleFilter}/>
                                     <label htmlFor='composter'>Composter</label>
                                 </div>
                                 <div className={css`margin: 10px 0;`}>
-                                    <input type="checkbox" name="work-participant" className={css`margin: 0 10px;`} onChange={handleFilter}/>
+                                    <input type="checkbox" name="work-participant" className={css`margin: 0 10px;`} onClick={handleFilter}/>
                                     <label htmlFor='work-participant'>Work Party Participant</label>
                                 </div>
                             </div>
@@ -168,7 +175,7 @@ export default function VolunteerPage() {
 
                         <div id="search-results">
                             <h3>Showing {results.length} Results</h3>
-                            <div id="results-container">
+                            <div id="results-container" className={css`width: 800px;`}>
 
                                 {results.map((result, index) =>
                                     <div key={index}>

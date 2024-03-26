@@ -46,24 +46,26 @@ export default function VolunteerApplication() {
                 reply_to: email
             }
 
-            emailjs.send('service', 'template', templateParams, 'public')
-            .then(
-                (response) => {
-                // console.log('SUCCESS!', response.status, response.text);
-                navigate('/volunteer/confirmation', { replace: true });
-                setName('');
-                setEmail('');
-                setPhone('');
-                setPreferredContact('');
-                setAge('');
-                setTime('');
-                setProject('');
-                },
-                (error) => {
-                // console.log('FAILED...', error);
-                setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at phig@gmail.com."]);
-                },
-            );
+            navigate('/volunteer/confirmation', { replace: true });
+
+        //     emailjs.send('service', 'template', templateParams, 'public')
+        //     .then(
+        //         (response) => {
+        //         // console.log('SUCCESS!', response.status, response.text);
+        //         navigate('/volunteer/confirmation', { replace: true });
+        //         setName('');
+        //         setEmail('');
+        //         setPhone('');
+        //         setPreferredContact('');
+        //         setAge('');
+        //         setTime('');
+        //         setProject('');
+        //         },
+        //         (error) => {
+        //         // console.log('FAILED...', error);
+        //         setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at phig@gmail.com."]);
+        //         },
+        //     );
         }
     }
 
