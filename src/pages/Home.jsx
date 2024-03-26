@@ -1,6 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-// import BannerBackground from "../assets/PHIG_spring_2023_butterfly_habitat_1.png"
+import HomepageCards from '../components/HomepageCards'
+import PheaturedEvent from '../components/PheaturedEvent'
+import PheaturedBook from '../components/PheaturedBook'
+import Leaderboard from '../components/Leaderboard'
+import Goals from '../components/Goals'
+import Newsfeed from '../components/Newsfeed'
 
 const Home = () => {
   return (
@@ -17,8 +21,19 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        <HomepageCards />
+
+        <PheaturedEvent />
+
+        <PheaturedBook />
+        
+        <Leaderboard />
+        
+        <Goals />
+
+        <Newsfeed />
     </div>
   )
 }
 
-export default Home
+export default Home;
