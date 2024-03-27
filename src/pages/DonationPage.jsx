@@ -65,7 +65,7 @@ export default function DonationPage() {
                         <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$50</button>
                     </div>
                     <input type="text" placeholder='Custom amount' className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 3px;`} />
-                    <Link to="/pay"><input type="submit" value="Next" className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 10px; margin: 20px auto; background-color: darkgreen; color: white;`} /></Link>
+                    <Link to="/phig/pay"><input type="submit" value="Next" className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 10px; margin: 20px auto; background-color: darkgreen; color: white;`} /></Link>
                 </form>
             </div>
 

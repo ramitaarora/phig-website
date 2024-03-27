@@ -5,7 +5,7 @@ export default function ConfirmationPageVolunteer() {
         <div id="confirmation">
             <h2>🎉 All set! 🎉</h2>
             <p>We’ll contact you via email or phone soon.</p>
-            <Link to="/volunteer">Back</Link>
+            <Link to="/phig/volunteer">Back</Link>
         </div>
     )
 }

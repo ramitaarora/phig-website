@@ -40,16 +40,16 @@ const Navbar = () => {
         <nav>
         <div className="nav-entire-container">
         <div className="nav-logo-container">
-        <Link to='/'><img src={Logo} alt='PHIG Logo' /></Link>
+        <Link to='/phig'><img src={Logo} alt='PHIG Logo' /></Link>
         </div>
         <div className="navbar-links-container">
         <div className="navlinks-excluding-button">
-          <Link to="/about">About Us</Link>
+          <Link to="/phig/about">About Us</Link>
           <a href="">Our Approach</a>
-          <Link to="/news">News</Link>
-          <Link to='/volunteer'>Get Involved</Link>
+          <Link to="/phig/news">News</Link>
+          <Link to='/phig/volunteer'>Get Involved</Link>
           </div>
-          <button className="primary-button"><Link to='/donate'>Donate</Link></button>
+          <button className="primary-button"><Link to='/phig/donate'>Donate</Link></button>
         </div>
         </div>
         {/* <div className="navbar-menu-container">

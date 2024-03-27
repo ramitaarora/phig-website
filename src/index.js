@@ -24,21 +24,21 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path="/phig" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="/volunteer" element={<VolunteerPage />} />
-          <Route path="/donate" element={<DonationPage />} />
-          <Route path="/pay" element={<PaymentPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/resources" element={<ResourcesPage />} />
-          <Route path="/resources/websites" element={<WebsiteResources />} />
-          <Route path="/news" element={<NewsPage />} />
-          <Route path="/news/:articleID" element={<ArticlePage />} />
-          <Route path="/volunteer/application" element={<VolunteerApplication />} />
-          <Route path="/volunteer/confirmation" element={<ConfirmationPageVolunteer />} />
-          <Route path="/about/confirmation" element={<ConfirmationPageContact />} />
-          <Route path="/events" element={<EventsPage />} />
-          <Route path='/station' element={<WeatherStation />} />
+          <Route path="/phig/volunteer" element={<VolunteerPage />} />
+          <Route path="/phig/donate" element={<DonationPage />} />
+          <Route path="/phig/pay" element={<PaymentPage />} />
+          <Route path="/phig/about" element={<AboutPage />} />
+          <Route path="/phig/resources" element={<ResourcesPage />} />
+          <Route path="/phig/resources/websites" element={<WebsiteResources />} />
+          <Route path="/phig/news" element={<NewsPage />} />
+          <Route path="/phig/news/:articleID" element={<ArticlePage />} />
+          <Route path="/phig/volunteer/application" element={<VolunteerApplication />} />
+          <Route path="/phig/volunteer/confirmation" element={<ConfirmationPageVolunteer />} />
+          <Route path="/phig/about/confirmation" element={<ConfirmationPageContact />} />
+          <Route path="/phig/events" element={<EventsPage />} />
+          <Route path='/phig/station' element={<WeatherStation />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
