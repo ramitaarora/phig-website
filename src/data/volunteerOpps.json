@@ -6,7 +6,7 @@
         "status": "ONGOING",
         "place": "In-Person",
         "location": "California",
-        "image": "/phig/images/volunteer/volunteer-sample-1.png"
+        "image": "/phig-website/images/volunteer/volunteer-sample-1.png"
     },
     {
         "title": "UX/UI Designer",
@@ -15,6 +15,6 @@
         "status": "COMPLETED",
         "place": "Remote",
         "location": "California",
-        "image": "/phig/images/volunteer/volunteer-sample-2.png"
+        "image": "/phig-website/images/volunteer/volunteer-sample-2.png"
     }
 ]

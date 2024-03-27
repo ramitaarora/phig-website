@@ -39,23 +39,25 @@ const AboutPage = () => {
                 message: `\nName: ${fullName} \nEmail: ${email} \nPhone: ${phone} \nCountry of Residence: ${country} \nMessage: ${text}`,
             }
 
-            emailjs.send(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_TEMPLATE_KEY, templateParams, process.env.REACT_APP_PUBLIC_KEY)
-            .then(
-                (response) => {
-                // console.log('SUCCESS!', response.status, response.text);
-                navigate('/about/confirmation', { replace: true });
-                setFirstName('');
-                setLastName('');
-                setFullName('');
-                setEmail('');
-                setPhone('');
-                setText('');
-                },
-                (error) => {
-                // console.log('FAILED...', error);
-                setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at phig@gmail.com."]);
-                },
-            );
+            navigate('/phig-website/about/confirmation', { replace: true });
+
+            // emailjs.send(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_TEMPLATE_KEY, templateParams, process.env.REACT_APP_PUBLIC_KEY)
+            // .then(
+            //     (response) => {
+            //     // console.log('SUCCESS!', response.status, response.text);
+            //     navigate('/about/confirmation', { replace: true });
+            //     setFirstName('');
+            //     setLastName('');
+            //     setFullName('');
+            //     setEmail('');
+            //     setPhone('');
+            //     setText('');
+            //     },
+            //     (error) => {
+            //     // console.log('FAILED...', error);
+            //     setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at phig@gmail.com."]);
+            //     },
+            // );
         }
     }
 

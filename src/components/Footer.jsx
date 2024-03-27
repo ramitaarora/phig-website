@@ -9,28 +9,28 @@ export default function Footer() {
                 <div id="about-nav">
                     <h2>About PHIG</h2>
                     <ul>
-                        <Link to="/phig/about" className={css`text-decoration: none; color: white;`}><li>About Us</li></Link>
-                        <Link to="/phig/about" className={css`text-decoration: none; color: white;`}><li>History</li></Link>
-                        <Link to="/phig/about#contact-form" className={css`text-decoration: none; color: white;`}><li>Contact</li></Link>
+                        <Link to="/phig-website/about" className={css`text-decoration: none; color: white;`}><li>About Us</li></Link>
+                        <Link to="/phig-website/about" className={css`text-decoration: none; color: white;`}><li>History</li></Link>
+                        <Link to="/phig-website/about#contact-form" className={css`text-decoration: none; color: white;`}><li>Contact</li></Link>
                     </ul>
                 </div>
 
                 <div id="get-involved">
                     <h2>Get Involved</h2>
                     <ul>
-                        <Link to="/phig/volunteer" className={css`text-decoration: none; color: white;`}><li>Ways to Help</li></Link>
-                        <Link to="/phig/donate" className={css`text-decoration: none; color: white;`}><li>Donate</li></Link>
-                        <Link to="/phig/volunteer" className={css`text-decoration: none; color: white;`}><li>Volunteer</li></Link>
+                        <Link to="/phig-website/volunteer" className={css`text-decoration: none; color: white;`}><li>Ways to Help</li></Link>
+                        <Link to="/phig-website/donate" className={css`text-decoration: none; color: white;`}><li>Donate</li></Link>
+                        <Link to="/phig-website/volunteer" className={css`text-decoration: none; color: white;`}><li>Volunteer</li></Link>
                     </ul>
                 </div>
 
                 <div id="footer-social">
                     <h2>Social Media</h2>
                     <div className={css`display: flex; align-items: center; justify-content: space-evenly;`}>
-                        <a href="https://www.facebook.com/Pleasant-Hill-Instructional-Garden-PHIG-115550191840821/"><img src="/phig/images/footer/facebook.svg" alt="facebook"/></a>
-                        <a href="mailto:phigarden@gmail.com"><img src="/phig/images/footer/envelope.svg" alt="email"/></a>
-                        <a href="https://www.instagram.com/phill_garden/"><img src="/phig/images/footer/instagram.svg" alt="instagram"/></a>
-                        <a href="https://twitter.com/PHGarden"><img src="/phig/images/footer/twitter-x.svg" alt="twitter"/></a>
+                        <a href="https://www.facebook.com/Pleasant-Hill-Instructional-Garden-PHIG-115550191840821/"><img src="/phig-website/images/footer/facebook.svg" alt="facebook"/></a>
+                        <a href="mailto:phigarden@gmail.com"><img src="/phig-website/images/footer/envelope.svg" alt="email"/></a>
+                        <a href="https://www.instagram.com/phill_garden/"><img src="/phig-website/images/footer/instagram.svg" alt="instagram"/></a>
+                        <a href="https://twitter.com/PHGarden"><img src="/phig-website/images/footer/twitter-x.svg" alt="twitter"/></a>
                     </div>
                 </div>
             </div>

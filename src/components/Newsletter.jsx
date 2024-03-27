@@ -6,19 +6,19 @@ export default function Newsletter() {
                 <p>Subscribe to our newsletter for cool gardening tips, news, and other useful resources.</p>
                 <ul id='newsletter-icons'>
                     <li>
-                        <img src="/phig/images/newsletter/tips.png" alt="tips"/>
+                        <img src="/phig-website/images/newsletter/tips.png" alt="tips"/>
                         <p>Garden Tips</p>
                     </li>
                     <li>
-                        <img src="/phig/images/newsletter/tutorials.png" alt="tutorials"/>
+                        <img src="/phig-website/images/newsletter/tutorials.png" alt="tutorials"/>
                         <p>Tutorials</p>
                     </li>
                     <li>
-                        <img src="/phig/images/newsletter/news.png" alt="news"/>
+                        <img src="/phig-website/images/newsletter/news.png" alt="news"/>
                         <p>News</p>
                     </li>
                     <li>
-                        <img src="/phig/images/newsletter/inspiration.png" alt="inspiration"/>
+                        <img src="/phig-website/images/newsletter/inspiration.png" alt="inspiration"/>
                         <p>Inspiration</p>
                     </li>
                 </ul>

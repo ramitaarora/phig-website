@@ -5,7 +5,7 @@ export default function ConfirmationPageContact() {
         <div id="confirmation">
             <h2>🎉 All set! 🎉</h2>
             <p>We’ll contact you via email or phone soon.</p>
-            <Link to="/phig/about#contact-form">Back</Link>
+            <Link to="/phig-website/about#contact-form">Back</Link>
         </div>
     )
 }

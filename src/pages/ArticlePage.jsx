@@ -13,7 +13,7 @@ export default function ArticlePage() {
         if (findPost) {
             setPost(findPost);
 
-            fetch(`/phig/blog/${ID.articleID}.txt`)
+            fetch(`/phig-website/blog/${ID.articleID}.txt`)
                 .then(data => data.text())
                 .then(text => {
                     const postArray = (text.split('\n')).filter(item => item !== "");

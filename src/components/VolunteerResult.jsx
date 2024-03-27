@@ -34,7 +34,7 @@ export default function VolunteerResult({ result, index }) {
                         <p className={css`margin-top: 10px; font-size: 80%;`}>{result.description}</p>
                     </div>
                     <div id="result-buttons" className={css`margin: 20px auto; width: 75%;  display: flex; justify-content: space-evenly; align-items: center;`}>
-                        <Link to="/phig/volunteer/application"><button className={css`padding: 5px; color: white; background-color: darkgreen; border: 1px solid darkgreen; border-radius: 5px; cursor: pointer;`}>Apply Now</button></Link>
+                        <Link to="/phig-website/volunteer/application"><button className={css`padding: 5px; color: white; background-color: darkgreen; border: 1px solid darkgreen; border-radius: 5px; cursor: pointer;`}>Apply Now</button></Link>
                         <p>See Details</p>
                     </div>
 

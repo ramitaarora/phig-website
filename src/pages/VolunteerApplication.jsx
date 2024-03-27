@@ -46,7 +46,7 @@ export default function VolunteerApplication() {
                 reply_to: email
             }
 
-            navigate('/volunteer/confirmation', { replace: true });
+            navigate('/phig-website/volunteer/confirmation', { replace: true });
 
         //     emailjs.send('service', 'template', templateParams, 'public')
         //     .then(

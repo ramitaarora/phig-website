@@ -2,52 +2,52 @@
     {
         "name": "Pruning Shears",
         "subtitle": "S: Standard",
-        "picture": "/phig/images/donation/pruning-shears.jpeg",
+        "picture": "/phig-website/images/donation/pruning-shears.jpeg",
         "type": "Tool"
     },
     {
         "name": "Screwdriver",
         "subtitle": "S: Standard",
-        "picture": "/phig/images/donation/screwdrivers.png",
+        "picture": "/phig-website/images/donation/screwdrivers.png",
         "type": "Tool"
     },
     {
         "name": "Redwood Lumber",
         "subtitle": "S: 1x12, 2x12, 4x12",
-        "picture": "/phig/images/donation/redwood-lumber.jpeg",
+        "picture": "/phig-website/images/donation/redwood-lumber.jpeg",
         "type": "Material"
     },
     {
         "name": "Nails",
         "subtitle": "S: Mixed",
-        "picture": "/phig/images/donation/nails.jpeg",
+        "picture": "/phig-website/images/donation/nails.jpeg",
         "type": "Tool"
     },
     {
         "name": "California Onion Grass",
         "subtitle": "Melica californica",
-        "picture": "/phig/images/donation/california-onion-grass.jpeg",
+        "picture": "/phig-website/images/donation/california-onion-grass.jpeg",
         "type": "Plant",
         "description": "A member of the Poaceae family, this species is native to Oregon and California, thriving in diverse habitats from mountain forests to coastal grasslands. In California, it predominantly occurs in the Coast Ranges and Sierra foothills."
     },
     {
         "name": "Beschorneria",
         "subtitle": "Beschorneria yuccoides",
-        "picture": "/phig/images/donation/beschorneria.jpeg",
+        "picture": "/phig-website/images/donation/beschorneria.jpeg",
         "type": "Plant",
         "description": "Beschorneria yuccoides, akin to Yuccas, is an evergreen perennial with strap-shaped gray-green leaves, up to 2 ft. long. In late spring, it produces pinkish-red flower stalks reaching 3-7 ft. Heat and drought-tolerant, it adds bold architectural appeal with striking foliage and exotic flower spikes."
     },
     {
         "name": "Checkerbloom",
         "subtitle": "Sidalcea malviflora",
-        "picture": "/phig/images/donation/checkerbloom.jpeg",
+        "picture": "/phig-website/images/donation/checkerbloom.jpeg",
         "type": "Plant",
         "description": "A common perennial herb in the Malvaceae family native to Northern, Southern, and Central California, thriving in dry flats up to 7,500 feet. With palmate leaves and deep pink flowers on a spike, it tolerates diverse soils, preferring damp winters and dry summers. Often grown from seed, it can behave like an annual."
     },
     {
         "name": "Goldenrod",
         "subtitle": "Solidago californica",
-        "picture": "/phig/images/donation/goldenrod.jpeg",
+        "picture": "/phig-website/images/donation/goldenrod.jpeg",
         "type": "Plant",
         "description": "California Goldenrod, a native perennial herb, flourishes in open grassy areas across California (0-7500 feet). With vibrant yellow flowers during dormant periods, it attracts birds and pollinators. Ideal for central oak woodlands, it prefers wet winters/springs, tolerates extra water, but may spread aggressively. Exercise caution with planting space."
     }
