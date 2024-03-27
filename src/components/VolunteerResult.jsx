@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 export default function VolunteerResult({ result, index }) {
     return (
-        <div id={"each-result-" + index} className={css`display: flex; height: 250px; width: 700px; margin: 10px; background: lightgrey;`}>
+        <div id={"each-result-" + index} className={css`display: flex; height: 250px; width: 800px; margin: 10px; background: lightgrey;`}>
 
             <div id="result-img-container" className={css`height: 100%; width: 35%; object-fit: cover; object-position: center; overflow: hidden;`}>
                 <img src={result.image} alt="result" />
             </div>
 
 
-            <div id="result-right" className={css`padding: 20px; width: 65%; height: 100%;`}>
+            <div id="result-right" className={css`padding: 20px 30px;; width: 65%; height: 100%;`}>
 
                 <div id="result-corner" className={css`float: right; margin: 0 20px; height: 70px; width: 25%; display: flex; flex-direction: column; justify-content: space-evenly;`}>
                     <div id="each-corner-stat" className={css`display: flex; justify-content: flex-start; align-items: center;`}>
