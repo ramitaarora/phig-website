@@ -31,6 +31,12 @@ const Home = () => {
         
         <Goals />
 
+        <section id="newsfeed-header">
+            <h3>Our Blogs</h3>
+            <h1>Latest Blogs & Articles</h1>
+            <p>Be the first to know about recent garden projects, volunteer opportunities, and gardening tips!</p>
+        </section>
+
         <Newsfeed />
     </div>
   )
