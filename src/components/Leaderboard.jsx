@@ -3,7 +3,7 @@ import contributors from '../data/contributers.json';
 
 export default function Leaderboard() {
     return (
-        <section id="leaderboard" className={css`margin: 0 auto; width: 50%; text-align: center;`}>
+        <section id="leaderboard" className={css`margin: 90px auto; width: 50%; text-align: center;`}>
 
             <div id="leaderboard-header">
                 <h2>Leaderboard</h2>
