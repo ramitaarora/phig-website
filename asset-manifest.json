@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/phig-website/static/css/main.376d6bbf.css",
-    "main.js": "/phig-website/static/js/main.3382c263.js",
+    "main.css": "/phig-website/static/css/main.68f5c5da.css",
+    "main.js": "/phig-website/static/js/main.18902668.js",
     "static/media/PHIG_spring_2023_butterfly_habitat_1.png": "/phig-website/static/media/PHIG_spring_2023_butterfly_habitat_1.0e2f6d0f814ea7d8be86.png",
     "static/media/newsletter-image.jpeg": "/phig-website/static/media/newsletter-image.700dfff0d03b875ab83c.jpeg",
     "static/media/Logo.png": "/phig-website/static/media/Logo.0ceb34f7786d219f25b7.png",
     "index.html": "/phig-website/index.html",
-    "main.376d6bbf.css.map": "/phig-website/static/css/main.376d6bbf.css.map",
-    "main.3382c263.js.map": "/phig-website/static/js/main.3382c263.js.map"
+    "main.68f5c5da.css.map": "/phig-website/static/css/main.68f5c5da.css.map",
+    "main.18902668.js.map": "/phig-website/static/js/main.18902668.js.map"
   },
   "entrypoints": [
-    "static/css/main.376d6bbf.css",
-    "static/js/main.3382c263.js"
+    "static/css/main.68f5c5da.css",
+    "static/js/main.18902668.js"
   ]
 }
