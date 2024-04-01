@@ -102,7 +102,7 @@ nav {
   margin: 0;
       padding: 0;
       box-sizing: border-box;
-      height: 100vh;
+      height: 555px;
       overflow: hidden; /* Prevent vertical scrollbar due to the fixed height */
 }
 /* .bgImg {
@@ -130,7 +130,7 @@ nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./assets/PHIG_spring_2023_butterfly_habitat_1.png");
 
   /* Set a specific height */
-  height: 80%;
+  height: 100%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;

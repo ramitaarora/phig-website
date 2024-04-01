@@ -1,6 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-// import BannerBackground from "../assets/PHIG_spring_2023_butterfly_habitat_1.png"
+import HomepageCards from '../components/HomepageCards'
+import PheaturedEvent from '../components/PheaturedEvent'
+import PheaturedBook from '../components/PheaturedBook'
+import Leaderboard from '../components/Leaderboard'
+import Goals from '../components/Goals'
+import Newsfeed from '../components/Newsfeed'
 
 const Home = () => {
   return (
@@ -17,8 +21,25 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        <HomepageCards />
+
+        <PheaturedEvent />
+
+        <PheaturedBook />
+        
+        <Leaderboard />
+        
+        <Goals />
+
+        <section id="newsfeed-header">
+            <h3>Our Blogs</h3>
+            <h1>Latest Blogs & Articles</h1>
+            <p>Be the first to know about recent garden projects, volunteer opportunities, and gardening tips!</p>
+        </section>
+
+        <Newsfeed />
     </div>
   )
 }
 
-export default Home
+export default Home;
