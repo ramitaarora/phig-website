@@ -24,7 +24,7 @@ export default function Leaderboard() {
                 {contributors ? contributors.map((contributor, index) => (
                     <div id="each-contributer" key={index} className={css`display: flex; justify-content: space-between; align-items: center; box-shadow: 5px 5px 5px lightgrey; margin: 15px auto; border-radius: 15px;`}>
                         <div className={css`display: flex; justify-content: space-between; align-items: center;`}>
-                            <img src="./images/homepage/dollar-sign.png" alt="dollar-sign" className={css`height: 60px;`}/>
+                            <img src="./phig-website/images/homepage/dollar-sign.png" alt="dollar-sign" className={css`height: 60px;`}/>
                             <h4>{contributor.name}</h4>
                         </div>
                         <div className={css`display: flex; justify-content: space-between; align-items: center;`}>

@@ -27,14 +27,10 @@ export default function Footer() {
                 <div id="footer-social">
                     <h2>Social Media</h2>
                     <div className={css`display: flex; align-items: center; justify-content: space-evenly;`}>
-                        <a href="https://www.facebook.com/Pleasant-Hill-Instructional-Garden-PHIG-115550191840821/" target="_blank"><img src="/images/footer/facebook.svg" alt="facebook"/></a>
-                        <a href="mailto:phigarden@gmail.com" target="_blank"><img src="/phig-website/images/footer/envelope.svg" alt="email"/></a>
-                        <a href="https://www.instagram.com/phill_garden/" target="_blank"><img src="/images/footer/instagram.svg" alt="instagram"/></a>
-                        <a href="https://twitter.com/PHGarden" target="_blank"><img src="/phig-website/images/footer/twitter-x.svg" alt="twitter"/></a>
-                        <a href="https://www.facebook.com/Pleasant-Hill-Instructional-Garden-PHIG-115550191840821/" target="_blank"><img src="/phig-website/images/footer/facebook.svg" alt="facebook"/></a>
-                        <a href="mailto:phigarden@gmail.com"><img src="/phig-website/images/footer/envelope.svg" alt="email"/></a>
-                        <a href="https://www.instagram.com/phill_garden/" target="_blank"><img src="/phig-website/images/footer/instagram.svg" alt="instagram"/></a>
-                        <a href="https://twitter.com/PHGarden" target="_blank"><img src="/phig-website/images/footer/twitter-x.svg" alt="twitter"/></a>
+                        <a href="https://www.facebook.com/Pleasant-Hill-Instructional-Garden-PHIG-115550191840821/" target="_blank"><img src="./phig-website/images/footer/facebook.svg" alt="facebook"/></a>
+                        <a href="mailto:phigarden@gmail.com" target="_blank"><img src="./phig-website/images/footer/envelope.svg" alt="email"/></a>
+                        <a href="https://www.instagram.com/phill_garden/" target="_blank"><img src="./phig-website/images/footer/instagram.svg" alt="instagram"/></a>
+                        <a href="https://twitter.com/PHGarden" target="_blank"><img src="./phig-website/images/footer/twitter-x.svg" alt="twitter"/></a>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 export default function PheaturedEvent() {
     return (
         <div id="pheatured-event">
-            <div id="header" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url('./images/homepage/earth-day-event.jpeg'); height: 500px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; color: white;`}>
+            <div id="header" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url('./phig-website/images/homepage/earth-day-event.jpeg'); height: 500px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; color: white;`}>
                 <h2 className={css`position: relative; top: 300px;`}>Earth Day 2024 - Meet & Greet</h2>
                 <p className={css`position: relative; top: 300px;`}>Hosted by Monika Olsen</p>
             </div>

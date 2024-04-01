@@ -5,7 +5,7 @@ export default function HomepageCards() {
         <section id="homepage-cards" className={css`margin: 90px auto; width: 80%; display: flex; flex-wrap: wrap; justify-content: space-between;`}>
             <div id="each-homepage-card" className={css`box-shadow: 0px 5px 5px lightgrey; width: 350px; display: flex; flex-direction: column; justify-content: space-between;`}>
                 <div className={css`height: 35%; overflow: hidden; object-position: center; object-fit: cover; `}>
-                    <img src="./images/homepage/card-1.jpeg" alt="our-projects" />
+                    <img src="./phig-website/images/homepage/card-1.jpeg" alt="our-projects" />
                 </div>
                 <div className={css`padding: 25px;`}>
                     <h3>Our Projects</h3>
@@ -21,7 +21,7 @@ export default function HomepageCards() {
 
             <div id="each-homepage-card" className={css`box-shadow: 0px 5px 5px lightgrey; width: 350px; display: flex; flex-direction: column; justify-content: space-between;`}>
                 <div className={css`height: 35%; overflow: hidden; object-position: center; object-fit: cover; `}>
-                    <img src="./images/homepage/card-2.jpeg" alt="our-projects" />
+                    <img src="./phig-website/images/homepage/card-2.jpeg" alt="our-projects" />
                 </div>
                 <div className={css`padding: 25px;`}>
                     <h3>Our Mission</h3>
@@ -37,7 +37,7 @@ export default function HomepageCards() {
 
             <div id="each-homepage-card" className={css`box-shadow: 0px 5px 5px lightgrey; width: 350px; display: flex; flex-direction: column; justify-content: space-between;`}>
                 <div className={css`height: 35%; overflow: hidden; object-position: center; object-fit: cover; `}>
-                    <img src="./images/homepage/card-3.jpeg" alt="our-projects" />
+                    <img src="./phig-website/images/homepage/card-3.jpeg" alt="our-projects" />
                 </div>
                 <div className={css`padding: 25px;`}>
                     <h3>Work Parties</h3>
