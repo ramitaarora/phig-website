@@ -1,0 +1,43 @@
+[
+    {
+      "name": "Annie’s Annuals and Perennials",
+      "location": "Richmond",
+      "link": "www.anniesannuals.com",
+      "hours": "Open Tuesday through Sunday, 10 to 5",
+      "phoneNumber": "510-215-1671"
+    },
+    {
+      "name": "Carquinez Regional Environmental Education Center",
+      "location": "Crockett",
+      "link": "www.creecyouth.org",
+      "hours": "Open Saturday mornings or by appointment only",
+      "phoneNumber": "510-787-2265"
+    },
+    {
+      "name": "Native Here Nursery",
+      "location": "Berkeley",
+      "link": "www.ebcnps.org/nativehere.html",
+      "hours": "Open Fridays, 9 to noon; Saturdays, 10 to 1",
+      "phoneNumber": "510-549-0211"
+    },
+    {
+      "name": "Pacific Coast Seed",
+      "location": "Livermore",
+      "link": "www.pcseed.com",
+      "phoneNumber": "925-373-4417"
+    },
+    {
+      "name": "Ploughshares Nursery",
+      "location": "Alameda",
+      "link": "http://www.ploughsharesnursery.com/",
+      "hours": "Open Wednesday through Sunday, 9 to 5:30",
+      "phoneNumber": "510-898-7811"
+    },
+    {
+      "name": "The Markham Arboretum",
+      "location": "Concord",
+      "link": "http://www.markhamarboretum.org/",
+      "hours": "Every Tuesday 9 am to 12 noon",
+      "phoneNumber": "925-681-2968"
+    }
+  ]

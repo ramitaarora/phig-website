@@ -18,6 +18,8 @@ import ConfirmationPageVolunteer from './pages/ConfirmationPageVolunteer';
 import ConfirmationPageContact from './pages/ConfirmationPageContact';
 import EventsPage from './pages/EventsPage';
 import WeatherStation from './pages/WeatherStation';
+import ApproachPage from './pages/ApproachPage';
+import ProjectsPage from './pages/ProjectsPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -26,19 +28,21 @@ root.render(
       <Routes>
         <Route path="/phig-website" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="/phig-website/volunteer" element={<VolunteerPage />} />
-          <Route path="/phig-website/donate" element={<DonationPage />} />
-          <Route path="/phig-website/pay" element={<PaymentPage />} />
-          <Route path="/phig-website/about" element={<AboutPage />} />
-          <Route path="/phig-website/resources" element={<ResourcesPage />} />
-          <Route path="/phig-website/resources/websites" element={<WebsiteResources />} />
-          <Route path="/phig-website/news" element={<NewsPage />} />
-          <Route path="/phig-website/news/:articleID" element={<ArticlePage />} />
-          <Route path="/phig-website/volunteer/application" element={<VolunteerApplication />} />
-          <Route path="/phig-website/volunteer/confirmation" element={<ConfirmationPageVolunteer />} />
-          <Route path="/phig-website/about/confirmation" element={<ConfirmationPageContact />} />
-          <Route path="/phig-website/events" element={<EventsPage />} />
-          <Route path='/phig-website/station' element={<WeatherStation />} />
+          <Route path="/volunteer" element={<VolunteerPage />} />
+          <Route path="/donate" element={<DonationPage />} />
+          <Route path="/pay" element={<PaymentPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/resources/websites" element={<WebsiteResources />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/news/:articleID" element={<ArticlePage />} />
+          <Route path="/volunteer/application" element={<VolunteerApplication />} />
+          <Route path="/volunteer/confirmation" element={<ConfirmationPageVolunteer />} />
+          <Route path="/about/confirmation" element={<ConfirmationPageContact />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path='/station' element={<WeatherStation />} />
+          <Route path='/projects' element={<ProjectsPage />} />
+          <Route path='/approach' element={<ApproachPage />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>

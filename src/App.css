@@ -30,49 +30,54 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
 
 /* NAVIGATION BAR CSS */
 
 nav {
+  width: 100vw;
   min-height: 90px;
-}
-.nav-entire-container{
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content: space-between;
   background-color: #081821;
-  padding-right: 1rem 4%;
-}
-.nav-logo-container {
-  padding: 1rem;
-}
-.navbar-menu-container {
-  display: none;
-}
-.navbar-links-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.navbar-links-container a {
-  /* margin-right: 3rem; */
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-  font-weight: 400;
-  width: 120px;
-  margin-right: 50px;
-  /* adjust margin as needed */
+  padding: 20px 40px;
 }
 
-.navlinks-excluding-button {
- display: flex;
- justify-content:space-between;
-  margin-right: 20%;
- width: 50vw;
+nav a {
+  color: white;
+  display: flex;
+  align-items: center;
 }
+
+nav a img {
+  margin-left: 5px;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #153949;
+  color: white;
+  padding: 0 25px;
+  z-index: 1;
+  line-height: 50px;
+  margin-left: -5px;
+  border-radius: 10px;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+  display: block;
+}
+
+.nav-dropdown-content:hover .nav-dropdown-content {
+  display: block;
+}
+
 .primary-button {
-  padding: 0.5rem 1.5rem;
+  padding: 10px 40px;
   background-color: #348659;
   background-image: linear-gradient(to left, #348659, #80b899);
   outline: none;
@@ -84,17 +89,16 @@ nav {
   font-weight: 400;
   transition: 0.2s;
   margin-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.navbar-cart-icon {
-  font-size: 1.15rem;
+
+.primary-button img {
+  margin-right: 10px;
 }
-.primary-button:hover {
-  background-color: rgb(234, 234, 234);
-}
-.navbar-menu-container svg {
-  font-size: 1.5rem;
-  cursor: pointer;
-}
+
+
 
 /* BANNER */
 
@@ -127,7 +131,7 @@ nav {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./assets/PHIG_spring_2023_butterfly_habitat_1.png");
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/homepage/homepage-banner.png"); */
 
   /* Set a specific height */
   height: 100%;
