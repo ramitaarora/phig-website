@@ -6,6 +6,7 @@ import Leaderboard from '../components/Leaderboard'
 import Goals from '../components/Goals'
 import Newsfeed from '../components/Newsfeed'
 import { css } from '@emotion/css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -23,9 +24,9 @@ const Home = () => {
                     <div className='home-text-section'>
                         <h1 className='primary-heading'>Living Landscapes</h1>
                         <p className='primary-text'>A California Habitats Garden that protects and conserves vegetation & wildlife critical to our planet.</p>
-                        <button className='secondary-button'>
+                        <Link to="/approach"><button className='secondary-button'>
                             Our Impact
-                        </button>
+                        </button></Link>
                     </div>
                 </div>
             </div>

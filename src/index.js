@@ -18,6 +18,8 @@ import ConfirmationPageVolunteer from './pages/ConfirmationPageVolunteer';
 import ConfirmationPageContact from './pages/ConfirmationPageContact';
 import EventsPage from './pages/EventsPage';
 import WeatherStation from './pages/WeatherStation';
+import ApproachPage from './pages/ApproachPage';
+import ProjectsPage from './pages/ProjectsPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -39,6 +41,8 @@ root.render(
           <Route path="/about/confirmation" element={<ConfirmationPageContact />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path='/station' element={<WeatherStation />} />
+          <Route path='/projects' element={<ProjectsPage />} />
+          <Route path='/approach' element={<ApproachPage />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
