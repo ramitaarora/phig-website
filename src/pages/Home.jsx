@@ -13,7 +13,7 @@ const Home = () => {
         <div className='home-container'>
             <div className='home-banner-container'>
                 <div className={css`
-                background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./images/homepage/homepage-banner.png");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("./phig-website/images/homepage/homepage-banner.png");
                 height: 100%;
                 background-position: center;
                 background-repeat: no-repeat;
