@@ -10,7 +10,7 @@ export default function NewsPage() {
 
             <Newsfeed />
 
-            <Newsletter />
+    {/*<Newsletter />*/}
 
         </div>
     )
