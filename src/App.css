@@ -26,12 +26,13 @@ body {
   /* background-color: #f6f6f6; */
   background-color: white;
 }
-li {
-  list-style: none;
-}
 
 a {
   text-decoration: none;
+}
+
+footer li {
+  list-style: none;
 }
 
 /* NAVIGATION BAR CSS */

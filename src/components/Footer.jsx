@@ -11,7 +11,7 @@ export default function Footer() {
                     <ul>
                         <Link to="/about" className={css`text-decoration: none; color: white;`}><li>About Us</li></Link>
                         <Link to="/about" className={css`text-decoration: none; color: white;`}><li>History</li></Link>
-                        <Link to="/about#contact-form" className={css`text-decoration: none; color: white;`}><li>Contact</li></Link>
+                        <Link to="/contact" className={css`text-decoration: none; color: white;`}><li>Contact</li></Link>
                     </ul>
                 </div>
 

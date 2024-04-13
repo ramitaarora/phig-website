@@ -20,6 +20,7 @@ import EventsPage from './pages/EventsPage';
 import WeatherStation from './pages/WeatherStation';
 import ApproachPage from './pages/ApproachPage';
 import ProjectsPage from './pages/ProjectsPage';
+import ContactPage from './pages/ContactPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -43,6 +44,7 @@ root.render(
           <Route path='/station' element={<WeatherStation />} />
           <Route path='/projects' element={<ProjectsPage />} />
           <Route path='/approach' element={<ApproachPage />} />
+          <Route path='/contact' element={<ContactPage />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>

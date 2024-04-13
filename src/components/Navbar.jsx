@@ -16,7 +16,7 @@ const Navbar = () => {
             <img src="./images/nav-carat-down.svg" alt="down" />
           </Link>
           <div className="nav-dropdown-content">
-            <Link to="/about/#contact-form">Contact</Link>
+            <Link to="/contact">Contact</Link>
             <Link to="/about/">Timeline</Link>
           </div>
         </div>
