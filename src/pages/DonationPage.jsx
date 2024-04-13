@@ -7,6 +7,12 @@ import donations from '../data/donations.json';
 export default function DonationPage() {
     const [searchResults, setSearchResults] = useState(donations);
     const [input, setInput] = useState('')
+    const [amount, setAmount] = useState('')
+
+    const updateAmount = (event) => {
+        event.preventDefault();
+        setAmount(event.target.innerHTML)
+    }
 
     const setAll = (event) => {
         event.preventDefault();
@@ -57,14 +63,14 @@ export default function DonationPage() {
                 <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 0px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white;`}>
                     <h2 className={css`margin: 10px;`}>Join #PHIG</h2>
                     <div id="quick-form-buttons" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;`}>
-                        <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$1</button>
-                        <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$5</button>
-                        <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$10</button>
-                        <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$20</button>
-                        <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$25</button>
-                        <button className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$50</button>
+                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$1</button>
+                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$5</button>
+                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$10</button>
+                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$20</button>
+                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$25</button>
+                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$50</button>
                     </div>
-                    <input type="text" placeholder='Custom amount' className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 3px;`} />
+                    <input type="text" placeholder='Custom amount' value={amount} onChange={event => setAmount(event.target.value)} className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 3px;`} />
                     <Link to="/pay"><input type="submit" value="Next" className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 10px; margin: 20px auto; background-color: darkgreen; color: white;`} /></Link>
                 </form>
             </div>

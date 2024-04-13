@@ -4,8 +4,8 @@ export default function PheaturedEvent() {
     return (
         <div id="pheatured-event">
             <div id="header" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url('./images/homepage/earth-day-event.jpeg'); height: 500px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; color: white;`}>
-                <h2 className={css`position: relative; top: 300px;`}>Earth Day 2024 - Meet & Greet</h2>
-                <p className={css`position: relative; top: 300px;`}>Hosted by Monika Olsen</p>
+                <h2 className={css`position: relative; top: 300px;`}>Earth Day 2024</h2>
+                <p className={css`position: relative; top: 300px;`}>Hosted by Pleasant Hill Instructional Garden</p>
             </div>
 
             <div className={css`display: flex; justify-content: space-between; margin: 0 50px;`}>
@@ -16,19 +16,19 @@ export default function PheaturedEvent() {
                 </div>
 
                 <div id="event-date" className={css`background-color: white; position: relative; top: -150px; width: 25%; padding: 30px; border: 1px solid lightgrey; border-radius: 10px;`}>
-                    <div className={css`display: flex;`}>
-                        <div>
-                            <h2>22</h2>
+                    <div className={css`display: flex; margin-bottom: 10px;`}>
+                        <div className={css`margin-right: 20px;`}>
+                            <h2>28</h2>
                             <p>APR</p>
                         </div>
                         <div>
-                            <h3>Monday April 22, 2024</h3>
-                            <p>11:00 AM Pacific Time</p>
+                            <h3>Sunday April 28, 2024</h3>
+                            <p>12:30PM Pacific Time</p>
                         </div>
                     </div>
 
                     <p>A confirmation email with more details will be provided after registration.</p>
-                    <button>Register with EventBrite</button>
+                    <button className={css`margin-top: 10px;`}>Register with EventBrite</button>
                 </div>
             </div>
 

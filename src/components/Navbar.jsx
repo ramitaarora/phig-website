@@ -11,13 +11,13 @@ const Navbar = () => {
 
       <div className={css`width: 70%; display: flex; justify-content: space-evenly;`}>
         <div className="nav-dropdown">
-          <Link to="/about">
+          <Link to="/contact">
             About Us
             <img src="./images/nav-carat-down.svg" alt="down" />
           </Link>
           <div className="nav-dropdown-content">
-            <Link to="/about/#contact-form">Contact</Link>
-            <Link to="/about/">Timeline</Link>
+            <Link to="/contact">Contact</Link>
+            {/*<Link to="/about/">Timeline</Link>*/}
           </div>
         </div>
 
