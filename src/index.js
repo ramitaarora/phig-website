@@ -10,6 +10,7 @@ import VolunteerPage from './pages/VolunteerPage';
 import DonationPage from './pages/DonationPage';
 import ResourcesPage from './pages/ResourcesPage';
 import WebsiteResources from './pages/WebsiteResources';
+import NurseryResource from './pages/NurseryResources';
 import NewsPage from './pages/NewsPage';
 import ArticlePage from './pages/ArticlePage';
 import PaymentPage from './pages/PaymentPage';
@@ -34,6 +35,7 @@ root.render(
           <Route path="/about" element={<AboutPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/resources/websites" element={<WebsiteResources />} />
+          <Route path="/resources/nursery" element = {<NurseryResource />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/news/:articleID" element={<ArticlePage />} />
           <Route path="/volunteer/application" element={<VolunteerApplication />} />
