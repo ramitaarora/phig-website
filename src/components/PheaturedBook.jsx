@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 export default function PheaturedBook() {
     return (
 
-        <section id="pheatured-book" className={css`margin: 90px auto; width: 95%; box-shadow: 5px 5px 5px 5px lightgrey;background-color: white;background-image: radial-gradient(circle, #ffffff 30%, #f0f0f0 60%);`}>
+        <section id="pheatured-book" className={css`background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 30%, rgba(232, 232, 232, 0.7) 60%), url('./images/homepage/leaf-background.jpeg'); background-position: bottom right; background-repeat: no-repeat; margin: 90px auto; width: 95%; box-shadow: 5px 5px 5px 5px lightgrey;`}>
             <div className={css`display: flex; justify-content: space-between; align-items: center;`}>
 
                 <div className={css`width: 60%`}>
