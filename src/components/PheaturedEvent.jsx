@@ -31,7 +31,7 @@ export default function PheaturedEvent() {
                     <hr style={{color:'lightgrey', display:'flex'}}></hr>
 
                     <p style={{color:'grey', fontSize:'small'}}>A <span style={{color:'black', fontSize:'small'}}>confirmation email</span> with more details will be provided after registration.</p>
-                    <a href="https://www.eventbrite.com/e/earth-day-2024-free-fun-family-friendly-educational-tickets-833927518657?aff=oddtdtcreator" target="_blank"> <button className={css`border-radius: 10px;margin-top: 30px;height: 40px;width: 200px;cursor: pointer;padding: 4px; border: 6px; font-size: big; background-color: #407D46; color: white;`}>  Register with EventBrite </button> </a>
+                    <a href="https://www.eventbrite.com/e/earth-day-2024-free-fun-family-friendly-educational-tickets-833927518657?aff=oddtdtcreator" target="_blank" rel="noreferrer"> <button className={css`border-radius: 10px;margin-top: 30px;height: 40px;width: 200px;cursor: pointer;padding: 4px; border: 6px; font-size: big; background-color: #407D46; color: white;`}>  Register with EventBrite </button> </a>
                 </div>
             </div>
 
