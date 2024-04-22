@@ -33,7 +33,7 @@ export default function ResourcesPage() {
                     </div>
                 </Link>
 
-                <Link className={css`text-decoration: none; color: inherit;`}>
+                <Link to="/resources/nursery" className={css`text-decoration: none; color: inherit;`}>
                     <div id="resource-button" className = "Nurseries">
                         <img className = "Resources_Img" src="/images/resources/plant.png" alt="nurseries" />
                         <p className = "Nursery">Nurseries</p>
