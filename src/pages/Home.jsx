@@ -24,7 +24,7 @@ const Home = () => {
                     <div className='home-text-section'>
                         <h1 className='primary-heading'>Living Landscapes</h1>
                         <p className='primary-text'>A California Habitats Garden that protects and conserves vegetation & wildlife critical to our planet.</p>
-                        <Link to="/approach"><button className='secondary-button'>
+                        <Link to="/approach"><button className='secondary-button' style={{borderRadius:'15px 0px 15px 0px'}}>
                             Our Impact
                         </button></Link>
                     </div>
@@ -33,17 +33,19 @@ const Home = () => {
             <HomepageCards />
 
             <PheaturedEvent />
-
+            <div>
+                <img style={{marginBottom:'-107px', marginLeft:'1000px'}} src="./images/homepage/butterfly.png" alt="butterfly" />
+            </div>
             <PheaturedBook />
 
             <Leaderboard />
 
             <Goals />
 
-            <section id="newsfeed-header">
-                <h3>Our Blogs</h3>
-                <h1>Latest Blogs & Articles</h1>
-                <p>Be the first to know about recent garden projects, volunteer opportunities, and gardening tips!</p>
+            <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} id="newsfeed-header">
+                <h3 style={{marginTop:'50px',marginBottom:'30px', color:'#539B42'}} >Our Blogs</h3>
+                <h1 style={{marginBottom:'20px'}}>Latest <span style={{color:'#539B42'}}>Blogs & Articles</span></h1>
+                <p style={{fontSize:'small'}}>Be the first to know about recent garden projects, volunteer opportunities, and gardening tips!</p>
             </section>
 
             <Newsfeed />
