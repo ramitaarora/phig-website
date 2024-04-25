@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 export default function WebsiteResource({ name, description, image, link }) {
     return (
-        <div id="website-resource" className={css`display: flex; justify-content: space-evenly`}>
+        <div id="website-resource" className={css`display: flex; justify-content: space-evenly; margin: 0 auto;`}>
             <div className='websiteresourseimagediv'>
                 <img className='websiteresourseimage' src={image} alt={name} />
             </div>
