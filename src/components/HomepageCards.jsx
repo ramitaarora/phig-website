@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function HomepageCards() {
     return (
         <section id="homepage-cards" className={css`margin: 90px auto; width: 80%; display: flex; flex-wrap: wrap; justify-content: space-between; height: 100%;`}>
-            <div id="each-homepage-card" className={css`margin: 10px auto; box-shadow: 0px 5px 5px lightgrey; height: 700px; width: 350px; display: flex; flex-direction: column; justify-content: space-between; border-bottom:3px solid #97C159;`}>
+            <div id="each-homepage-card" className={css`margin: 10px auto; box-shadow: 0px 5px 5px lightgrey; height: 630px; width: 350px; display: flex; flex-direction: column; justify-content: space-between; border-bottom:3px solid #97C159;`}>
                 <div className={css`height: 32%; overflow: hidden;`}>
                     <img src="./images/homepage/card-1.jpeg" alt="our-projects"/>
                 </div>
@@ -20,7 +20,7 @@ export default function HomepageCards() {
                 </div>
             </div>
 
-            <div id="each-homepage-card" className={css`margin: 10px auto; box-shadow: 0px 5px 5px lightgrey; height: 700px; width: 350px; display: flex; flex-direction: column; justify-content: space-between; border-bottom:3px solid #97C159;`}>
+            <div id="each-homepage-card" className={css`margin: 10px auto; box-shadow: 0px 5px 5px lightgrey; height: 630px; width: 350px; display: flex; flex-direction: column; justify-content: space-between; border-bottom:3px solid #97C159;`}>
                 <div className={css`height: 32%; overflow: hidden;`}>
                     <img src="./images/homepage/card-2.jpeg" alt="our-projects"/>
                 </div>
@@ -36,7 +36,7 @@ export default function HomepageCards() {
                 </div>
             </div>
 
-            <div id="each-homepage-card" className={css`margin: 10px auto; box-shadow: 0px 5px 5px lightgrey; height: 700px; width: 350px; display: flex; flex-direction: column; justify-content: space-between; border-bottom:3px solid #97C159;`}>
+            <div id="each-homepage-card" className={css`margin: 10px auto; box-shadow: 0px 5px 5px lightgrey; height: 630px; width: 350px; display: flex; flex-direction: column; justify-content: space-between; border-bottom:3px solid #97C159;`}>
                 <div className={css`height: 32%; overflow: hidden;`}>
                     <img src="./images/homepage/card-3.jpeg" alt="our-projects" />
                 </div>

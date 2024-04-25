@@ -53,7 +53,7 @@ export default function ContactForm() {
                 },
                 (error) => {
                 // console.log('FAILED...', error);
-                setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at phig@gmail.com."]);
+                setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at PHinstructionalgarden@gmail.com"]);
                 },
             );
         }

@@ -48,24 +48,24 @@ export default function VolunteerApplication() {
 
             navigate('/volunteer/confirmation', { replace: true });
 
-        //     emailjs.send('service', 'template', templateParams, 'public')
-        //     .then(
-        //         (response) => {
-        //         // console.log('SUCCESS!', response.status, response.text);
-        //         navigate('/volunteer/confirmation', { replace: true });
-        //         setName('');
-        //         setEmail('');
-        //         setPhone('');
-        //         setPreferredContact('');
-        //         setAge('');
-        //         setTime('');
-        //         setProject('');
-        //         },
-        //         (error) => {
-        //         // console.log('FAILED...', error);
-        //         setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at phig@gmail.com."]);
-        //         },
-        //     );
+            emailjs.send(process.env.REACT_APP_SERVICE_KEY, process.env.REACT_APP_TEMPLATE_KEY, templateParams, process.env.REACT_APP_PUBLIC_KEY)
+            .then(
+                (response) => {
+                // console.log('SUCCESS!', response.status, response.text);
+                navigate('/volunteer/confirmation', { replace: true });
+                setName('');
+                setEmail('');
+                setPhone('');
+                setPreferredContact('');
+                setAge('');
+                setTime('');
+                setProject('');
+                },
+                (error) => {
+                // console.log('FAILED...', error);
+                setErrorMessage(pre => [...pre, "Error: Email not sent. Please contact us at PHinstructionalgarden@gmail.com."]);
+                },
+            );
         }
     }
 
