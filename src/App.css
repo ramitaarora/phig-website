@@ -1,4 +1,4 @@
-/* GENERAL CSS */
+/* General Styles */
 
 :root {
   --primary: #FFFFFF;
@@ -52,7 +52,7 @@ footer li {
   list-style: none;
 }
 
-/* BUTTONS */
+/* Buttons */
 
 .gradient-button {
   padding: 10px 30px;
@@ -139,7 +139,7 @@ footer li {
   color: grey;
 }
 
-/* NAVIGATION BAR CSS */
+/* Navigation Styles */
 
 nav a {
   color: var(--primary);
@@ -180,4 +180,42 @@ nav a img {
   display: block;
 }
 
-/* HOME PAGE */
+/* Homepage Cards */
+
+#each-homepage-card {
+  margin: 10px auto; 
+  box-shadow: 0px 5px 5px lightgrey; 
+  height: 630px; 
+  width: 350px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  border-bottom: 3px solid #97C159;
+}
+
+.homepage-card-image {
+  height: 32%;
+  overflow: hidden;
+}
+
+.homepage-card-text {
+  padding: 25px; 
+  height: 45%;
+}
+
+.homepage-card-text h3 {
+  margin-bottom: 15px;
+}
+
+.homepage-card-learn-more {
+  display: flex; 
+  padding: 25px; 
+  align-items: center; 
+  height: 20%;
+}
+
+.homepage-card-learn-more p {
+  margin-right: 5px; 
+  color:#34773A; 
+  border-bottom: 2px solid #34773A;
+}
