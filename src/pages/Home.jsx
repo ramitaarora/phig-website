@@ -34,9 +34,9 @@ const Home = () => {
 
             <Goals />
 
-            <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} id="newsfeed-header" className={css`position: relative; top: -150px;`}>
+            <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} id="newsfeed-header">
                 <h3 style={{ marginTop: '50px', marginBottom: '30px', color: '#539B42' }} >Our Blogs</h3>
-                <h1 style={{ marginBottom: '20px' }}>Latest <span style={{ color: '#539B42' }}>Blogs & Articles</span></h1>
+                <h1 style={{ marginBottom: '20px' }}>Latest <span className={css`color: var(--success); font-family: 'Inria Serif', sans-serif;`}>Blogs & Articles</span></h1>
                 <p style={{ fontSize: 'small' }}>Be the first to know about recent garden projects, volunteer opportunities, and gardening tips!</p>
             </section>
 

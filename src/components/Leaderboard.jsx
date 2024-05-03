@@ -12,11 +12,11 @@ export default function Leaderboard() {
 
             <div id="leaderboard-filter" className={css`display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px`}>
                 <div >
-                    <input style={{color: 'grey',padding: '20px',border: 'none', boxShadow: '3px 3px 3px 3px lightgrey',height:'50px',width:'210px',borderRadius:'30px'}} type="text" name="search" value="search                          🔍" placeholder="Search"/>
+                    <input style={{color: 'grey',padding: '20px',border: 'none', boxShadow: '3px 3px 3px 3px lightgrey',height:'50px',width:'250px',borderRadius:'30px'}} type="text" name="search" value="Search" placeholder="Search"/>
                 </div>
                 <div>
-                    <button style={{borderColor:'#63D79C',border:'none',backgroundColor:'#63D79C',color:'white',height:'50px',width:'150px',borderRadius: '30px 0px 0px 30px',padding:'5px', paddingLeft:'20px', paddingRight:'20px'}}>Contributions</button>
-                    <button style={{borderColor:'#63D79C',border: '2px solid ', backgroundColor:'white',color:'#63D79C',height:'50px',width:'150px',borderRadius: '0px 30px 30px 0px'}}>Special Volunteers</button>
+                    <button className='pill-button'>Contributions</button>
+                    <button className='pill-button-outline'>Special Volunteers</button>
                 </div>
             </div>
 
