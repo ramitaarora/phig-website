@@ -10,20 +10,20 @@ export default function VolunteerResult({ result, index }) {
             </div>
 
 
-            <div id="result-right" className={css`padding: 20px 30px;; width: 65%; height: 100%;`}>
+            <div id="result-right" className={css`padding: 20px 30px; width: 65%; height: 100%;`}>
 
                 <div id="result-corner" className={css`float: right; margin: 0 20px; height: 70px; width: 25%; display: flex; flex-direction: column; justify-content: space-evenly;`}>
-                    <div id="each-corner-stat" className={css`display: flex; justify-content: flex-start; align-items: center;`}>
+                    <div id="each-corner-stat">
                         <img src={result.status === "COMPLETED" ? './images/volunteer/red-circle.svg' : './images/volunteer/green-circle.svg'} alt="status-dot" />
-                        <p className={css`margin-left: 5px;`}>{result.status}</p>
+                        <p>{result.status}</p>
                     </div>
-                    <div id="each-corner-stat" className={css`display: flex; justify-content: flex-start; align-items: center;`}>
+                    <div id="each-corner-stat">
                         <img src="./images/volunteer/person.svg" alt="place" />
-                        <p className={css`margin-left: 5px;`}>{result.place}</p>
+                        <p>{result.place}</p>
                     </div>
-                    <div id="each-corner-stat" className={css`display: flex; justify-content: flex-start; align-items: center;`}>
+                    <div id="each-corner-stat">
                         <img src="./images/volunteer/location.svg" alt="location" />
-                        <p className={css`margin-left: 5px;`}>{result.location}</p>
+                        <p>{result.location}</p>
                     </div>
                 </div>
 
@@ -34,8 +34,7 @@ export default function VolunteerResult({ result, index }) {
                         <p className={css`margin-top: 10px; font-size: 80%;`}>{result.description}</p>
                     </div>
                     <div id="result-buttons" className={css`margin: 20px auto; width: 75%;  display: flex; justify-content: space-evenly; align-items: center;`}>
-                        <Link to="/volunteer/application"><button className={css`padding: 5px; color: white; background-color: darkgreen; border: 1px solid darkgreen; border-radius: 5px; cursor: pointer;`}>Apply Now</button></Link>
-                        <p>See Details</p>
+                        <Link to="/volunteer/application"><button className="green-button">Apply Now</button></Link>
                     </div>
 
                 </div>

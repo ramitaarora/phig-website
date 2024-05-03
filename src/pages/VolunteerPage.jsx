@@ -118,9 +118,9 @@ export default function VolunteerPage() {
                 <section id="why-volunteer" className={css`display: flex; justify-content: space-evenly; height: 400px; margin: 100px 100px;`}>
                     <div id="volunteer-left" className={css`display: flex; flex-direction: column; justify-content: space-evenly; padding: 0 50px;`}>
                         <h2>Why volunteer with us?</h2>
-                        <p><b>Water Conservation:</b> Contribute to water conservation efforts by learning and implementing eco-friendly watering techniques. Help spread awareness about responsible water usage in gardening.</p>
-                        <p><b>Wildlife Protection:</b> Create safe havens for local wildlife by incorporating wildlife-friendly elements into your garden. From pollinator-friendly plants to bird-friendly feeders, be a vital part of nurturing biodiversity.</p>
-                        <p><b>Gardening Tips:</b> Share your gardening expertise and tips with a global audience. Help beginners kickstart their green journey and guide seasoned gardeners toward more sustainable practices.</p>
+                        <p><span>Water Conservation:</span> Contribute to water conservation efforts by learning and implementing eco-friendly watering techniques. Help spread awareness about responsible water usage in gardening.</p>
+                        <p><span>Wildlife Protection:</span> Create safe havens for local wildlife by incorporating wildlife-friendly elements into your garden. From pollinator-friendly plants to bird-friendly feeders, be a vital part of nurturing biodiversity.</p>
+                        <p><span>Gardening Tips:</span> Share your gardening expertise and tips with a global audience. Help beginners kickstart their green journey and guide seasoned gardeners toward more sustainable practices.</p>
                     </div>
                     <div id="volunteer-right" className={css`height: 100%; object-fit: cover; object-position: center; overflow: hidden;`}>
                         <img src="./images/volunteer/volunteers.png" alt="volunteers" />
@@ -135,42 +135,43 @@ export default function VolunteerPage() {
 
                 <section id="search-opportunities" className={css`display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 50px auto;`}>
                     <h2>Search for Opportunities</h2>
-                    <form id="search" className={css`display: flex; justify-content: space-evenly; margin: 30px auto;`} onSubmit={handleSearch}>
-                        <input type="text" value={inputValue} onChange={event => setInputValue(event.target.value)}/>
-                        <input type="submit" />
+                    <form id="search" className={css`display: flex; justify-content: space-evenly; margin: 30px auto; width: 60%; align-items: center;`} onSubmit={handleSearch}>
+                        <input type="text" value={inputValue} placeholder="Search by keyword" onChange={event => setInputValue(event.target.value)} className='form-input' style={{ width: '80%'}}/>
+                        <input type="submit" className='dark-button'/>
                     </form>
+                    <span className={css`border-bottom: 1px solid lightgrey; width: 70%;`}></span>
 
                     <div id="results" className={css`display: flex; justify-content: space-evenly; margin: 30px auto;`}>
                         <form className={css`margin: 0 50px 0 0;`}>
                             <div id="work-format">
                                 <h3 className={css`border-bottom: 1px solid lightgrey; margin: 20px 0; padding: 10px 0;`}>Work Format</h3>
-                                <div className={css`margin: 10px 0;`}>
-                                    <input type="checkbox" name="remote-work" className={css`margin: 0 10px;`} onClick={handleFilter}/>
+                                <div className="volunteer-checkbox">
+                                    <input type="checkbox" name="remote-work" onClick={handleFilter}/>
                                     <label htmlFor='remote-work'>Remote Work</label>
                                 </div>
-                                <div className={css`margin: 10px 0;`}>
-                                    <input type="checkbox" name="inperson-work" className={css`margin: 0 10px;`} onClick={handleFilter}/>
+                                <div className="volunteer-checkbox">
+                                    <input type="checkbox" name="inperson-work" onClick={handleFilter}/>
                                     <label htmlFor='inperson-work'>In-Person Work</label>
                                 </div>
                             </div>
 
                             <div id="activity-type">
                                 <h3 className={css`border-bottom: 1px solid lightgrey; margin: 20px 0; padding: 10px 0;`}>Volunteer Activity Type</h3>
-                                <div className={css`margin: 10px 0;`}>
-                                    <input type="checkbox" name="ui-ux" className={css`margin: 0 10px;`} onClick={handleFilter}/>
+                                <div className="volunteer-checkbox">
+                                    <input type="checkbox" name="ui-ux" onClick={handleFilter}/>
                                     <label htmlFor='ui-ux'>UI/UX Designer</label>
                                 </div>
-                                <div className={css`margin: 10px 0;`}>
-                                    <input type="checkbox" name="composter" className={css`margin: 0 10px;`} onClick={handleFilter}/>
+                                <div className="volunteer-checkbox">
+                                    <input type="checkbox" name="composter" onClick={handleFilter}/>
                                     <label htmlFor='composter'>Composter</label>
                                 </div>
-                                <div className={css`margin: 10px 0;`}>
-                                    <input type="checkbox" name="work-participant" className={css`margin: 0 10px;`} onClick={handleFilter}/>
+                                <div className="volunteer-checkbox">
+                                    <input type="checkbox" name="work-participant" onClick={handleFilter}/>
                                     <label htmlFor='work-participant'>Work Party Participant</label>
                                 </div>
                             </div>
 
-                            <input type="reset" value="Clear Filters" onClick={clearResults} className={css`margin-top: 20px; background-color: #081821; color: white; padding: 8px; border: 1px solid #081821; border-radius: 10px; cursor: pointer;`}/>
+                            <input type="reset" value="Clear Filters" onClick={clearResults} className='dark-button' style={{ margin: '30px 0' }}/>
                         </form>
 
                         <div id="search-results">

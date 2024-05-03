@@ -73,50 +73,50 @@ export default function VolunteerApplication() {
         <div id="volunteer-app" className={css`margin: 50px auto; width: 500px;`}>
             <header className={css`text-align: center;`}>
                 <h1>Volunteer Application</h1>
-                <p>We sincerely appreciate you taking the time to fill out this form and for volunteering. It means a lot to us!</p>
+                <p className={css`margin-top: 15px;`}>We sincerely appreciate you taking the time to fill out this form and for volunteering. It means a lot to us!</p>
             </header>
-            <form onSubmit={handleSubmit} className={css` margin: 20px auto; display: flex; flex-direction: column;`}>
+            <form onSubmit={handleSubmit} className={css` margin: 20px auto; display: flex; flex-direction: column; line-height: 40px;`}>
                 <label htmlFor="name">Name</label>
-                <input type="text" id="name" placeholder="Name" value={name} onChange={event => setName(event.target.value)} required/>
+                <input type="text" id="name" placeholder="Name" value={name} onChange={event => setName(event.target.value)} className='form-input' required/>
 
-                <p>How should we contact you?</p>
+                <label>How should we contact you?</label>
                 <div className={css`display: flex; justify-content: space-around; align-items: center;`}>
-                    <div>
+                    <div className='application-radio'>
                         <input type="radio" id="phone" name="contact" value="Phone" onClick={event => setPreferredContact(event.target.value)}/>
                         <label htmlFor="phone">Phone</label>
                     </div>
-                    <div>
-                        <input type="radio" id="email" name="contact" value="Email" onClick={event => setPreferredContact(event.target.value)}/>
+                    <div className='application-radio'>
+                        <input type="radio" id="email" name="contact" value="Email" onClick={event => setPreferredContact(event.target.value)} />
                         <label htmlFor="email">Email</label>
                     </div>
                 </div>
 
                 <label htmlFor="email">Email Address</label>
-                <input type="text" id="email" placeholder="Email Address" value={email} onChange={event => setEmail(event.target.value)} required/>
+                <input type="text" id="email" placeholder="Email Address" value={email} onChange={event => setEmail(event.target.value)} className='form-input' required/>
 
                 <label htmlFor="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="Phone Number" value={phone} onChange={event => setPhone(event.target.value)} required/>
+                <input type="tel" id="phone" placeholder="Phone Number" value={phone} onChange={event => setPhone(event.target.value)} className='form-input' required/>
 
                 <div className={css`display: flex; justify-content: space-between; align-items: center;`}>
                     <div className={css`display: flex; flex-direction: column;`}>
                         <label htmlFor="age">Age</label>
-                        <input type="text" id="age" placeholder="Age" value={age} onChange={event => setAge(event.target.value)} required/>
+                        <input type="text" id="age" placeholder="Age" value={age} className='form-input' onChange={event => setAge(event.target.value)} required/>
                     </div>
                     <div className={css`display: flex; flex-direction: column;`}>
                         <label htmlFor="availability">When are you open?</label>
-                        <input type="time" id="availability" value={time} onChange={event => setTime(event.target.value)} required/>
+                        <input type="time" id="availability" value={time} onChange={event => setTime(event.target.value)} className='form-input'  required/>
                     </div>
                 </div>
 
                 <label htmlFor="project">I am available for these projects:</label>
-                <select id="project" value={project} onChange={event => setProject(event.target.value)} required>
-                    <option></option>
+                <select id="project" value={project} onChange={event => setProject(event.target.value)} className='form-input' required>
+                    <option>Please Select</option>
                     {volunteerOpps.map((opp, index) =>
                         <option key={index}>{opp.title}</option>
                     )}
                 </select>
 
-                <input type="submit" />
+                <input type="submit" className='green-button' style={{ marginTop: '30px' }}/>
                 <div id="error-messages">
                     {errorMessage.length ? (
                         errorMessage.map((message, index) => 
@@ -125,7 +125,7 @@ export default function VolunteerApplication() {
                     ) : null}
                 </div>
 
-                <Link to="/volunteer#search-opportunities">Previous</Link>
+                <Link to="/volunteer#search-opportunities" className={css`text-align: center;`}>Previous</Link>
             </form>
         </div>
     );
