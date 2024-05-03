@@ -12,6 +12,7 @@
   --header-color: #081821;
   --body-color: #232323;
   --lightgreen: #97C159;
+  --orange: #F0B353;
 }
 
 * {
@@ -63,6 +64,11 @@ footer li {
 
 .form-input:active {
   border: #8F8F8F 1px solid;
+}
+
+.line-break {
+  border-bottom: 1px solid lightgrey; 
+  padding: 10px;
 }
 
 /* Buttons */
@@ -394,6 +400,65 @@ nav a svg {
   text-align: center;
   padding: 10%;
   line-height: 50px;
+}
+
+/* Approach Page */
+
+.approach-col {
+  width: 40%;
+  padding: 0 20px;
+}
+
+.approach-col hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+}
+
+.approach-mask {
+  -webkit-mask-image: url('../public/images/our-approach-mask.png');
+  mask-image: url('../public/images/our-approach-mask.png');
+  -webkit-mask-size: 70%;
+  mask-size: 70%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat; 
+}
+
+.approach-underline {
+  position: absolute;
+  width: 52px;
+  height: 2px;
+  background: #F0B353;
+  border-radius: 5px;
+  
+}
+
+#approach-text p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#approach-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14px;
+  width: 15%;
+  text-align: left;
+  font-weight: bold;
+}
+
+#approach-icons img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.approach-border {
+  text-align: end;
+  margin-bottom: -5px;
+  position: relative; top: -100px;
 }
 
 /* Footer Styles */

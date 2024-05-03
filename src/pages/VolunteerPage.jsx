@@ -139,7 +139,7 @@ export default function VolunteerPage() {
                         <input type="text" value={inputValue} placeholder="Search by keyword" onChange={event => setInputValue(event.target.value)} className='form-input' style={{ width: '80%'}}/>
                         <input type="submit" className='dark-button'/>
                     </form>
-                    <span className={css`border-bottom: 1px solid lightgrey; width: 70%;`}></span>
+                    <span className='line-break' style={{ width: '70%'}} ></span>
 
                     <div id="results" className={css`display: flex; justify-content: space-evenly; margin: 30px auto;`}>
                         <form className={css`margin: 0 50px 0 0;`}>
