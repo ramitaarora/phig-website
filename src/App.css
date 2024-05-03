@@ -1,29 +1,46 @@
 /* GENERAL CSS */
 
+:root {
+  --primary: #FFFFFF;
+  --secondary: #153949;
+  --tertiary: #E9FEFF;
+  --radio-button: #829FF8;
+  --success: #407D46;
+  --warning: #C96767;
+  --enabled: #63D79C;
+  --accent: #FBC81A;
+  --header-color: #081821;
+  --body-color: #232323;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inria Sans', sans-serif;
-  font-family: 'Inter', sans-serif;
-  /* 
-  light: 300
-  reg: 400
-  bold: 700
-  */
+  font-family: 'Inria Serif', sans-serif;
 }
+
+h3 {
+  font-family: 'Kanit', sans-serif;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
+
 .App {
   min-height: 100vh;
   width: 100vw;
   margin: 0rem auto;
 }
+
 body {
   max-width: 100%;
-  /* background-color: #f6f6f6; */
   background-color: white;
 }
 
@@ -33,6 +50,60 @@ a {
 
 footer li {
   list-style: none;
+}
+
+/* BUTTONS */
+
+.gradient-button {
+  color: yellow;
+}
+
+.green-button {
+  color: yellow;
+}
+
+.dark-button {
+  color: yellow;
+}
+
+.radio-button {
+  color: var(--radio-button);
+}
+
+.radio-button:hover {
+  color: var(--radio-button);
+}
+
+.pill-button {
+  color: var(--enabled);
+}
+
+.pill-button:hover {
+  color: var(--enabled);
+}
+
+.dropdown-green {
+  color: yellow;
+}
+
+.dropdown-green:hover {
+  color: yellow;
+}
+
+.dropdown-dark {
+  color: yellow;
+}
+
+.dropdown-dark:hover {
+  color: yellow;
+}
+
+.checkbox-style {
+  color: grey;
+}
+
+.form-input {
+  background-color: grey;
 }
 
 /* NAVIGATION BAR CSS */
