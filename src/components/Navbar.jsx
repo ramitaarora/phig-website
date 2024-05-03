@@ -4,7 +4,7 @@ import { css } from '@emotion/css';
 const Navbar = () => {
 
   return (
-    <nav>
+    <nav className={css`width: 100vw; min-height: 90px; display: flex; align-items: center; justify-content: space-between; background-color: #081821; padding: 20px 40px;`}>
       <div>
         <Link to='/'><img src="/images/homepage/logo.png" alt='PHIG-logo' /></Link>
       </div>
@@ -51,8 +51,8 @@ const Navbar = () => {
       <div>
         <Link to='/donate'>
 
-          <button className="primary-button">
-            <img src="/images/homepage/donate-hand.png" alt="donate" height="30px" width="30px" />
+          <button className="gradient-button">
+            {/*<img src="/images/homepage/donate-hand.png" alt="donate" height="30px" width="30px" />*/}
             Donate
           </button>
         </Link>

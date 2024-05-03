@@ -55,7 +55,19 @@ footer li {
 /* BUTTONS */
 
 .gradient-button {
-  color: yellow;
+  padding: 10px 30px;
+  background-color: var(--success);
+  background-image: linear-gradient(330deg, var(--success), var(--enabled));
+  outline: none;
+  border: none;
+  border-radius: 8.5px;
+  color: var(--primary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .green-button {
@@ -103,23 +115,14 @@ footer li {
 }
 
 .form-input {
-  background-color: grey;
+  background-color: lightgrey;
+  color: grey;
 }
 
 /* NAVIGATION BAR CSS */
 
-nav {
-  width: 100vw;
-  min-height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #081821;
-  padding: 20px 40px;
-}
-
 nav a {
-  color: white;
+  color: var(--primary);
   display: flex;
   align-items: center;
 }
@@ -131,13 +134,22 @@ nav a img {
 .nav-dropdown-content {
   display: none;
   position: absolute;
-  background-color: #153949;
-  color: white;
-  padding: 0 25px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  
   z-index: 1;
   line-height: 50px;
   margin-left: -5px;
   border-radius: 10px;
+}
+
+.nav-dropdown-content a {
+  padding: 0 25px;
+  border-radius: 10px;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #204656;
 }
 
 .nav-dropdown:hover .nav-dropdown-content {
@@ -147,30 +159,6 @@ nav a img {
 .nav-dropdown-content:hover .nav-dropdown-content {
   display: block;
 }
-
-.primary-button {
-  padding: 10px 40px;
-  background-color: #348659;
-  background-image: linear-gradient(to left, #348659, #80b899);
-  outline: none;
-  border: none;
-  border-radius: 8.5px;
-  color: white;
-  font-size: 1.1rem;
-  cursor: pointer;
-  font-weight: 400;
-  transition: 0.2s;
-  margin-right: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.primary-button img {
-  margin-right: 10px;
-}
-
-
 
 /* BANNER */
 
