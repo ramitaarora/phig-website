@@ -47,6 +47,7 @@ root.render(
           <Route path='/projects' element={<ProjectsPage />} />
           <Route path='/approach' element={<ApproachPage />} />
           <Route path='/contact' element={<ContactPage />} />
+          <Route path='/contact/confirmation' element={<ContactPage />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>

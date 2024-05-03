@@ -141,11 +141,15 @@ footer li {
 .radio-button {
   cursor: pointer;
   color: var(--radio-button);
+  background-color: white; 
+  border: 1px solid var(--radio-button);
+  border-radius: 8px; 
+  margin-right: 10px;
 }
 
 .radio-button:hover {
-  cursor: pointer;
-  color: var(--radio-button);
+  background-color: var(--radio-button);
+  color: var(--primary);
 }
 
 .pill-button {
@@ -362,6 +366,25 @@ nav a img {
 
 .application-radio input {
   margin-right: 10px;
+}
+
+/* Donate Page */
+
+#quick-form-buttons button {
+  width: 45%; 
+  border: 1px solid lightgrey; 
+  padding: 10px 15px; 
+  margin: 10px 0; 
+  border-radius: 3px;
+}
+
+#filter-materials-buttons button {
+  width: 100px; 
+  height: 30px; 
+}
+
+#donate-materials h2 {
+  text-align: center;
 }
 
 
