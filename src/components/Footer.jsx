@@ -9,19 +9,19 @@ export default function Footer() {
                 <div id="about-nav">
                     <h2>About PHIG</h2>
                     <ul>
-                        {/*<Link to="/about" className={css`text-decoration: none; color: white;`}><li>About Us</li></Link>*/}
-                        {/*<Link to="/about" className={css`text-decoration: none; color: white;`}><li>History</li></Link>*/}
-                        <Link to="/contact" className={css`text-decoration: none; color: white;`}><li>Contact</li></Link>
-                        <Link to="/events" className={css`text-decoration: none; color: white;`}><li>Events</li></Link>
+                        {/*<Link to="/about"><li>About Us</li></Link>*/}
+                        {/*<Link to="/about"><li>History</li></Link>*/}
+                        <Link to="/contact"><li>Contact</li></Link>
+                        <Link to="/events"><li>Events</li></Link>
                     </ul>
                 </div>
 
                 <div id="get-involved">
                     <h2>Get Involved</h2>
                     <ul>
-                        {/*<Link to="/volunteer" className={css`text-decoration: none; color: white;`}><li>Ways to Help</li></Link>*/}
-                        <Link to="/donate" className={css`text-decoration: none; color: white;`}><li>Donate</li></Link>
-                        <Link to="/volunteer" className={css`text-decoration: none; color: white;`}><li>Volunteer</li></Link>
+                        {/*<Link to="/volunteer"><li>Ways to Help</li></Link>*/}
+                        <Link to="/donate"><li>Donate</li></Link>
+                        <Link to="/volunteer"><li>Volunteer</li></Link>
                     </ul>
                 </div>
 

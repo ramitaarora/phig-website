@@ -62,16 +62,16 @@ export default function DonationPage() {
                 </div>
                 <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 0px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white;`}>
                     <h2 className={css`margin: 10px;`}>Join #PHIG</h2>
-                    <div id="quick-form-buttons" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;`}>
-                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$1</button>
-                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$5</button>
-                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$10</button>
-                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$20</button>
-                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$25</button>
-                        <button onClick={updateAmount} className={css`width: 45%; border: 1px solid lightgrey; padding: 10px 15px; margin: 10px 0; border-radius: 3px;`}>$50</button>
+                    <div id="quick-form-buttons" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; margin-top: 20px;`}>
+                        <button onClick={updateAmount}>$1</button>
+                        <button onClick={updateAmount}>$5</button>
+                        <button onClick={updateAmount}>$10</button>
+                        <button onClick={updateAmount}>$20</button>
+                        <button onClick={updateAmount}>$25</button>
+                        <button onClick={updateAmount}>$50</button>
                     </div>
-                    <input type="text" placeholder='Custom amount' value={amount} onChange={event => setAmount(event.target.value)} className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 3px;`} />
-                    <Link to="/pay"><input type="submit" value="Next" className={css`width: 94%; border: 1px solid lightgrey; padding: 10px 15px; border-radius: 10px; margin: 20px auto; background-color: darkgreen; color: white;`} /></Link>
+                    <input type="text" placeholder='Custom amount' value={amount} onChange={event => setAmount(event.target.value)} className='form-input' style={{ width: '94%', margin: '20px auto 0 auto' }} />
+                    <Link to="/pay"><input type="submit" value="Next" className='green-button' style={{ margin: '30px auto 0 auto' }} /></Link>
                 </form>
             </div>
 
@@ -108,18 +108,18 @@ export default function DonationPage() {
             </div>
 
             <div id="donate-materials" className={css`margin: 50px auto;`}>
-                <h2 className={css`text-align: center;`}>Or Help By Donating</h2>
-                <h2 className={css`text-align: center;`}>Tools & Materials!</h2>
+                <h2>Or Help By Donating</h2>
+                <h2>Tools & Materials!</h2>
 
                 <div id="filter-materials" className={css`display: flex; justify-content: space-between; align-items: center; margin: 50px 40px;`}>
                     <div id="filter-materials-buttons" className={css`display: flex; width: 40%;`}>
-                        <button onClick={setAll} className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>All</button>
-                        <button onClick={setMaterials} className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Materials</button>
-                        <button onClick={setTools} className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Tools</button>
-                        <button onClick={setPlants} className={css`width: 100px; height: 30px; background-color: white; border: 1px solid #829FF8; border-radius: 8px; color: #829FF8; margin-right: 10px; &:hover { background-color: #829FF8; color: white; cursor: pointer; };`}>Plants</button>
+                        <button onClick={setAll} className='radio-button'>All</button>
+                        <button onClick={setMaterials} className='radio-button'>Materials</button>
+                        <button onClick={setTools} className='radio-button'>Tools</button>
+                        <button onClick={setPlants} className='radio-button'>Plants</button>
                     </div>
                     <form id="filter-materials-search" className={css`display: flex; width: 40%;`} onChange={handleSearch}>
-                        <input type="text" placeholder="Search" value={input} onChange={event => setInput(event.target.value)} className={css`background-color: none; border: none; border: 1px solid lightgrey; width: 100%; padding: 10px 5px; border-radius: 5px;`}/>
+                        <input type="text" placeholder="Search" value={input} onChange={event => setInput(event.target.value)} className='form-input' style={{ width: '100%'}}/>
                     </form>
                 </div>
 

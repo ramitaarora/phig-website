@@ -2,7 +2,7 @@ import {css} from '@emotion/css';
 
 export default function EventsPage() {
     return (
-        <div>
+        <div className={css`padding: 5%;`}>
             <header className={css`text-align: center;`}>
                 <h1>Events</h1>
             </header>
