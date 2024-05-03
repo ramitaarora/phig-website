@@ -302,3 +302,16 @@ nav a img {
 #view-goodreads-button:hover {
   background-color: var(--lightgreen);
 }
+
+#homepage-each-goal {
+  display: flex; 
+  margin: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+  width: 300px;
+}
+
+#homepage-each-goal img {
+  height: 50px;
+  margin-right: 10px;
+}

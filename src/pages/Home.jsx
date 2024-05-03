@@ -3,7 +3,7 @@ import HomepageCards from '../components/HomepageCards'
 import PheaturedEvent from '../components/PheaturedEvent'
 import PheaturedBook from '../components/PheaturedBook'
 import Leaderboard from '../components/Leaderboard'
-import Goals from '../components/Goals'
+import HomepageGoals from '../components/HomepageGoals'
 import Newsfeed from '../components/Newsfeed'
 import { css } from '@emotion/css';
 import { Link } from 'react-router-dom';
@@ -32,7 +32,7 @@ const Home = () => {
 
             <Leaderboard />
 
-            <Goals />
+            <HomepageGoals />
 
             <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }} id="newsfeed-header">
                 <h3 style={{ marginTop: '50px', marginBottom: '30px', color: '#539B42' }} >Our Blogs</h3>
