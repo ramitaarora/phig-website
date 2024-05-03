@@ -387,6 +387,14 @@ nav a img {
   text-align: center;
 }
 
+/* Confirmation Page */
+
+#confirmation {
+  width: 100%;
+  text-align: center;
+  padding: 10%;
+  line-height: 50px;
+}
 
 /* Footer Styles */
 

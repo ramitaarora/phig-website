@@ -41,13 +41,12 @@ root.render(
           <Route path="/news/:articleID" element={<ArticlePage />} />
           <Route path="/volunteer/application" element={<VolunteerApplication />} />
           <Route path="/volunteer/confirmation" element={<ConfirmationPageVolunteer />} />
-          <Route path="/about/confirmation" element={<ConfirmationPageContact />} />
+          <Route path="/contact/confirmation" element={<ConfirmationPageContact />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path='/station' element={<WeatherStation />} />
           <Route path='/projects' element={<ProjectsPage />} />
           <Route path='/approach' element={<ApproachPage />} />
           <Route path='/contact' element={<ContactPage />} />
-          <Route path='/contact/confirmation' element={<ContactPage />} />
         </Route>
         <Route path="*" element={<Error />} />
       </Routes>
