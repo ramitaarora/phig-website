@@ -11,6 +11,7 @@
   --accent: #FBC81A;
   --header-color: #081821;
   --body-color: #232323;
+  --lightgreen: #97C159;
 }
 
 * {
@@ -24,7 +25,7 @@ h3 {
   font-family: 'Kanit', sans-serif;
 }
 
-p {
+p, span {
   font-family: 'Inter', sans-serif;
 }
 
@@ -90,8 +91,21 @@ footer li {
   margin-top: 1rem;
 }
 
-.green-button:hover {
-  background-color: var(--enabled);
+.green-button:hover,
+.event-button:hover {
+  background-color: var(--lightgreen);
+}
+
+.event-button {
+  border-radius: 10px;
+  margin-top: 15px;
+  height: 40px;
+  width: 80%;
+  cursor: pointer;
+  padding: 4px; 
+  border: 6px; 
+  background-color: var(--success);
+  color: var(--primary);
 }
 
 .dark-button {
@@ -218,4 +232,13 @@ nav a img {
   margin-right: 5px; 
   color:#34773A; 
   border-bottom: 2px solid #34773A;
+}
+
+/* Pheatured Event Styles */
+
+#pheatured-event-header h2, 
+#pheatured-event-header p {
+  position: relative; 
+  top: 300px; 
+  margin-left: 80px
 }

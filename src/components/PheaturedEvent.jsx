@@ -3,27 +3,27 @@ import { css } from '@emotion/css';
 export default function PheaturedEvent() {
     return (
         <div id="pheatured-event">
-            <div id="header" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url('./images/homepage/earth-day-event.jpeg'); height: 500px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; color: white;`}>
-                <h2 className={css`position: relative; top: 300px; margin-left: 80px`}>Earth Day 2024</h2>
-                <p className={css`position: relative; top: 300px;margin-left: 80px`}>Hosted by Pleasant Hill Instructional Garden</p>
+            <div id="pheatured-event-header" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url('./images/homepage/earth-day-event.jpeg'); height: 500px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; color: white;`}>
+                <h2>Earth Day 2024</h2>
+                <p>Hosted by Pleasant Hill Instructional Garden</p>
             </div>
 
             <div className={css`display: flex; justify-content: space-between; margin: 0 80px;`}>
-                <div id="overlay-header" className={css`background-color: rgba(255, 255, 255, 0.95); position: relative; top: -50px; display: flex; width: 60%; text-align: center; padding: 20px; height: 100px; box-shadow: 2px 2px 2px lightgrey;`}>
-                    <p className={css`border-right: 1px solid lightgrey;color:#97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Master Gardeners' Composting Workshop</p>
-                    <p className={css`border-right: 1px solid lightgrey;color:#97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Hands-on Demonstrations</p>
-                    <p className={css`color:#97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Limited Availability Garden Tour</p>
+                <div id="overlay-header" className={css`background-color: rgba(255, 255, 255, 0.95); position: relative; top: -50px; display: flex; justify-content: center; align-items: center; width: 60%; text-align: center; padding: 20px; height: 100px; box-shadow: 2px 2px 2px lightgrey;`}>
+                    <p className={css`border-right: 1px solid lightgrey; color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Master Gardeners' Composting Workshop</p>
+                    <p className={css`border-right: 1px solid lightgrey; color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Hands-on Demonstrations</p>
+                    <p className={css`color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Limited Availability Garden Tour</p>
                 </div>
 
                 <div id="event-date" className={css`background-color: white; position: relative; top: -150px; width: 30%; padding: 30px; border: 1px solid lightgrey; border-radius: 10px; box-shadow: 0px 0px 20px grey; display: flex; flex-direction: column; justify-content: space-evenly;`}>
 
                     <div className={css`display: flex; margin-bottom: 10px;`}>
-                        <div className={css`margin-right: 20px; border: 2px solid lightgrey;padding: 20px; border-radius: 15px;`}>
+                        <div className={css`margin-right: 20px; border: 2px solid lightgrey; padding: 20px; border-radius: 15px; text-align: center;`}>
                             <h2>28</h2>
                             <p>APR</p>
                         </div>
                         <div className={css`display: flex; flex-direction: column; justify-content: space-between;`}>
-                            <h3>Sunday April 28, 2024</h3>
+                            <h2>Sunday April 28, 2024</h2>
                             <div>
                                 <p className={css`color: grey; font-size: 14px;`}>12:30 PM - 4:30 PM</p>
                                 <p className={css`color: grey; font-size: 14px;`}>Pacific Time</p>
@@ -36,12 +36,12 @@ export default function PheaturedEvent() {
                     <div className={css`text-align: center;`}>
                         <p style={{ color: 'grey', fontSize: 'small' }}>A <span style={{ color: 'black', fontSize: 'small' }}>confirmation email</span> with more details will be provided after registration.</p>
                         <a href="https://www.eventbrite.com/e/earth-day-2024-free-fun-family-friendly-educational-tickets-833927518657?aff=oddtdtcreator" target="_blank" rel="noreferrer">
-                            <button className={css`border-radius: 10px;margin-top: 30px;height: 40px;width: 80%;cursor: pointer;padding: 4px; border: 6px; font-size: big; background-color: #407D46; color: white;`}>
+                            <button className="event-button">
                                 Register with EventBrite
                             </button>
                         </a>
                         <a href="./downloads/EarthDay_2024_flyer.pdf" download>
-                            <button className={css`border-radius: 10px;margin-top: 10px;height: 40px;width: 80%;cursor: pointer;padding: 4px; border: 6px; font-size: big; background-color: #407D46; color: white;`}>
+                            <button className="event-button">
                                 Download Flyer
                             </button>
                         </a>
@@ -51,7 +51,7 @@ export default function PheaturedEvent() {
             </div>
 
 
-            <div id="event-details" className={css`position: relative; top: -100px; margin: 80px; line-height: 35px;`}>
+            <div id="event-details" className={css`position: relative; top: -150px; margin: 80px; line-height: 35px;`}>
                 <h3 style={{ fontWeight: 'bold', marginBottom: '20px', marginTop: '-80px' }}>Details</h3>
                 {/* <button>Garden History</button> */}
                 <p>This year is the 54rd anniversary of Earth Day. Small efforts can make a difference to help the Earth, reduce our impact on climate change, and improve sustainable practices in your garden. </p>
