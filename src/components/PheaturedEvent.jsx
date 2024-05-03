@@ -51,7 +51,7 @@ export default function PheaturedEvent() {
             </div>
 
 
-            <div id="event-details" className={css`position: relative; top: -150px; margin: 80px; line-height: 35px;`}>
+            <div id="event-details" className={css`position: relative; top: -100px; margin: 80px; line-height: 35px;`}>
                 <h3 style={{ fontWeight: 'bold', marginBottom: '20px', marginTop: '-80px' }}>Details</h3>
                 {/* <button>Garden History</button> */}
                 <p>This year is the 54rd anniversary of Earth Day. Small efforts can make a difference to help the Earth, reduce our impact on climate change, and improve sustainable practices in your garden. </p>

@@ -194,7 +194,7 @@ nav a img {
   display: block;
 }
 
-/* Homepage Cards */
+/* Homepage Styles */
 
 #each-homepage-card {
   margin: 10px auto; 
@@ -234,11 +234,41 @@ nav a img {
   border-bottom: 2px solid #34773A;
 }
 
-/* Pheatured Event Styles */
-
 #pheatured-event-header h2, 
 #pheatured-event-header p {
   position: relative; 
   top: 300px; 
   margin-left: 80px
+}
+
+.each-book {
+  display: flex; 
+  align-items: center; 
+  margin: 15px 0; 
+  padding-right: 25px;
+}
+
+.each-book img {
+  height: 80px; 
+  width: 50px; 
+  object-position: center; 
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.view-amazon-button {
+  border-radius: 10px;
+  height: 25px; 
+  cursor: pointer; 
+  padding: 5px 10px; 
+  border: 6px; 
+  font-size: 10px; 
+  background-color: var(--success); 
+  color: var(--primary); 
+  margin-top: 10px;
+}
+
+.view-amazon-button:hover,
+#view-goodreads-button:hover {
+  background-color: var(--lightgreen);
 }
