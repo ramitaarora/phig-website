@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d3f35db6.css",
-    "main.js": "/static/js/main.d0151a75.js",
+    "main.css": "/static/css/main.28740183.css",
+    "main.js": "/static/js/main.bd8b16e1.js",
     "static/media/newsletter-image.jpeg": "/static/media/newsletter-image.700dfff0d03b875ab83c.jpeg",
+    "static/media/our-approach-mask.png": "/static/media/our-approach-mask.c28348bcb59b49d6a380.png",
     "index.html": "/index.html",
-    "main.d3f35db6.css.map": "/static/css/main.d3f35db6.css.map",
-    "main.d0151a75.js.map": "/static/js/main.d0151a75.js.map"
+    "main.28740183.css.map": "/static/css/main.28740183.css.map",
+    "main.bd8b16e1.js.map": "/static/js/main.bd8b16e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3f35db6.css",
-    "static/js/main.d0151a75.js"
+    "static/css/main.28740183.css",
+    "static/js/main.bd8b16e1.js"
   ]
 }
