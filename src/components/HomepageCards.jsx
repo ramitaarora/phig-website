@@ -22,7 +22,7 @@ export default function HomepageCards() {
 
             <div id="each-homepage-card">
                 <div className="homepage-card-image">
-                    <img src="./images/homepage/card-2.jpeg" alt="our-projects"/>
+                    <img src="./images/homepage/card-2.jpeg" alt="our-projects" title="Photo courtesy of Hunter Industries Incorporated."/>
                 </div>
                 <div className="homepage-card-text">
                     <h3>Our Mission</h3>
@@ -38,7 +38,7 @@ export default function HomepageCards() {
 
             <div id="each-homepage-card">
                 <div className="homepage-card-image">
-                    <img src="./images/homepage/card-3.jpeg" alt="our-projects" title="Photo courtesy of Hunter Industries Incorporated."/>
+                    <img src="./images/homepage/card-3.jpeg" alt="our-projects"/>
                 </div>
                 <div className="homepage-card-text">
                     <h3>Work Parties</h3>
