@@ -13,7 +13,7 @@ const AboutPage = () => {
             </header>
 
             <main className={css`border-radius: 10%; position: relative; top: -105px; background-color: white;`}>
-                <div id="timeline">
+                <div id="timeline" className={css`padding: 50px; 200px;`}>
                     {timelineData.map((timelineItem, index) => (
                         <div key={index}>
                             <Timeline date={timelineItem.date}
