@@ -12,7 +12,7 @@ const AboutPage = () => {
                 <p className={css`line-height: 30px; margin: 30px 20%; 30px 20%;`}>To educate students, staff, and community members in the need for water conservation with a demonstration garden using no pesticides, water recycling methods, drought tolerant and native plantings.</p>
             </header>
 
-            <main className={css`border-radius: 10%; position: relative; top: -105px; background-color: white;`}>
+            <main className={css`border-radius: 20% 20% 0 0; position: relative; top: -105px; background-color: white;`}>
                 <div id="timeline" className={css`padding: 50px; 200px;`}>
                     {timelineData.map((timelineItem, index) => (
                         <div key={index}>
@@ -28,11 +28,14 @@ const AboutPage = () => {
 
                 </div>
 
-                <div>
-                    <h1>The Garden Today</h1>
-                    <p>A former wasteland transformed into a thriving wildlife habitat and water-conserving garden through the collaborative efforts of volunteers, students, scouts, and community members in Pleasant Hill.</p>
-                    <p>Established in 2007 as a landscape design class project, the garden promotes sustainable practices, featuring drought-tolerant and native plants, and serves as a valuable learning resource.</p>
+                <div className={css`margin: 5%; background-color: #E9FEFF; display: flex;`}>
+                    <div className={css`padding: 5%; margin: auto;`}>
+                        <h1>The Garden Today</h1>
+                        <p className={css`margin-top: 50px;`}>A former wasteland transformed into a thriving wildlife habitat and water-conserving garden through the collaborative efforts of volunteers, students, scouts, and community members in Pleasant Hill. Established in 2007 as a landscape design class project, the garden promotes sustainable practices, featuring drought-tolerant and native plants, and serves as a valuable learning resource.</p>
+                    </div>
+                    <img src="/images/about-page/phig-map.png" alt="phig-map" />
                 </div>
+
                 <ContactForm />
             </main>
         </div>
