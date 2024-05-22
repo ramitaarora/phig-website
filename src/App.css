@@ -461,6 +461,18 @@ nav a svg {
   position: relative; top: -100px;
 }
 
+/* About Page */
+
+.main-image-even {
+  transform: rotate(10deg);
+  margin-top: 80px;
+}
+
+.main-image-odd {
+  transform: rotate(350deg);
+  margin-top: 80px;
+}
+
 /* Footer Styles */
 
 footer a {

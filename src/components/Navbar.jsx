@@ -19,7 +19,7 @@ const Navbar = () => {
           </Link>
           <div className="nav-dropdown-content">
             <Link to="/contact">Contact</Link>
-            {/*<Link to="/about/">Timeline</Link>*/}
+            <Link to="/about">Timeline</Link>
           </div>
         </div>
 

@@ -9,8 +9,8 @@ export default function Footer() {
                 <div id="about-nav">
                     <h2>About PHIG</h2>
                     <ul>
-                        {/*<Link to="/about"><li>About Us</li></Link>*/}
-                        {/*<Link to="/about"><li>History</li></Link>*/}
+                        <Link to="/approach"><li>About Us</li></Link>
+                        <Link to="/about"><li>History</li></Link>
                         <Link to="/contact"><li>Contact</li></Link>
                         <Link to="/events"><li>Events</li></Link>
                     </ul>
