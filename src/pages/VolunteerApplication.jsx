@@ -6,7 +6,7 @@ import volunteerOpps from '../data/volunteerOpps.json';
 import emailjs from '@emailjs/browser';
 
 export default function VolunteerApplication() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
