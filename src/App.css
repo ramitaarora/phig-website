@@ -465,12 +465,12 @@ nav a svg {
 
 .main-image-even {
   transform: rotate(10deg);
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .main-image-odd {
   transform: rotate(350deg);
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 /* Footer Styles */
