@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className="nav-dropdown">
           <Link to="/contact">
             About Us
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fillRule="white" className="bi bi-chevron-down" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white" className="bi bi-chevron-down" viewBox="0 0 16 16">
               <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
             </svg>
           </Link>
@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="nav-dropdown">
           <Link to="/news">
             News
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fillRule="white" className="bi bi-chevron-down" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white" className="bi bi-chevron-down" viewBox="0 0 16 16">
               <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
             </svg>
           </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <div className="nav-dropdown">
           <Link to='/volunteer'>
             Get Involved
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fillRule="white" className="bi bi-chevron-down" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white" className="bi bi-chevron-down" viewBox="0 0 16 16">
               <path fillRule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
             </svg>
           </Link>

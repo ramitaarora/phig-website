@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
-export default function ContactForm() {
+export default function ContactForm({style, header}) {
     const navigate = useNavigate()
     const [errorMessage, setErrorMessage] = useState([]);
     const [firstName, setFirstName] = useState('');
@@ -59,8 +59,8 @@ export default function ContactForm() {
         }
     }
     return (
-        <div id="contact-form">
-            <h1>Contact Form</h1>
+        <div id="contact-form" className={style}>
+            <h1>{header}</h1>
             <form action="#" method="post" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="first-name">First Name*  </label>
