@@ -38,7 +38,9 @@ const AboutPage = () => {
                     <img src="/images/about-page/phig-map.png" alt="phig-map" />
                 </div>
 
-                <ContactForm />
+                <div className={css`width: 100%`}>
+                    <ContactForm />
+                </div>
             </main>
         </div>
 
