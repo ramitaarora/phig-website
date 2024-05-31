@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
-export default function ContactForm({style, header}) {
+export default function ContactForm() {
     const navigate = useNavigate()
     const [errorMessage, setErrorMessage] = useState([]);
     const [firstName, setFirstName] = useState('');
@@ -49,6 +49,7 @@ export default function ContactForm({style, header}) {
                 setFullName('');
                 setEmail('');
                 setPhone('');
+                setCountry('');
                 setText('');
                 },
                 (error) => {
@@ -59,16 +60,14 @@ export default function ContactForm({style, header}) {
         }
     }
     return (
-        <div id="contact-form" className={style}>
-            <h1>{header}</h1>
+        <div id="contact-form" className="about-page-contact">
+            <h2>How Can We Help?</h2>
             <form action="#" method="post" onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="first-name">First Name*  </label>
-                    <input type="text" id="first-name" name="first-name" value={firstName} onChange={e => setFirstName(e.target.value)} required />
+                    <input type="text" id="first-name" name="first-name" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder="First Name" required />
                 </div>
                 <div>
-                    <label htmlFor="last-name">Last Name  </label>
-                    <input type="text" id="last-name" name="last-name" value={lastName} onChange={e => setLastName(e.target.value)} required />
+                    <input type="text" id="last-name" name="last-name" value={lastName} onChange={e => setLastName(e.target.value)} placeholder="First Name" required />
                 </div>
                 <div>
                     <label htmlFor="email">Email*  </label>
