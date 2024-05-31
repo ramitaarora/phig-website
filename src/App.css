@@ -478,8 +478,32 @@ nav a svg {
 }
 
 .about-page-contact {
-   
+   margin: 0 auto;
+   background-color: var(--header-color);
+   color: var(--primary);
+   width: 50%;
+   padding: 50px;
+   height: 900px;
 }
+
+.about-page-contact form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-page-form-input {
+  background-color: var(--primary);
+  border-radius: 5px;
+  padding: 11px;
+  border: none;
+}
+
+.about-page-contact span {
+  color: red;
+}
+
 
 /* Contact Page and Forms */
 
