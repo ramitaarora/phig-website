@@ -1,0 +1,17 @@
+[
+    {
+      "project_name": "Soil Enrichment",
+      "description": "Enrich the compacted soil (add compost for planting projects)",
+      "difficulty": 2
+    },
+    {
+      "project_name": "Weed Whacking",
+      "description": "Weed & prune the topsoil in preparation for seeds",
+      "difficulty": 2
+    },
+    {
+      "project_name": "Composting",
+      "description": "Turn natural waste and collect compost material",
+      "difficulty": 1
+    }
+  ]

@@ -24,7 +24,8 @@ export default function HomepageCards() {
                 <div className="homepage-card-image">
                     <img src="./images/homepage/card-2.jpeg" alt="our-projects" title="Photo courtesy of Hunter Industries Incorporated."/>
                 </div>
-                <div className="homepage-card-text">
+                <p className={css`margin-left: 5px; font-size: 10px;`}>Photo courtesy of Hunter Industries Incorporated.</p> 
+                <div className="homepage-card-text">   
                     <h3>Our Mission</h3>
                     <p>We educate students, staff, and community members in the need for water conservation using a demonstration garden. Our goal is to avoid pesticides, encourage water recycling methods, and teach drought tolerant and native plantings.</p>
                 </div>

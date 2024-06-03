@@ -19,19 +19,19 @@ export default function ResourcesPage() {
                     </div>
                 </Link>
 
-                <Link className={css`text-decoration: none; color: inherit;`}>
+                {/*<Link className={css`text-decoration: none; color: inherit;`}>
                     <div id="resource-button" className="Book">
                         <img className = "Resources_Img" src="/images/resources/book.png" alt="books-cds" />
                         <p className = "Books">Books and CD's</p>
                     </div>
-                </Link>
+                </Link>*/}
 
-                <Link className={css`text-decoration: none; color: inherit;`}>
+                {/*<Link className={css`text-decoration: none; color: inherit;`}>
                     <div id="resource-button" className = "Classes">
                         <img className = "Resources_Img" src="/images/resources/class.png" alt="classes" />
                         <p className = "Class">Classes</p>
                     </div>
-                </Link>
+                </Link>*/}
 
                 <Link to="/resources/nursery" className={css`text-decoration: none; color: inherit;`}>
                     <div id="resource-button" className = "Nurseries">
