@@ -546,6 +546,17 @@ nav a svg {
   width: 100%;
 }
 
+/* Weather Icon */
+
+#weather-icon {
+  position: fixed;
+  color: green;
+  background: transparent;
+  bottom: 0;
+  right: 0;
+  z-index: 100000;
+}
+
 /* Footer Styles */
 
 footer a {
