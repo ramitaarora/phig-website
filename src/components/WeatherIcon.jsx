@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { css } from '@emotion/css';
 
 export default function WeatherIcon() {
     const [temp, setTemp] = useState();
@@ -24,7 +25,7 @@ export default function WeatherIcon() {
     return (
         <div id="weather-icon">
             <img src={icon} alt="weather-icon" height="50px" width="50px" />
-            <p>{temp ? `${formatTemp(temp)}°F` : null}</p>
+            <p className={css`font-weight: bold;`}>{temp ? `${formatTemp(temp)}°` : null}</p><p>F</p>
         </div>
     )
 }
