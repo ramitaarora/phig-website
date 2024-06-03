@@ -12,7 +12,7 @@ export default function Leaderboard() {
 
             <div id="leaderboard-filter" className={css`display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px`}>
                 <div >
-                    <input style={{color: 'grey',padding: '20px',border: 'none', boxShadow: '3px 3px 3px 3px lightgrey',height:'50px',width:'250px',borderRadius:'30px'}} type="text" name="search" value="Search" placeholder="Search"/>
+                    <input style={{color: 'grey',padding: '20px',border: 'none', boxShadow: '3px 3px 3px 3px lightgrey',height:'50px',width:'250px',borderRadius:'30px'}} type="text" name="search" placeholder="Search"/>
                 </div>
                 <div>
                     <button className='pill-button'>Contributions</button>
