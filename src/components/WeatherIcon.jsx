@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { css } from '@emotion/css';
+import { HashLink } from 'react-router-hash-link';
 
 export default function WeatherIcon() {
     const [temp, setTemp] = useState();
@@ -23,9 +24,11 @@ export default function WeatherIcon() {
     }, [])
 
     return (
-        <div id="weather-icon">
-            <img src={icon} alt="weather-icon" height="50px" width="50px" />
-            <p className={css`font-weight: bold;`}>{temp ? `${formatTemp(temp)}°` : null}</p><p>F</p>
-        </div>
+        <HashLink to="/contact#weather-station">
+            <div id="weather-icon">
+                <img src={icon} alt="weather-icon" height="50px" width="50px" />
+                <p className={css`font-weight: bold;`}>{temp ? `${formatTemp(temp)}°` : null}</p><p>F</p>
+            </div>
+        </HashLink>
     )
 }
