@@ -1,20 +1,41 @@
 [
     {
-        "title": "Pruner",
-        "time": "8:00 AM - 5:00PM",
-        "description": "Please join us when several volunteer activities are taking place: composting, pruning, weeding, planting, creating seasonal wildlife habitat and improving our beds.",
-        "status": "ONGOING",
-        "place": "In-Person",
-        "location": "California",
-        "image": "/images/volunteer/volunteer-sample-1.png"
+      "title": "PHIG Volunteer",
+      "time": "Garden work parties usually 9:00-12:00 PM on Sundays",
+      "description": "Please join us when several volunteer activities are taking place: composting, pruning, weeding, planting, creating seasonal wildlife habitat and improving our beds.",
+      "status": "ONGOING",
+      "place": "In-Person",
+      "location": "PHIG, Pleasant Hill, California",
+      "image": "/images/volunteer/volunteer-sample-1.png"
     },
     {
-        "title": "UX/UI Designer",
-        "time": "We'll work with your schedule",
-        "description": "Design and update our website to reflect what we do and attract more visitors.",
-        "status": "COMPLETED",
-        "place": "Remote",
-        "location": "California",
-        "image": "/images/volunteer/volunteer-sample-2.png"
+      "title": "Create a plant database of plants in the garden",
+      "time": "We'll work with your schedule",
+      "status": "ONGOING",
+      "place": "Remote",
+      "location": "California"
+    },
+    {
+      "title": "Monitoring creek water quality",
+      "time": "Monthly",
+      "status": "INTERNSHIP",
+      "place": "In person and remote",
+      "location": "PHIG, Pleasant Hill, California"
+    },
+    {
+      "title": "Chart weather station data",
+      "time": "Monthly",
+      "status": "INTERNSHIP",
+      "place": "In person and remote",
+      "location": "PHIG, Pleasant Hill, California"
+    },
+    {
+      "title": "UX/UI Designer/Website Developer",
+      "time": "We'll work with your schedule",
+      "description": "Design, develop and update our website to reflect what we do and attract more visitors.",
+      "status": "ONGOING",
+      "place": "Remote",
+      "location": "California",
+      "image": "/images/volunteer/volunteer-sample-2.png"
     }
-]
+  ]
