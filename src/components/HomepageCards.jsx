@@ -6,7 +6,7 @@ export default function HomepageCards() {
         <section id="homepage-cards" className={css`margin: 90px auto; width: 80%; display: flex; flex-wrap: wrap; justify-content: space-between; height: 100%;`}>
             <div id="each-homepage-card">
                 <div className="homepage-card-image">
-                    <img src="./images/homepage/card-1.jpeg" alt="our-projects"/>
+                    <img src="./images/homepage/card-1.jpeg" alt="our-projects" loading="lazy"/>
                 </div>
                 <div className="homepage-card-text">
                     <h3>Our Projects</h3>
@@ -22,7 +22,7 @@ export default function HomepageCards() {
 
             <div id="each-homepage-card">
                 <div className="homepage-card-image">
-                    <img src="./images/homepage/card-2.jpeg" alt="our-projects" title="Photo courtesy of Hunter Industries Incorporated."/>
+                    <img src="./images/homepage/card-2.jpeg" alt="our-projects" title="Photo courtesy of Hunter Industries Incorporated." loading="lazy"/>
                 </div>
                 <p className={css`margin-left: 5px; font-size: 10px;`}>Photo courtesy of Hunter Industries Incorporated.</p> 
                 <div className="homepage-card-text">   
@@ -39,7 +39,7 @@ export default function HomepageCards() {
 
             <div id="each-homepage-card">
                 <div className="homepage-card-image">
-                    <img src="./images/homepage/card-3.jpeg" alt="our-projects"/>
+                    <img src="./images/homepage/card-3.jpeg" alt="our-projects" loading="lazy"/>
                 </div>
                 <div className="homepage-card-text">
                     <h3>Work Parties</h3>

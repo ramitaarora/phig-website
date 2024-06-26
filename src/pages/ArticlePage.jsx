@@ -22,6 +22,10 @@ export default function ArticlePage() {
         }
     }, [ID])
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <div id="article">
             {post ? (
@@ -37,7 +41,7 @@ export default function ArticlePage() {
                         ) : null}
                     </div>
                     <div>
-                        <img src={post.image} alt={post.title} />
+                        <img src={post.image} alt={post.title} loading="lazy"/>
                         <p className='article-image-caption'>Image: {post.caption}</p>
                     </div>
                 </div>

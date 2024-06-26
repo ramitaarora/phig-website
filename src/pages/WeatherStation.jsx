@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 export default function WeatherStation() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <div id="weather-station">
             <iframe

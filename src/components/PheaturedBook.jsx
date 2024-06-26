@@ -11,7 +11,7 @@ export default function PheaturedBook() {
                     <div><hr style={{ width: '50px', height: '5px', backgroundColor: '#97C159', border: 'none', marginTop: '-10px', marginLeft: '80px' }}></hr></div>
                     <div className={css`display: flex; justify-content: space-between; align-items: center;`}>
                         <div style={{ marginLeft: '75px', marginTop: '10px' }}>
-                            <img style={{ height: '300px', width: '900px', boxShadow: '5px 5px 5px 5px lightgrey', marginBottom: '30px' }} src="./images/homepage/pheatured-book.jpeg" alt="pheatured-book" />
+                            <img style={{ height: '300px', width: '900px', boxShadow: '5px 5px 5px 5px lightgrey', marginBottom: '30px' }} src="./images/homepage/pheatured-book.jpeg" alt="pheatured-book" loading="lazy" />
                         </div>
                         <div className='PheaturedB'>
                             <h4 style={{ marginBottom: '10px' }}>Nature’s Best Hope: A New Approach to Conservation That Starts in Your Yard</h4>
@@ -33,7 +33,7 @@ export default function PheaturedBook() {
                     <div><hr style={{ width: '50px', height: '5px', backgroundColor: '#97C159', border: 'none', marginTop: '-10px', marginBottom: '20px' }}></hr></div>
 
                     <div className='each-book'>
-                        <img src="./images/homepage/book-1.jpeg" alt="pheatured-book" />
+                        <img src="./images/homepage/book-1.jpeg" alt="pheatured-book" loading="lazy" />
                         <div>
                             <h4 className='ph4'>The Living Landscape: Designing for Beauty and Biodiversity in the Home Garden</h4>
                             <p className='ph4b'>Rick Darke, Douglas W. Tallamy</p>
@@ -44,7 +44,7 @@ export default function PheaturedBook() {
                     </div>
 
                     <div className='each-book'>
-                        <img src="./images/homepage/book-2.jpeg" alt="pheatured-book"/>
+                        <img src="./images/homepage/book-2.jpeg" alt="pheatured-book" loading="lazy"/>
                         <div>
                             <h4 className='ph4'>Bringing Nature Home: How You Can Sustain Wildlife with Native Plants</h4>
                             <p className='ph4b'>Douglas W. Tallamy</p>
@@ -55,7 +55,7 @@ export default function PheaturedBook() {
                     </div>
 
                     <div className='each-book'>
-                        <img src="./images/homepage/book-3.jpeg" alt="pheatured-book"/>
+                        <img src="./images/homepage/book-3.jpeg" alt="pheatured-book" loading="lazy"/>
                         <div>
                             <h4 className='ph4'>Think Like An Ecosystem: An Introduction to Permaculture, Water Systems, Soil Science and Landscape Design</h4>
                             <p className='ph4b'>Amélie des Plantes</p>

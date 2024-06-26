@@ -1,9 +1,13 @@
+import { useEffect } from 'react';
 import ContactForm from "../components/ContactForm";
 import { css } from '@emotion/css';
 import Timeline from "../components/Timeline";
 import timelineData from '../data/timelineData.json';
 
 const AboutPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <div>
             <header className={css`height: 500px; width: 100%; background-color: #081821; color: white; text-align: center; display: flex; flex-direction: column; align-items: center; line-height: 60px;`}>
@@ -35,7 +39,7 @@ const AboutPage = () => {
                         <h1>The Garden Today</h1>
                         <p className={css`margin-top: 50px;`}>A former wasteland transformed into a thriving wildlife habitat and water-conserving garden through the collaborative efforts of volunteers, students, scouts, and community members in Pleasant Hill. Established in 2007 as a landscape design class project, the garden promotes sustainable practices, featuring drought-tolerant and native plants, and serves as a valuable learning resource.</p>
                     </div>
-                    <img src="/images/about-page/phig-map.png" alt="phig-map" />
+                    <img src="/images/about-page/phig-map.png" alt="phig-map" loading="lazy" />
                 </div>
 
                 <div className={css`width: 100%`}>

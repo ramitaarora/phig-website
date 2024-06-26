@@ -6,7 +6,7 @@ export default function VolunteerResult({ result, index }) {
         <div id={"each-result-" + index} className={css`display: flex; height: 250px; width: 800px; margin: 10px; background: lightgrey;`}>
 
             <div id="result-img-container" className={css`height: 100%; width: 35%; object-fit: cover; object-position: center; overflow: hidden;`}>
-                <img src={result.image} alt="result" />
+                <img src={result.image} alt="result" loading="lazy"/>
             </div>
 
 

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { css } from '@emotion/css';
 import { Link } from 'react-router-dom';
 import DonateResult from '../components/DonateResult';
@@ -45,6 +45,10 @@ export default function DonationPage() {
         
     }
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <section id="donation-page">
             <header className={css`height: 400px; width: 100%; background-color: #081821; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 60px; margin-bottom: 30px;`}>
@@ -58,7 +62,7 @@ export default function DonationPage() {
                         <p>$10 donated =</p>
                         <p>1 new stage</p>
                     </div>
-                    <img src="./images/donation/seed-grows.png" alt="seed-grows" className={css`height: 200px; margin-top: 150px;`}/>
+                    <img src="./images/donation/seed-grows.png" alt="seed-grows" className={css`height: 200px; margin-top: 150px;`} loading="lazy"/>
                 </div>
                 <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 0px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white;`}>
                     <h2 className={css`margin: 10px;`}>Join #PHIG</h2>

@@ -1,6 +1,10 @@
 import { css } from '@emotion/css';
+import { useEffect } from 'react';
 
 export default function ApproachPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <div>
             <svg width="480" height="251" viewBox="0 0 480 251" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +30,7 @@ export default function ApproachPage() {
                 <div className='approach-col'>
                     <div className={css`width: 100%; padding: 20px;`}>
                         <div class='approach-mask'>
-                            <img src="./images/our-approach-poppies.jpeg" alt="our-approach-poppies" width="350px" />
+                            <img src="./images/our-approach-poppies.jpeg" alt="our-approach-poppies" width="350px" loading="lazy" />
                         </div>
                     </div>
 

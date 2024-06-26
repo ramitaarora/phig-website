@@ -4,6 +4,10 @@ import VolunteerResult from '../components/VolunteerResult';
 import volunteerOpps from '../data/volunteerOpps.json';
 
 export default function VolunteerPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     const [results, setResults] = useState(volunteerOpps);
     const [inputValue, setInputValue] = useState('')
 
@@ -123,7 +127,7 @@ export default function VolunteerPage() {
                         <p><span>Gardening Tips:</span> Share your gardening expertise and tips with a global audience. Help beginners kickstart their green journey and guide seasoned gardeners toward more sustainable practices.</p>
                     </div>
                     <div id="volunteer-right" className={css`height: 100%; object-fit: cover; object-position: center; overflow: hidden;`}>
-                        <img src="./images/volunteer/volunteers.png" alt="volunteers" />
+                        <img src="./images/volunteer/volunteers.png" alt="volunteers" loading="lazy"/>
                     </div>
                 </section>
 

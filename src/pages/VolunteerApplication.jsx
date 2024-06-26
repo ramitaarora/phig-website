@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { css } from '@emotion/css';
 import { Link, useNavigate } from 'react-router-dom';
 import volunteerOpps from '../data/volunteerOpps.json';
@@ -6,6 +6,10 @@ import volunteerOpps from '../data/volunteerOpps.json';
 import emailjs from '@emailjs/browser';
 
 export default function VolunteerApplication() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     const navigate = useNavigate();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
