@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
 import Suggestions from '../components/Suggestions';
 import { css } from '@emotion/css';
+import { useEffect } from 'react';
 
 export default function ResourcesPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     return (
         <div>
             <header className={css`margin-top: 100px; text-align: center; height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly;`}>

@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+
 export default function PaymentPage() {
     const divStyle = {
         position: "relative",
@@ -17,6 +19,10 @@ export default function PaymentPage() {
         width: "100%",
         height: "100%"
     }
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <div>

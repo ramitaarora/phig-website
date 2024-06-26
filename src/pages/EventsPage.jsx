@@ -1,6 +1,11 @@
 import {css} from '@emotion/css';
+import { useEffect } from 'react';
 
 export default function EventsPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     return (
         <div className={css`padding: 5%;`}>
             <header className={css`text-align: center;`}>

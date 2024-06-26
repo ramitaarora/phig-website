@@ -1,8 +1,13 @@
 import ContactPageForm from "../components/ContactPageForm"
 import WeatherStation from "./WeatherStation";
 import { css } from '@emotion/css';
+import { useEffect } from "react";
 
 export default function ContactPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     return (
         <div>
             {/*<header className={css`text-align: center; height: 100px; padding: 50px;`}>

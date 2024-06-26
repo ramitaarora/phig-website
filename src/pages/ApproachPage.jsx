@@ -1,6 +1,10 @@
 import { css } from '@emotion/css';
+import { useEffect } from 'react';
 
 export default function ApproachPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <div>
             <svg width="480" height="251" viewBox="0 0 480 251" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,8 +1,13 @@
 import { css } from '@emotion/css';
 import NurseryResource from '../components/NurseryResource';
 import nurseryResources from '../data/nurseryResources.json';
+import { useEffect } from 'react';
 
 export default function NurseryResources() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     return (
         <div>
             <header>

@@ -7,9 +7,13 @@ import HomepageGoals from '../components/HomepageGoals'
 import Newsfeed from '../components/Newsfeed'
 import { css } from '@emotion/css';
 import { Link } from 'react-router-dom';
-
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     return (
         <div>
             <div className={css`margin: 0; padding: 0; height: 555px; overflow: hidden;`}>

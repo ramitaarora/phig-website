@@ -4,6 +4,10 @@ import VolunteerResult from '../components/VolunteerResult';
 import volunteerOpps from '../data/volunteerOpps.json';
 
 export default function VolunteerPage() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     const [results, setResults] = useState(volunteerOpps);
     const [inputValue, setInputValue] = useState('')
 

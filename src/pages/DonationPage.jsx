@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { css } from '@emotion/css';
 import { Link } from 'react-router-dom';
 import DonateResult from '../components/DonateResult';
@@ -44,6 +44,10 @@ export default function DonationPage() {
         }
         
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return (
         <section id="donation-page">

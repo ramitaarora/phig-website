@@ -1,8 +1,13 @@
 import { css } from '@emotion/css';
 import WebsiteResource from '../components/WebsiteResource';
 import websiteResources from '../data/websiteResources.json';
+import { useEffect } from 'react';
 
 export default function WebsiteResources() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+    
     return (
         <div>
             <header>

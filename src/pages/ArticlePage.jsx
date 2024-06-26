@@ -22,6 +22,10 @@ export default function ArticlePage() {
         }
     }, [ID])
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return (
         <div id="article">
             {post ? (
