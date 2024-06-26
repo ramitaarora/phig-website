@@ -26,7 +26,7 @@ export default function ApproachPage() {
                 <div className='approach-col'>
                     <div className={css`width: 100%; padding: 20px;`}>
                         <div class='approach-mask'>
-                            <img src="./images/our-approach-poppies.jpeg" alt="our-approach-poppies" width="350px" />
+                            <img src="./images/our-approach-poppies.jpeg" alt="our-approach-poppies" width="350px" loading="lazy" />
                         </div>
                     </div>
 

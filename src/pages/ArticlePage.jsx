@@ -37,7 +37,7 @@ export default function ArticlePage() {
                         ) : null}
                     </div>
                     <div>
-                        <img src={post.image} alt={post.title} />
+                        <img src={post.image} alt={post.title} loading="lazy"/>
                         <p className='article-image-caption'>Image: {post.caption}</p>
                     </div>
                 </div>

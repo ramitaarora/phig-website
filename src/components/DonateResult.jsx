@@ -5,7 +5,7 @@ export default function DonateResult({ name, subtitle, picture, description }) {
     return (
         <div id="donate-result" className={css`width: 300px; border-radius: 15px; box-shadow: 0px 5px 5px lightgrey; margin: 15px;`}>
             <div id="donate-result-image" className={css`height: 170px; overflow: hidden; object-position: center; object-fit: cover; border-radius: 15px 15px 0 0;`}>
-                <img src={picture} alt={name} />
+                <img src={picture} alt={name} loading="lazy"/>
             </div>
             <div id="donate-result-card" className={css`padding: 20px; border-radius: 15px 15px 0 0; background-color: white; margin-bottom: 10px; line-height: 20px; position: relative; top: -10px;`}>
                 <h3 className={css`font-size: 16px; margin: 5px 0;`}>{name}</h3>

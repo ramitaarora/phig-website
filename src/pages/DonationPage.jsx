@@ -58,7 +58,7 @@ export default function DonationPage() {
                         <p>$10 donated =</p>
                         <p>1 new stage</p>
                     </div>
-                    <img src="./images/donation/seed-grows.png" alt="seed-grows" className={css`height: 200px; margin-top: 150px;`}/>
+                    <img src="./images/donation/seed-grows.png" alt="seed-grows" className={css`height: 200px; margin-top: 150px;`} loading="lazy"/>
                 </div>
                 <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 0px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white;`}>
                     <h2 className={css`margin: 10px;`}>Join #PHIG</h2>

@@ -27,7 +27,7 @@ const Home = () => {
 
             <PheaturedEvent />
             <div>
-                <img style={{ marginBottom: '-107px', marginLeft: '1000px' }} src="./images/homepage/butterfly.png" alt="butterfly" />
+                <img style={{ marginBottom: '-107px', marginLeft: '1000px' }} src="./images/homepage/butterfly.png" alt="butterfly" loading="lazy"/>
             </div>
             <PheaturedBook />
 
