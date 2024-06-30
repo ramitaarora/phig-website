@@ -27,7 +27,7 @@ export default function WeatherIcon() {
         <HashLink to="/contact#weather-station">
             <div id="weather-icon">
                 <img src={icon} alt="weather-icon" height="50px" width="50px" />
-                <p className={css`font-weight: bold;`}>{temp ? `${formatTemp(temp)}°` : null}</p><p>F</p>
+                <p className={css`font-weight: 500;`}>{temp ? `${formatTemp(temp)}°` : null}</p><p className={css`font-weight: 300;`}>F</p>
             </div>
         </HashLink>
     )
