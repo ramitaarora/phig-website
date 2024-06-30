@@ -6,7 +6,7 @@
         "firstImage": "/images/about-page/2007-firstImage.jpeg",
         "secondImage": "/images/about-page/2007-secondImage.jpeg",
         "mainImage": "/images/about-page/2007-mainImage.jpeg",
-        "caption": "PHIG Sign"
+        "caption": "Image: Before PHIG"
     },
     {
         "date": "??? 2008",
@@ -14,7 +14,8 @@
         "description": "The project involved soil preparation, mulching, and planting native and drought-tolerant species. Plant propagation included native meadow grasses. Eagle Scout Crosby Sperling built an information kiosk. Volunteers added paths and a dry streambed during Community Service Day and Chevron's Week of Caring in September. Ongoing work included path building and planting in prepared beds as the weather cooled.",
         "firstImage": "/images/about-page/2008-firstImage.jpeg",
         "secondImage": "/images/about-page/2008-secondImage.jpeg",
-        "mainImage": "/images/about-page/2008-mainImage.jpeg"
+        "mainImage": "/images/about-page/2008-mainImage.jpeg",
+        "caption": "Image: Volunteer breaking up soil with pickaxe"
     },
     {
         "date": "??? 2009",
@@ -22,7 +23,8 @@
         "description": "Weeding, sheet-mulching, composting, and pruning continued in 2009, but a major accomplishment was bringing a micro spray and drip irrigation water conservation system to the garden with funding provided by several organizations in Pleasant Hill and Contra Costa County and labor supplied by many volunteer groups.",
         "firstImage": "/images/about-page/2009-firstImage.jpeg",
         "secondImage": "/images/about-page/2009-secondImage.jpeg",
-        "mainImage": "/images/about-page/2009-mainImage.jpeg"
+        "mainImage": "/images/about-page/2009-mainImage.jpeg",
+        "caption": "Image: Trenching for irrigation"
     },
     {
         "date": "??? 2010",
@@ -30,6 +32,7 @@
         "description": "As a part of the requirements for the National Wildlife Federation's Habitat certification, PHIG volunteers provided food, water, shelter, and nesting areas for birds, bats, lizards, and insects in as many ways as possible. Bird shelters and houses, a bat house, and other shelters were designed, built, and installed in the garden.",
         "firstImage": "/images/about-page/2010-firstImage.jpeg",
         "secondImage": "",
-        "mainImage": "/images/about-page/2010-mainImage.jpeg"
+        "mainImage": "/images/about-page/2010-mainImage.jpeg",
+        "caption": "Image: Creating wildlife habitat"
     }
 ]
