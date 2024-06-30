@@ -6,7 +6,7 @@ export default function HomepageCards() {
         <section id="homepage-cards" className={css`margin: 90px auto; width: 80%; display: flex; flex-wrap: wrap; justify-content: space-between; height: 100%;`}>
             <div id="each-homepage-card">
                 <div className="homepage-card-image">
-                    <img src="./images/homepage/card-1.jpeg" alt="our-projects" loading="lazy"/>
+                    <img src="./images/homepage/card-1.jpeg" alt="Planting CA ceanothus" title="Planting CA ceanothus" loading="lazy"/>
                 </div>
                 <div className="homepage-card-text">
                     <h3>Our Projects</h3>
@@ -22,9 +22,9 @@ export default function HomepageCards() {
 
             <div id="each-homepage-card">
                 <div className="homepage-card-image">
-                    <img src="./images/homepage/card-2.jpeg" alt="our-projects" title="Photo courtesy of Hunter Industries Incorporated." loading="lazy"/>
+                    <img src="./images/homepage/card-2.jpeg" alt="Low-flow sprinkler head" title="Photo courtesy of Hunter Industries Incorporated." loading="lazy"/>
                 </div>
-                <p className={css`margin-left: 5px; font-size: 10px;`}>Photo courtesy of Hunter Industries Incorporated.</p> 
+                <p className={css`text-align: center; font-size: 10px;`}>Photo courtesy of Hunter Industries Incorporated.</p> 
                 <div className="homepage-card-text">   
                     <h3>Our Mission</h3>
                     <p>We educate students, staff, and community members in the need for water conservation using a demonstration garden. Our goal is to avoid pesticides, encourage water recycling methods, and teach drought tolerant and native plantings.</p>
@@ -39,7 +39,7 @@ export default function HomepageCards() {
 
             <div id="each-homepage-card">
                 <div className="homepage-card-image">
-                    <img src="./images/homepage/card-3.jpeg" alt="our-projects" loading="lazy"/>
+                    <img src="./images/homepage/card-3.jpeg" alt="Planting native grasses" title="Planting native grasses" loading="lazy"/>
                 </div>
                 <div className="homepage-card-text">
                     <h3>Work Parties</h3>

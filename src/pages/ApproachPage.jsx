@@ -30,8 +30,9 @@ export default function ApproachPage() {
                 <div className='approach-col'>
                     <div className={css`width: 100%; padding: 20px;`}>
                         <div class='approach-mask'>
-                            <img src="./images/our-approach-poppies.jpeg" alt="our-approach-poppies" width="350px" loading="lazy" />
+                            <img src="./images/our-approach-poppies.jpeg" alt="CA State Flower" title="CA State Flower" width="350px" loading="lazy" />
                         </div>
+                        <figcaption className={css`font-size: 8px; position: relative; top: -25px; left: 35px;`}>Image: CA State Flower</figcaption>
                     </div>
 
                     <h2>About us</h2>

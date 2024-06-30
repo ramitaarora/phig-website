@@ -127,7 +127,7 @@ export default function VolunteerPage() {
                         <p><span>Gardening Tips:</span> Share your gardening expertise and tips with a global audience. Help beginners kickstart their green journey and guide seasoned gardeners toward more sustainable practices.</p>
                     </div>
                     <div id="volunteer-right" className={css`height: 100%; object-fit: cover; object-position: center; overflow: hidden;`}>
-                        <img src="./images/volunteer/volunteers.png" alt="volunteers" loading="lazy"/>
+                        <img src="./images/volunteer/volunteers.png" alt="Painting the storage workbench" title="Painting the storage workbench" loading="lazy"/>
                     </div>
                 </section>
 

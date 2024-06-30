@@ -20,7 +20,7 @@ export default function Timeline({ date, firstImage, secondImage, header, descri
                 <h4 className={css`text-align: center; margin-bottom: 20px;`}>{header}</h4>
                 <p className={css`line-height: 30px;`}>{description}</p>
                 <div className={index % 2 === 0 ? "main-image-even" : "main-image-odd"}>
-                    <img src={mainImage} alt="timeline-mainImage" className={css`height: 250px; width: 350px; object-fit: cover; object-position: center; border: 20px solid black;`} loading="lazy" />
+                    <img src={mainImage} alt={caption} title={caption} className={css`height: 250px; width: 350px; object-fit: cover; object-position: center; border: 20px solid black;`} loading="lazy" />
                     {caption ? <figcaption className={css`font-size: 10px; text-align: center;`}>{caption}</figcaption> : null}
                 </div>
             </div>

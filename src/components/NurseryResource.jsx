@@ -4,7 +4,7 @@ export default function NurseryResource({ name, description, image, link, locati
     return (
         <div id="nursery-resource" className={css`display: flex; justify-content: space-evenly`}>
             <div className='nurseryresourseimagediv'>
-                <img className='nurseryresourseimage' src={image} alt={location} loading="lazy"/>
+                <img className='nurseryresourseimage' src={image} alt={name} title={name} loading="lazy"/>
             </div>
             <div className='nureserresbod'>
                 <div className='nurseryres'>
