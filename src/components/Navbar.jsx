@@ -59,7 +59,7 @@ const Navbar = () => {
         <Link to='/donate'>
 
           <button className="gradient-button">
-            {/*<img src="/images/homepage/donate-hand.png" alt="donate" height="30px" width="30px" />*/}
+            <img src="/images/donation/donate-hand.png" alt="donate" height="30px" width="30px" className={css`margin-right: 10px;`}/>
             Donate
           </button>
         </Link>
