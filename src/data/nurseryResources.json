@@ -3,7 +3,7 @@
       "name": "Annie’s Annuals and Perennials",
       "location": "Richmond",
       "image": "/images/resources/image1.png",
-      "link": "www.anniesannuals.com",
+      "link": "https://www.anniesannuals.com/",
       "days": "Tue - Sun",
       "hours": "10am - 5pm",
       "phoneNumber": "510-215-1671"
@@ -12,7 +12,7 @@
       "name": "Carquinez Regional Environmental Education Center",
       "location": "Crockett",
       "image": "/images/resources/image 2.png",
-      "link": "www.creecyouth.org",
+      "link": "https://creecyouth.org/",
       "days": "Saturday mornings",
       "hours": "Appointment only",
       "phoneNumber": "510-787-2265"
@@ -21,7 +21,7 @@
       "name": "Native Here Nursery",
       "location": "Berkeley",
       "image": "/images/resources/image 3.png",
-      "link": "www.ebcnps.org/nativehere.html",
+      "link": "https://nativeherenursery.org/",
       "days": "Fri | Sat",
       "hours": "9am - 12pm | 10am - 1pm",
       "phoneNumber": "510-549-0211"
@@ -30,7 +30,7 @@
       "name": "Pacific Coast Seed",
       "location": "Livermore",
       "image": "/images/resources/image 4.png",
-      "link": "www.pcseed.com",
+      "link": "https://www.pcseed.com/",
       "days": "Mon - Fri",
       "hours": "8:30am - 5pm",
       "phoneNumber": "925-373-4417"

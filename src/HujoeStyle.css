@@ -211,6 +211,12 @@
     border-radius: 8%;
 
 }
+
+.submitclass:hover {
+    background-color: var(--enabled);
+    color: var(--primary);
+    cursor: pointer;
+}
 .websiteresourseimage{
     /* margin: 50px;
     margin-left: -17px;
@@ -232,6 +238,10 @@
     text-decoration: none; /* Remove the default underline */
     border-bottom: 1px solid #97C159; /* Add a bottom border */
     padding-bottom: 2px; 
+}
+
+.learnmore:hover {
+    color: var(--success);
 }
 
 .arrow {

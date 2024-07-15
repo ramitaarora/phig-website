@@ -9,8 +9,8 @@ export default function WebsiteResource({ name, description, image, link }) {
             <div>
                 <h3 className='title'>{name}</h3>
                 <p className='description'>{description}</p>
-                <a className='learnmore' href={link}>Learn More</a>
-                <div class="arrow"></div>
+                <a className='learnmore' href={link} target="_blank">Learn More</a>
+                <div className="arrow"></div>
             </div>
         </div>
     )

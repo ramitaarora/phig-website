@@ -1,4 +1,8 @@
 export default function Newsletter() {
+    const subscribe = (event) => {
+        event.preventDefault();
+    }
+
     return (
         <div className="newsletter">
             <div id="newsletter-left">
@@ -22,9 +26,9 @@ export default function Newsletter() {
                         <p>Inspiration</p>
                     </li>
                 </ul>
-                <form id="newsletter-form">
+                <form id="newsletter-form" onSubmit={subscribe}>
                     <input type="text" placeholder="Enter your email" />
-                    <input type="submit" />
+                    <input type="submit"/>
                 </form>
             </div>
             <div id="newsletter-right" >

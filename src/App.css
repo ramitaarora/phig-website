@@ -301,6 +301,10 @@ nav a svg {
   border-bottom: 2px solid #34773A;
 }
 
+.homepage-card-learn-more p:hover {
+  color: var(--lightgreen);
+}
+
 #pheatured-event-header h2,
 #pheatured-event-header p {
   position: relative;
@@ -615,6 +619,11 @@ nav a svg {
   margin: 15px;
   padding: 0 25px 0 10px;
   outline: 1px solid var(--primary);
+  cursor: pointer;
+}
+
+#weather-icon:hover {
+  outline: 1px solid lightgrey;
 }
 
 /* Footer Styles */
@@ -622,4 +631,20 @@ nav a svg {
 footer a {
   text-decoration: none;
   color: white;
+}
+
+footer a:hover {
+  color: var(--enabled)
+}
+
+#footer-social img:hover {
+  position: relative;
+  top: -5px;
+}
+
+/* Misc */
+
+#resources a:hover {
+  position: relative;
+  top: -5px;
 }
