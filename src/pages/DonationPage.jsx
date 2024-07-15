@@ -29,7 +29,7 @@ export default function DonationPage() {
         } 
         if (event.target.innerHTML === '$100' || event.target.innerHTML === '$200') {
             setPlantGrowth('5');
-            setPlantHeight('500')
+            setPlantHeight('450')
         } 
     }
 
@@ -76,14 +76,14 @@ export default function DonationPage() {
             </header>
 
             <div id="quick-donate" className={css`border-radius: 50% 50% 0 0; display: flex; justify-content: space-evenly; border-radius: 20% 20% 0 0; position: relative; top: -105px; background-color: white; height: 500px;`}>
-                {/*<div id="quick-donate-image">*/}
-                    {/*<div id="tag" className={css`background-color: darkgreen; color: white; padding: 10px 15px; border-radius: 10px; position: relative; left: -250px; top: 35px; transform: rotate(350deg); text-align: center; width: fit-content;`}>
+                <div id="quick-donate-image" className={css`width: 30%; display: flex; flex-direction: column;`}>
+                    <div id="tag" className={css`background-color: darkgreen; color: white; padding: 10px 15px; border-radius: 10px; position: relative; left: -100px; top: 35px; transform: rotate(350deg); text-align: center; width: fit-content;`}>
                         <p>$10 donated =</p>
                         <p>1 new stage</p>
-                    </div>*/}
-                    <div className={css`display: flex; align-items: flex-end; justify-content: center; height: 100%; width: 30%;`}>
+                    </div>
+                    <div className={css`display: flex; align-items: flex-end; justify-content: center; height: 100%;`}>
                         <img src={`./images/donation/plant-growth-${plantGrowth}.png`} className={css`height: ${plantHeight}px;`} alt="seed-grows" loading="lazy" />
-                    {/*</div>*/}
+                    </div>
                 </div>
                 <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 0px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white; width: 400px; height: 100%;`}>
                     <h2 className={css`margin: 10px;`}>Join #PHIG</h2>

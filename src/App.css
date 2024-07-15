@@ -391,6 +391,11 @@ nav a svg {
   border-radius: 3px;
 }
 
+#quick-form-buttons button:hover {
+  background-color: var(--success);
+  color: var(--primary);
+}
+
 #filter-materials-buttons button {
   width: 100px;
   height: 30px;
