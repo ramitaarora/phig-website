@@ -405,6 +405,22 @@ nav a svg {
   text-align: center;
 }
 
+#other-donations-contact p {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+#donation-time-div p {
+  font-size: 11px;
+}
+
+.donation-time {
+  background-color: black; 
+  color: white; 
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+
 /* Confirmation Page */
 
 #confirmation {
