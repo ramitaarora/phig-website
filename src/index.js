@@ -22,6 +22,8 @@ import WeatherStation from './pages/WeatherStation';
 import ApproachPage from './pages/ApproachPage';
 import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
+import BooksPage from './pages/BooksPage';
+import ClassesPage from './pages/ClassesPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -37,6 +39,8 @@ root.render(
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/resources/websites" element={<WebsiteResources />} />
           <Route path="/resources/nursery" element = {<NurseryResource />} />
+          <Route path='/resources/classes' element={<ClassesPage />} />
+          <Route path='/resources/books' element={<BooksPage />} />
           <Route path="/news" element={<NewsPage />} />
           <Route path="/news/:articleID" element={<ArticlePage />} />
           <Route path="/volunteer/application" element={<VolunteerApplication />} />

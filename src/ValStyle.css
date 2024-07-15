@@ -49,6 +49,11 @@ body {
     width: 100%;
 }
 
+.news-feed-article:hover {
+    position: relative;
+    top: -5px;
+}
+
 .news-feed-title {
     color: var(--primary-color);
     font-family: 'Inter', sans-serif;
@@ -160,6 +165,11 @@ h2.article-metadata {
     color: var(--primary-color);
     font-size: 10px;
     padding: 8px 20px;
+}
+
+#newsletter-form > input[type=submit]:hover {
+    background-color: var(--secondary-color);
+    cursor: pointer;
 }
 
 #newsletter-right {
