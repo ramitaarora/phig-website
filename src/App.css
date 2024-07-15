@@ -76,6 +76,10 @@ footer li {
 
 /* Buttons */
 
+button {
+  cursor: pointer;
+}
+
 .gradient-button {
   padding: 10px 30px;
   background-color: var(--success);
@@ -387,6 +391,11 @@ nav a svg {
   border-radius: 3px;
 }
 
+#quick-form-buttons button:hover {
+  background-color: var(--success);
+  color: var(--primary);
+}
+
 #filter-materials-buttons button {
   width: 100px;
   height: 30px;
@@ -394,6 +403,48 @@ nav a svg {
 
 #donate-materials h2 {
   text-align: center;
+}
+
+#other-donations-contact p {
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+#donation-time-div p {
+  font-size: 11px;
+}
+
+.donation-time {
+  background-color: black; 
+  color: white; 
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+
+#top-contributors-container img {
+  height: 35px;
+}
+
+#top-contributors-container p {
+  font-size: 14px;
+}
+
+#top-contributors-container h4 {
+  font-size: 14px;
+  color: var(--enabled);
+  font-weight: bold;
+}
+
+.top-contributor-level {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.top-contributors-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Confirmation Page */
