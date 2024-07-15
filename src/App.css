@@ -421,6 +421,32 @@ nav a svg {
   border-radius: 10px;
 }
 
+#top-contributors-container img {
+  height: 35px;
+}
+
+#top-contributors-container p {
+  font-size: 14px;
+}
+
+#top-contributors-container h4 {
+  font-size: 14px;
+  color: var(--enabled);
+  font-weight: bold;
+}
+
+.top-contributor-level {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between;
+}
+
+.top-contributors-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /* Confirmation Page */
 
 #confirmation {

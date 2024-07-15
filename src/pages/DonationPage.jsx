@@ -103,8 +103,7 @@ export default function DonationPage() {
             </div>
 
             <div id="other-donations" className={css`padding: 0 50px; background-color: white; margin-top: 0; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; max-width: 100%;`}>
-
-                <div id="other-donations-container" className={css`background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 30%, rgba(232, 232, 232, 0.7) 60%), url('./images/homepage/leaf-background.jpeg') center/cover; background-position: top right; background-repeat: no-repeat; margin: 0 auto; width: 45%; padding: 40px; height: 500px;`}>
+                <div id="other-donations-container" className={css`background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 30%, rgba(232, 232, 232, 0.7) 60%), url('./images/homepage/leaf-background.jpeg') center/cover; background-position: top right; background-repeat: no-repeat; margin: 0 auto; width: 45%; padding: 40px; height: 500px; box-shadow: 5px 5px 5px lightgrey;`}>
                     <div id="other-donations-header" className={css`text-align: center; padding: 20px; height: 50%; display: flex; flex-direction: column; justify-content: space-evenly;`}>
                         <h2 className={css`color: #8D9E42`}>Support Our Mission</h2>
                         <p className={css`font-size: 14px;`}>We welcome donations by credit/debit card, PayPal, check, domestic or international wire, or stock transfer. We accept automatic monthly donations via Credit Card and Paypal.</p>
@@ -125,7 +124,6 @@ export default function DonationPage() {
 
                         <p className={css`font-size: 11px; color: grey;`}>Please make your check payable to Pleasant Hill Instructional Garden</p>
                     </div>
-                    
                     <div id="other-donations-contact" className={css`display: flex; justify-content: space-between; align-items: center; height: 50%;`}>
                         <div className={css`display: flex; flex-direction: column; justify-content: space-evenly; height: 100%; align-items: flex-start; padding: 20px; width: 50%;`}>
                             <button className='green-button' style={{ borderRadius: '15px 0px 15px 0px' }}>Donate by Check</button>
@@ -159,10 +157,87 @@ export default function DonationPage() {
                     </div>
                 </div>
 
-                {/*<div id="other-donations-container" className={css`background-color: #E9FEFF; margin: 0 auto; width: 45%;`}>
-                    <h2 className={css`text-align: center; border-bottom: 1px solid lightgrey; padding: 20px;`}>Other Ways to Give</h2>
-                    
-    </div>*/}
+                <div id="top-contributors-container" className={css`margin: 0 auto; width: 45%; padding: 40px; height: 500px; background-color: var(--header-color); border-radius: 20px; color: var(--primary); line-height: 35px;`}>
+                    <div id="top-contributors-header" className={css`display: flex; justify-content: space-between;`}>
+                        <div>
+                            <h2>Top Contributors</h2>
+                            <p>PHIG thanks those who have donated</p>
+                        </div>
+                        <div className={css`display: flex; align-items: center;`}>
+                            <h4 className={css`margin-right: 10px;`}>See All</h4>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#63D79C" viewBox="0 0 16 16">
+                                <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div id="top-contributors-gold">
+                        <div className="top-contributor-level">
+                            <div className={css`display: flex; align-items: center;`}>
+                                <img src="./images/donation/contributor-gold.png" alt="gold" />
+                                <h3 className={css`color: #FAE18F; font-size: 22px;`}>Gold</h3>
+                            </div>
+                            <div className={css`display: flex; align-items: center;`}>
+                                <img src="./images/donation/calendar.png" alt="calendar" />
+                                <div className={css`line-height: 15px; margin-left: 10px;`}>
+                                    <p>Donation</p>
+                                    <p>Frequency</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="top-contributors-line">
+                            <p>Central Contra Costa Sanitary District</p>
+                            <h4>Daily</h4>
+                        </div>
+                        <div className="top-contributors-line">
+                            <p>Mt Diablo Unified School District</p>
+                            <h4>Daily</h4>
+                        </div>
+                        <div className="top-contributors-line">
+                            <p>City of Pleasant Hill/ Civic Action Committee</p>
+                            <h4>Weekly</h4>
+                        </div>
+                        <div className="top-contributors-line">
+                            <p>Pleasant Hill Community Foundation</p>
+                            <h4>Weekly</h4>
+                        </div>
+
+                    </div>
+
+                    <div id="top-contributors-silver">
+                        <div className="top-contributor-level">
+                            <div className={css`display: flex; align-items: center;`}>
+                                <img src="./images/donation/contributor-silver.png" alt="silver" />
+                                <h3 className={css`color: #F7F5F0; font-size: 22px;`}>Silver</h3>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div className="top-contributors-line">
+                            <p>Mt Diablo Unified School District</p>
+                            <h4>Bi-Weekly</h4>
+                        </div>
+                        <div className="top-contributors-line">
+                            <p>City of Pleasant Hill/ Civic Action Committee</p>
+                            <h4>Monthly</h4>
+                        </div>
+
+                    </div>
+
+                    <div id="top-contributors-bronze">
+                        <div className="top-contributor-level">
+                            <div className={css`display: flex; align-items: center;`}>
+                                <img src="./images/donation/contributor-bronze.png" alt="bronze" />
+                                <h3 className={css`color: #79725A; font-size: 22px;`}>Bronze</h3>
+                            </div>
+                            <div></div>
+                    </div>
+                        <div className="top-contributors-line">
+                            <p>Pleasant Hill Community Foundation</p>
+                            <h4>Yearly</h4>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
             <div id="donate-materials" className={css`margin: 50px auto;`}>
