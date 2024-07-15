@@ -1,6 +1,7 @@
 import { css } from '@emotion/css';
 import { Link } from 'react-router-dom';
 
+
 export default function Footer() {
     return (
         <footer className={css`background-color: #081821; color: white; padding: 50px; line-height: 40px;`}>
@@ -42,6 +43,7 @@ export default function Footer() {
                 <p>Pictures courtesy of Monika Olsen</p>
                 <p>© Pleasant Hill Instructional Garden 2024</p>
             </div>
+            
         </footer>
     );
 }
