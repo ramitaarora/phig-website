@@ -648,3 +648,35 @@ footer a:hover {
   position: relative;
   top: -5px;
 }
+
+#home-banner-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10%;
+  color: var(--primary);
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 768px) {
+  /* General */
+  #nav {
+    display: none;
+  }
+
+  /* Homepage */
+  #home-banner {
+    width: 100vw;
+    height: 50vh;
+  }
+  #home-banner-text {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+}
