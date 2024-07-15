@@ -8,10 +8,29 @@ export default function DonationPage() {
     const [searchResults, setSearchResults] = useState(donations);
     const [input, setInput] = useState('')
     const [amount, setAmount] = useState('')
+    const [plantGrowth, setPlantGrowth] = useState('1')
+    const [plantHeight, setPlantHeight] = useState('200')
 
     const updateAmount = (event) => {
         event.preventDefault();
-        setAmount(event.target.innerHTML)
+        setAmount(event.target.innerHTML);
+
+        if (event.target.innerHTML === '$1' || event.target.innerHTML === '$5') { 
+            setPlantGrowth('2');
+            setPlantHeight('150');
+        }
+        if (event.target.innerHTML === '$10' || event.target.innerHTML === '$20') {
+            setPlantGrowth('3');
+            setPlantHeight('300')
+        } 
+        if (event.target.innerHTML === '$25' || event.target.innerHTML === '$50') {
+            setPlantGrowth('4');
+            setPlantHeight('400')
+        } 
+        if (event.target.innerHTML === '$100' || event.target.innerHTML === '$200') {
+            setPlantGrowth('5');
+            setPlantHeight('500')
+        } 
     }
 
     const setAll = (event) => {
@@ -56,15 +75,17 @@ export default function DonationPage() {
                 <p className={css`position: relative; top: -50px;`}>Our volunteer team is growing every day and helping you learn ways to keep our planet healthy. Plant with us and track our progress!</p>
             </header>
 
-            <div id="quick-donate" className={css`border-radius: 50% 50% 0 0; display: flex; justify-content: space-evenly; border-radius: 20% 20% 0 0; position: relative; top: -105px; background-color: white;`}>
-                <div id="quick-donate-image">
-                    <div id="tag" className={css`background-color: darkgreen; color: white; padding: 10px 15px; border-radius: 10px; position: relative; left: -250px; top: 35px; transform: rotate(350deg); text-align: center; width: fit-content;`}>
+            <div id="quick-donate" className={css`border-radius: 50% 50% 0 0; display: flex; justify-content: space-evenly; border-radius: 20% 20% 0 0; position: relative; top: -105px; background-color: white; height: 500px;`}>
+                {/*<div id="quick-donate-image">*/}
+                    {/*<div id="tag" className={css`background-color: darkgreen; color: white; padding: 10px 15px; border-radius: 10px; position: relative; left: -250px; top: 35px; transform: rotate(350deg); text-align: center; width: fit-content;`}>
                         <p>$10 donated =</p>
                         <p>1 new stage</p>
-                    </div>
-                    <img src="./images/donation/seed-grows.png" alt="seed-grows" className={css`height: 200px; margin-top: 150px;`} loading="lazy"/>
+                    </div>*/}
+                    <div className={css`display: flex; align-items: flex-end; justify-content: center; height: 100%; width: 30%;`}>
+                        <img src={`./images/donation/plant-growth-${plantGrowth}.png`} className={css`height: ${plantHeight}px;`} alt="seed-grows" loading="lazy" />
+                    {/*</div>*/}
                 </div>
-                <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 0px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white;`}>
+                <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 0px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white; width: 400px; height: 100%;`}>
                     <h2 className={css`margin: 10px;`}>Join #PHIG</h2>
                     <div id="quick-form-buttons" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; margin-top: 20px;`}>
                         <button onClick={updateAmount}>$1</button>
@@ -73,6 +94,8 @@ export default function DonationPage() {
                         <button onClick={updateAmount}>$20</button>
                         <button onClick={updateAmount}>$25</button>
                         <button onClick={updateAmount}>$50</button>
+                        <button onClick={updateAmount}>$100</button>
+                        <button onClick={updateAmount}>$200</button>
                     </div>
                     <input type="text" placeholder='Custom amount' value={amount} onChange={event => setAmount(event.target.value)} className='form-input' style={{ width: '94%', margin: '20px auto 0 auto' }} />
                     <Link to="/pay"><input type="submit" value="Next" className='green-button' style={{ margin: '30px auto 0 auto' }} /></Link>
