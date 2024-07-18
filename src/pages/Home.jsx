@@ -39,8 +39,8 @@ const Home = () => {
 
             <HomepageGoals />
 
-            <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '10%' }} id="newsfeed-header">
-                <h3 style={{ marginTop: '50px', marginBottom: '30px', color: '#539B42' }} >Our Blogs</h3>
+            <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '5%', textAlign: 'center' }} id="newsfeed-header">
+                <h3 style={{ marginTop: '30px', marginBottom: '30px', color: '#539B42' }} >Our Blogs</h3>
                 <h1 style={{ marginBottom: '20px' }}>Latest <span className={css`color: var(--success); font-family: 'Inria Serif', sans-serif;`}>Blogs & Articles</span></h1>
                 <p style={{ fontSize: 'small' }}>Be the first to know about recent garden projects, volunteer opportunities, and gardening tips!</p>
             </section>

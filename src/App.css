@@ -710,7 +710,8 @@ footer a:hover {
 
 @media only screen and (max-width: 768px) {
   /* General */
-  #nav {
+  #nav,
+  #weather-icon {
     display: none;
   }
 
@@ -768,5 +769,17 @@ footer a:hover {
   }
   #homepage-each-goal {
     width: 100%;
+  }
+  /* Footer */
+  #footer-links {
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+  }
+  #about-nav,
+  #get-involved,
+  #footer-social {
+    margin: 10px auto;
+    text-align: center;
   }
 }
