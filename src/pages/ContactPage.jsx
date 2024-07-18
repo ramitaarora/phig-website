@@ -10,15 +10,12 @@ export default function ContactPage() {
     
     return (
         <div>
-            {/*<header className={css`text-align: center; height: 100px; padding: 50px;`}>
-                <h1>Contact Us</h1>
-    </header>*/}
-            <main className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; padding: 50px;`}>
+            <main className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; padding: 50px; @media (max-width: 768px) { flex-direction: column; }`}>
                 <ContactPageForm />
                 <div id="directions">
                     <h2>How to Reach Us</h2>
                     <div className="direction-list-items">
-                        <p>From Hwy 680</p>
+                        <p>From Hwy 680:</p>
                         <ul>
                             <li>Exit Treat Blvd</li>
                             <li>Follow signs to Oak Park Blvd</li>

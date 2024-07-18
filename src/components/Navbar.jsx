@@ -5,7 +5,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div id="desktop-nav" className={css`width: 100vw; min-height: 90px; display: flex; align-items: center; justify-content: space-between; background-color: #081821; padding: 20px 40px;`}>
+      <div id="desktop-nav" className={css`width: 100vw; min-height: 90px; display: flex; align-items: center; justify-content: space-between; background-color: var(--header-color); padding: 20px 40px;`}>
         <div>
           <Link to='/'><img src="/images/homepage/logo.png" alt='PHIG-logo' /></Link>
         </div>
@@ -69,7 +69,7 @@ const Navbar = () => {
 
       </div>
 
-      <div id="mobile-nav" className={css`display: flex; width: 100%; justify-content: space-between; align-items: center; padding: 20px 40px; min-height: 90px; background-color: #081821;`} >
+      <div id="mobile-nav" className={css`display: flex; width: 100%; justify-content: space-between; align-items: center; padding: 20px 40px; min-height: 90px; background-color: var(--header-color);`} >
         <div>
           <Link to='/'><img src="/images/homepage/logo.png" alt='PHIG-logo' /></Link>
         </div>
