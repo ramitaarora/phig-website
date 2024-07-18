@@ -69,7 +69,7 @@ const Navbar = () => {
 
       </div>
 
-      <div id="mobile-nav" className={css`display: flex; width: 100%; justify-content: space-between; align-items: center; padding: 2%; position: absolute; top: 0px; z-index: 99;`} >
+      <div id="mobile-nav" className={css`display: flex; width: 100%; justify-content: space-between; align-items: center; padding: 20px 40px; min-height: 90px; background-color: #081821;`} >
         <div>
           <Link to='/'><img src="/images/homepage/logo.png" alt='PHIG-logo' /></Link>
         </div>

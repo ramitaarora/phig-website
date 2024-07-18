@@ -12,12 +12,22 @@ export default function ApproachPage() {
                 <path d="M0 221.5C88 68.7 318.667 10.1667 423 0H0V221.5Z" fill="#F0B353" />
             </svg>
 
-            <main className={css`width: 100%; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; position: relative; top: -100px;`}>
+            <main className={css`width: 100%; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; position: relative; top: -100px; @media (max-width: 786px) { flex-direction: column; }`}>
 
                 <div className='approach-col'>
-                    <h1>Our</h1>
-                    <h1>Mission</h1>
-                    <h1>& Vision</h1>
+                    <div className={css`@media (max-width: 786px) { display: flex; align-items: flex-end; justify-content: center; }`}>
+                        <div className={css`@media (max-width: 786px) { width: 30%; } @media (max-width: 550px) { width: 100%; }`}>
+                            <h1>Our</h1>
+                            <h1>Mission</h1>
+                            <h1>& Vision</h1>
+                        </div>
+
+                        <div className={css`width: 30%; @media (min-width: 786px) { display: none; } @media (max-width: 550px) { display: none; }`}>
+                            <div class='approach-mask'>
+                                <img src="./images/our-approach-poppies.jpeg" alt="CA State Flower" title="CA State Flower" width="350px" loading="lazy" />
+                            </div>
+                        </div>
+                    </div>
                     <hr />
 
                     <p>To educate students, staff, and community members in the need for water conservation with a demonstration garden using no pesticides, water recycling methods, drought tolerant and native plantings.</p>
@@ -28,11 +38,10 @@ export default function ApproachPage() {
                     <p className={css`margin-top: 15px;`}>We’re racing to hit these targets to help the world reverse climate change and biodiversity loss. Together, we find the paths to make change possible.</p>
                 </div>
                 <div className='approach-col'>
-                    <div className={css`width: 100%; padding: 20px;`}>
+                    <div className={css`width: 100%; padding: 20px; @media (max-width: 786px) { display: none; }`}>
                         <div class='approach-mask'>
                             <img src="./images/our-approach-poppies.jpeg" alt="CA State Flower" title="CA State Flower" width="350px" loading="lazy" />
                         </div>
-                        <figcaption className={css`font-size: 8px; position: relative; top: -25px; left: 35px;`}>Image: CA State Flower</figcaption>
                     </div>
 
                     <h2>About us</h2>
@@ -55,7 +64,7 @@ export default function ApproachPage() {
             </div>
 
 
-            <div className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url('./images/homepage/goal-banner.png'); height: 100px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; color: white; display: flex; justify-content: space-evenly; align-items: center; border-top: 5px solid var(--success); border-bottom: 5px solid var(--success); position: relative; top: -100px;`}>
+            <div className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url('./images/homepage/goal-banner.png'); height: 100px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; color: white; display: flex; justify-content: space-evenly; align-items: center; border-top: 5px solid var(--success); border-bottom: 5px solid var(--success); position: relative; top: -100px; @media (max-width: 900px) { display: none; }`}>
                 <div id="approach-icons">
                     <img src="./images/homepage/goal-icon-water.png" alt="water-conservation" />
                     <p>Demonstrate water conservation</p>
