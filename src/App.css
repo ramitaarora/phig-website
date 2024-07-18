@@ -594,7 +594,7 @@ nav a svg {
    margin: 0 auto;
    background-color: var(--header-color);
    color: var(--primary);
-   width: 50%;
+   width: 80%;
    padding: 50px;
    height: 900px;
 }
@@ -799,6 +799,10 @@ footer a:hover {
     margin: 0 auto;
   }
   #homepage-each-goal {
+    width: 100%;
+  }
+
+  .about-page-contact {
     width: 100%;
   }
   /* Footer */

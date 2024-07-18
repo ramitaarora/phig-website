@@ -65,7 +65,7 @@ export default function ContactForm() {
             <h2 className={css`text-align: center;`}>How Can We Help?</h2>
             <form action="#" method="post" onSubmit={handleSubmit}>
                 <div className={css`width: 100%; display: flex; justify-content: space-between; align-items: center;`}>
-                    <div className={css`display: flex; flex-direction: column; align-items: flex-start; width: 100%; margin-right: 10px;`}>
+                    <div className={css`display: flex; flex-direction: column; align-items: center; width: 100%; margin-right: 10px;`}>
                         <label htmlFor="first-name">First Name<span>*</span></label>
                         <input className="about-page-form-input contact-form-input" type="text" id="first-name" name="first-name" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder="First Name" required />
                     </div>
