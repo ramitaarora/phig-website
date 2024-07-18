@@ -696,7 +696,7 @@ footer a:hover {
   top: -5px;
 }
 
-/* Mobile */
+/* Responsive Styles */
 
 @media only screen and (max-width: 1000px) {
   .each-book {
