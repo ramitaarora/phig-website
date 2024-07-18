@@ -3,7 +3,7 @@ import contributors from '../data/contributers.json';
 
 export default function Leaderboard() {
     return (
-        <section id="leaderboard" className={css`margin: 90px auto; width: 50%; text-align: center; font-family: "Inria Sans", sans-serif;`}>
+        <section id="leaderboard" className={css`margin: 90px auto; width: 50%; text-align: center; font-family: "Inria Sans", sans-serif; @media (max-width: 768px) { display: none; }`}>
 
             <div id="leaderboard-header">
                 <h2 style={{fontWeight:'500'}}>Leaderboard</h2>

@@ -316,6 +316,18 @@ nav a svg {
   color: var(--lightgreen);
 }
 
+#each-homepage-card {
+  margin-bottom: 30px;
+}
+
+.react-multi-carousel-dot button {
+  border-color: var(--secondary) !important;
+  border-width: 1px !important;
+}
+.react-multi-carousel-dot--active button {
+  background: var(--secondary) !important;
+}
+
 #pheatured-event-header h2,
 #pheatured-event-header p {
   position: relative;
@@ -703,6 +715,7 @@ footer a:hover {
   }
 
   /* Homepage */
+
   #home-banner {
     width: 100vw;
     height: 50vh;
@@ -712,26 +725,13 @@ footer a:hover {
     align-items: center;
     margin: 0 auto;
   }
-  /* Homepage Cards */
-  #homepage-cards-desktop {
+  #pheatured-event {
     display: none;
   }
-
-  #homepage-cards-mobile {
-    display: block;
+  #homepage-each-goal {
+    width: 45%;
   }
 
-  #each-homepage-card {
-    margin-bottom: 30px;
-  }
-
-  .react-multi-carousel-dot button {
-    border-color: var(--secondary) !important;
-    border-width: 1px !important;
-  }
-  .react-multi-carousel-dot--active button {
-    background: var(--secondary) !important;
-  }
   /* Pheatured Book */
 
   .each-book {
@@ -743,7 +743,7 @@ footer a:hover {
     width: 42px;
   }
 
-  .ph4b
+  .ph4b,
   .view-amazon-button {
     display: none;
   }
@@ -751,7 +751,7 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 550px) {
-  /* Pheatured Book */
+  /* Homepage */
   .each-book {
     width: 100%;
   }
@@ -765,5 +765,8 @@ footer a:hover {
   }
   #pheatured-book-image {
     margin: 0 auto;
+  }
+  #homepage-each-goal {
+    width: 100%;
   }
 }
