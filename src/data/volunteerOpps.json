@@ -13,21 +13,24 @@
       "time": "We'll work with your schedule",
       "status": "ONGOING",
       "place": "Remote",
-      "location": "California"
+      "location": "California",
+      "image": "/images/volunteer/volunteer-sample-3.jpg"
     },
     {
       "title": "Monitoring creek water quality",
       "time": "Monthly",
       "status": "INTERNSHIP",
       "place": "In person and remote",
-      "location": "PHIG, Pleasant Hill, California"
+      "location": "PHIG, Pleasant Hill, California",
+      "image": "/images/volunteer/volunteer-sample-4.jpg"
     },
     {
       "title": "Chart weather station data",
       "time": "Monthly",
       "status": "INTERNSHIP",
       "place": "In person and remote",
-      "location": "PHIG, Pleasant Hill, California"
+      "location": "PHIG, Pleasant Hill, California",
+      "image": "/images/volunteer/volunteer-sample-5.jpg"
     },
     {
       "title": "UX/UI Designer/Website Developer",

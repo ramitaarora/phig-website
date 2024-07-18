@@ -267,8 +267,7 @@ nav a svg {
 }
 
 #hamburger-menu,
-#hamburger-menu svg
-#hamburger-menu path {
+#hamburger-menu svg #hamburger-menu path {
   cursor: pointer;
 }
 
@@ -335,6 +334,7 @@ nav a svg {
   border-color: var(--secondary) !important;
   border-width: 1px !important;
 }
+
 .react-multi-carousel-dot--active button {
   background: var(--secondary) !important;
 }
@@ -415,6 +415,10 @@ nav a svg {
   margin-bottom: 30px;
 }
 
+#article {
+  margin: 5% 20%;
+}
+
 /* Volunteer Page */
 
 #volunteer-left span {
@@ -477,8 +481,8 @@ nav a svg {
 }
 
 .donation-time {
-  background-color: black; 
-  color: white; 
+  background-color: black;
+  color: white;
   padding: 2px 7px;
   border-radius: 10px;
 }
@@ -498,8 +502,8 @@ nav a svg {
 }
 
 .top-contributor-level {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -591,12 +595,12 @@ nav a svg {
 }
 
 .about-page-contact {
-   margin: 0 auto;
-   background-color: var(--header-color);
-   color: var(--primary);
-   width: 80%;
-   padding: 50px;
-   height: 900px;
+  margin: 0 auto;
+  background-color: var(--header-color);
+  color: var(--primary);
+  width: 80%;
+  padding: 50px;
+  height: 900px;
 }
 
 .about-page-contact form {
@@ -637,8 +641,8 @@ nav a svg {
 
 .contact-page-form h2,
 #directions h2 {
-  border-bottom: 1px solid var(--success); 
-  margin-bottom: 50px; 
+  border-bottom: 1px solid var(--success);
+  margin-bottom: 50px;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -713,6 +717,7 @@ footer a:hover {
   .each-book {
     margin: 0 15px;
   }
+
   .each-book img,
   .each-book-image {
     width: 45px;
@@ -720,11 +725,13 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+
   /* General */
   #desktop-nav,
   #weather-icon {
     display: none;
   }
+
   #mobile-nav {
     display: flex;
   }
@@ -735,6 +742,7 @@ footer a:hover {
     width: 100vw;
     height: 50vh;
   }
+
   #home-banner-text {
     text-align: center;
     align-items: center;
@@ -775,29 +783,40 @@ footer a:hover {
   /* Contact Page */
 
   #directions,
-.contact-page-form {
-  width: 100%;
-  height: fit-content;
-}
+  .contact-page-form {
+    width: 100%;
+    height: fit-content;
+  }
+
+  /* Article Page */
+
+  #article {
+    margin: 5%;
+  }
 
 }
 
 @media only screen and (max-width: 550px) {
+
   /* Homepage */
   .each-book {
     width: 100%;
   }
+
   .each-book img,
   .each-book-image {
     width: 60px;
   }
+
   .ph4b,
   .view-amazon-button {
     display: block;
   }
+
   #pheatured-book-image {
     margin: 0 auto;
   }
+
   #homepage-each-goal {
     width: 100%;
   }
@@ -805,12 +824,14 @@ footer a:hover {
   .about-page-contact {
     width: 100%;
   }
+
   /* Footer */
   #footer-links {
     flex-direction: column;
     margin: 0;
     justify-content: center;
   }
+
   #about-nav,
   #get-involved,
   #footer-social {

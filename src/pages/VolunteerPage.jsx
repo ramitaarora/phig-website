@@ -10,6 +10,7 @@ export default function VolunteerPage() {
     
     const [results, setResults] = useState(volunteerOpps);
     const [inputValue, setInputValue] = useState('')
+    const [filterVisibility, setFilterVisibility] = useState('none');
 
     useEffect(() => {
         if (inputValue === '') {
@@ -36,7 +37,7 @@ export default function VolunteerPage() {
         if (event.target.name === 'remote-work') {
             if (event.target.checked) {
                 const newResults = results.filter(result => result.place === 'Remote');
-                console.log(newResults);
+                // console.log(newResults);
                 if (newResults.length) {
                     setResults(newResults);
                 }
@@ -105,12 +106,20 @@ export default function VolunteerPage() {
         setResults(volunteerOpps);
     }
 
+    const handleFilterVisibility = () => {
+        if (filterVisibility === 'none') {
+            setFilterVisibility('block');
+        } else {
+            setFilterVisibility('none');
+        }
+    }
+
     return (
         <div>
 
             <header>
                 <div id="header-image" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('./images/volunteer/volunteer-header.jpeg'); height: 400px; width: 100vw; background-position: top; background-repeat: no-repeat; background-size: cover;`}>
-                    <div id="header-text" className={css`text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; color: white; height: 300px; width: 100vw;`}>
+                    <div id="header-text" className={css`text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; color: white; height: 300px; width: 100vw; padding: 2%; @media (max-width: 786px) { height: 400px; }`}>
                         <h1>Join Us!</h1>
                         <h2>🌱 Animals need nature, and we need each other 🌿</h2>
                         <p>To protect the future of the world’s ecosystems, we need everyone on board — from governments, to business owners, environmental activists, corporations, and citizens around the world!</p>
@@ -119,34 +128,33 @@ export default function VolunteerPage() {
             </header>
 
             <main>
-                <section id="why-volunteer" className={css`display: flex; justify-content: space-evenly; height: 400px; margin: 100px 100px;`}>
-                    <div id="volunteer-left" className={css`display: flex; flex-direction: column; justify-content: space-evenly; padding: 0 50px;`}>
+                <section id="why-volunteer" className={css`display: flex; justify-content: space-evenly; height: 600px; margin: 5%; align-items: center; @media (max-width: 800px) { flex-direction: column; height: fit-content; }`}>
+                    <div id="volunteer-left" className={css`display: flex; flex-direction: column; justify-content: space-evenly; padding: 0 50px; width: 60%; height: 100%; @media (max-width: 800px) { flex-direction: column; height: 600px; width: 100%;}`}>
                         <h2>Why volunteer with us?</h2>
                         <p><span>Water Conservation:</span> Contribute to water conservation efforts by learning and implementing eco-friendly watering techniques. Help spread awareness about responsible water usage in gardening.</p>
                         <p><span>Wildlife Protection:</span> Create safe havens for local wildlife by incorporating wildlife-friendly elements into your garden. From pollinator-friendly plants to bird-friendly feeders, be a vital part of nurturing biodiversity.</p>
                         <p><span>Gardening Tips:</span> Share your gardening expertise and tips with a global audience. Help beginners kickstart their green journey and guide seasoned gardeners toward more sustainable practices.</p>
                     </div>
-                    <div id="volunteer-right" className={css`height: 100%; object-fit: cover; object-position: center; overflow: hidden;`}>
-                        <img src="./images/volunteer/volunteers.png" alt="Painting the storage workbench" title="Painting the storage workbench" loading="lazy"/>
-                    </div>
+                    <img src="./images/volunteer/volunteers.png" alt="Painting the storage workbench" title="Painting the storage workbench" loading="lazy" className={css`height: 100%; object-fit: cover; object-position: center; width: 40%; @media (max-width: 800px) { height: 300px; width: 100%; object-position: 100% 20%; border-radius: 20px; margin: 20px auto; }`}/>
                 </section>
 
-                <section id="get-involved" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('./images/volunteer/volunteer-banner.png'); color: white; padding: 50px; display: flex; flex-direction: column; justify-content: space-between; height: 250px; background-position: center; background-repeat: no-repeat; background-size: cover;`}>
+                <section id="get-involved" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url('./images/volunteer/volunteer-banner.png'); color: white; padding: 50px; display: flex; flex-direction: column; justify-content: space-between; height: 330px; background-position: center; background-repeat: no-repeat; background-size: cover; }`}>
                     <h2>How to Get Involved:</h2>
                     <p>Ready to dig in? Select your favorite cause and let us know how you'd like to contribute. Whether you're a seasoned gardener, a nature enthusiast, or someone eager to make a positive impact, there's a place for you in our community.</p>
                     <p>Let's grow a sustainable future together! 🌍🌻</p>
                 </section>
 
-                <section id="search-opportunities" className={css`display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 50px auto;`}>
+                <section id="search-opportunities" className={css`display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 50px 5%;`}>
                     <h2>Search for Opportunities</h2>
                     <form id="search" className={css`display: flex; justify-content: space-evenly; margin: 30px auto; width: 60%; align-items: center;`} onSubmit={handleSearch}>
                         <input type="text" value={inputValue} placeholder="Search by keyword" onChange={event => setInputValue(event.target.value)} className='form-input' style={{ width: '80%'}}/>
+                        <img src="./images/volunteer/filter.png" alt="filter" className={css`height: 25px; margin: 5px; cursor: pointer;`} onClick={handleFilterVisibility}/>
                         <input type="submit" className='dark-button'/>
                     </form>
                     <span className='line-break' style={{ width: '70%'}} ></span>
 
-                    <div id="results" className={css`display: flex; justify-content: space-evenly; margin: 30px auto;`}>
-                        <form className={css`margin: 0 50px 0 0;`}>
+                    <div id="results" className={css`display: flex; justify-content: space-evenly; margin: 30px auto; @media (max-width: 1000px) { flex-direction: column; margin: 0 5%; }`}>
+                        <form className={css`margin: 0 50px 0 0; @media (max-width: 1000px) { display: ${filterVisibility}; }`}>
                             <div id="work-format">
                                 <h3 className={css`border-bottom: 1px solid lightgrey; margin: 20px 0; padding: 10px 0;`}>Work Format</h3>
                                 <div className="volunteer-checkbox">
@@ -178,9 +186,9 @@ export default function VolunteerPage() {
                             <input type="reset" value="Clear Filters" onClick={clearResults} className='dark-button' style={{ margin: '30px 0' }}/>
                         </form>
 
-                        <div id="search-results">
+                        <div id="search-results" className={css`@media (max-width: 800px) { margin: 2%;}`}>
                             <h3>Showing {results.length} Results</h3>
-                            <div id="results-container" className={css`width: 800px;`}>
+                            <div id="results-container" className={css``}>
 
                                 {results.map((result, index) =>
                                     <div key={index}>
