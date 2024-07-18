@@ -327,15 +327,30 @@ nav a svg {
   display: flex;
   align-items: center;
   margin: 15px 0;
-  padding-right: 25px;
 }
 
 .each-book img {
-  height: 80px;
-  width: 50px;
+  height: 120px;
+  width: 80px;
   object-position: center;
   object-fit: contain;
-  margin-right: 15px;
+}
+
+.each-book-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 120px;
+  width: 20%;
+}
+
+.each-book-text {
+  margin-left: 15px;
+  width: 80%;
+}
+
+.each-book-text a {
+  display: block;
 }
 
 .view-amazon-button {
@@ -366,6 +381,15 @@ nav a svg {
 #homepage-each-goal img {
   height: 50px;
   margin-right: 10px;
+}
+
+#pheatured-book-image {
+  min-height: 300px;
+  min-width: 200px;
+  max-height: 300px;
+  max-width: 200px;
+  box-shadow: 5px 5px 5px 5px lightgrey;
+  margin-bottom: 30px;
 }
 
 /* Volunteer Page */
@@ -660,13 +684,17 @@ footer a:hover {
   top: -5px;
 }
 
-#cards-circle-nav svg {
-  height: 12px;
-  width: 12px;
-  fill: var(--secondary);
-}
-
 /* Mobile */
+
+@media only screen and (max-width: 1000px) {
+  .each-book {
+    margin: 0 15px;
+  }
+  .each-book img,
+  .each-book-image {
+    width: 45px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   /* General */
@@ -684,6 +712,7 @@ footer a:hover {
     align-items: center;
     margin: 0 auto;
   }
+  /* Homepage Cards */
   #homepage-cards-desktop {
     display: none;
   }
@@ -692,4 +721,49 @@ footer a:hover {
     display: block;
   }
 
+  #each-homepage-card {
+    margin-bottom: 30px;
+  }
+
+  .react-multi-carousel-dot button {
+    border-color: var(--secondary) !important;
+    border-width: 1px !important;
+  }
+  .react-multi-carousel-dot--active button {
+    background: var(--secondary) !important;
+  }
+  /* Pheatured Book */
+
+  .each-book {
+    width: 33%;
+  }
+
+  .each-book img,
+  .each-book-image {
+    width: 42px;
+  }
+
+  .ph4b
+  .view-amazon-button {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+  /* Pheatured Book */
+  .each-book {
+    width: 100%;
+  }
+  .each-book img,
+  .each-book-image {
+    width: 60px;
+  }
+  .ph4b,
+  .view-amazon-button {
+    display: block;
+  }
+  #pheatured-book-image {
+    margin: 0 auto;
+  }
 }

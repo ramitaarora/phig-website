@@ -78,7 +78,7 @@ export default function HomepageCards() {
                 </div>
             </div>
             <div id="homepage-cards-mobile" className={css`width: 90%; margin: 20px auto;`}>
-                <Carousel responsive={responsive}>
+                <Carousel responsive={responsive} showDots={true} removeArrowOnDeviceType={["tablet", "mobile"]} dotListClass="custom-dot-list-style">
                     <div id="each-homepage-card">
                         <div className="homepage-card-image">
                             <img src="./images/homepage/card-1.jpeg" alt="Planting CA ceanothus" title="Planting CA ceanothus" loading="lazy" />
