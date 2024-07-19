@@ -8,7 +8,7 @@ export default function ApproachPage() {
     return (
         <div>
             <svg width="480" height="251" viewBox="0 0 480 251" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 251C99.8582 77.8497 361.608 11.5207 480 0H0V251Z" fill="#F0B353" fill-opacity="0.2" />
+                <path d="M0 251C99.8582 77.8497 361.608 11.5207 480 0H0V251Z" fill="#F0B353" fillOpacity="0.2" />
                 <path d="M0 221.5C88 68.7 318.667 10.1667 423 0H0V221.5Z" fill="#F0B353" />
             </svg>
 
@@ -23,7 +23,7 @@ export default function ApproachPage() {
                         </div>
 
                         <div className={css`width: 30%; @media (min-width: 786px) { display: none; } @media (max-width: 550px) { display: none; }`}>
-                            <div class='approach-mask'>
+                            <div className='approach-mask'>
                                 <img src="./images/our-approach-poppies.jpeg" alt="CA State Flower" title="CA State Flower" width="350px" loading="lazy" />
                             </div>
                         </div>
@@ -39,7 +39,7 @@ export default function ApproachPage() {
                 </div>
                 <div className='approach-col'>
                     <div className={css`width: 100%; padding: 20px; @media (max-width: 786px) { display: none; }`}>
-                        <div class='approach-mask'>
+                        <div className='approach-mask'>
                             <img src="./images/our-approach-poppies.jpeg" alt="CA State Flower" title="CA State Flower" width="350px" loading="lazy" />
                         </div>
                     </div>
@@ -58,7 +58,7 @@ export default function ApproachPage() {
 
             <div className="approach-border">
                 <svg width="480" height="251" viewBox="0 0 480 251" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M480 -1.52588e-05C380.142 173.15 118.392 239.479 0 251L480 251L480 -1.52588e-05Z" fill="#F0B353" fill-opacity="0.2" />
+                    <path d="M480 -1.52588e-05C380.142 173.15 118.392 239.479 0 251L480 251L480 -1.52588e-05Z" fill="#F0B353" fillOpacity="0.2" />
                     <path d="M480 29.5C392 182.3 161.333 240.833 57 251L480 251L480 29.5Z" fill="#F0B353" />
                 </svg>
             </div>

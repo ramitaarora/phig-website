@@ -266,9 +266,13 @@ nav a svg {
   display: none;
 }
 
-#hamburger-menu,
-#hamburger-menu svg #hamburger-menu path {
+#hamburger,
+#hamburger svg #hamburger path {
   cursor: pointer;
+}
+
+#hamburger-menu a:hover {
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--enabled) 100%);
 }
 
 /* Homepage Styles */

@@ -107,21 +107,22 @@ export default function DonationPage() {
                     <div id="other-donations-header" className={css`text-align: center; padding: 20px; height: 50%; display: flex; flex-direction: column; justify-content: space-evenly;`}>
                         <h2 className={css`color: #8D9E42`}>Support Our Mission</h2>
                         <p className={css`font-size: 14px;`}>We welcome donations by credit/debit card, PayPal, check, domestic or international wire, or stock transfer. We accept automatic monthly donations via Credit Card and Paypal.</p>
-                        <svg width="224" height="1" viewBox="0 0 224 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="93" y1="0.5" x2="224" y2="0.499989" stroke="url(#paint0_linear_0_1)" />
-                            <line x1="93" y1="0.5" x2="4.37114e-08" y2="0.500008" stroke="url(#paint1_linear_0_1)" />
-                            <defs>
-                                <linearGradient id="paint0_linear_0_1" x1="144.494" y1="1" x2="245.833" y2="1.00001" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#D6D6D6" />
-                                    <stop offset="0.5" stop-color="#BDBDBD" stop-opacity="0" />
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_0_1" x1="56.4434" y1="-5.62336e-06" x2="-15.5" y2="-5.2717e-06" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#D6D6D6" />
-                                    <stop offset="0.5" stop-color="#BDBDBD" stop-opacity="0" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-
+                        <div className={css`margin: 0 auto;`}>
+                            <svg width="224" height="1" viewBox="0 0 224 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="93" y1="0.5" x2="224" y2="0.499989" stroke="url(#paint0_linear_0_1)" />
+                                <line x1="93" y1="0.5" x2="4.37114e-08" y2="0.500008" stroke="url(#paint1_linear_0_1)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_0_1" x1="144.494" y1="1" x2="245.833" y2="1.00001" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#D6D6D6" />
+                                        <stop offset="0.5" stopColor="#BDBDBD" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_0_1" x1="56.4434" y1="-5.62336e-06" x2="-15.5" y2="-5.2717e-06" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#D6D6D6" />
+                                        <stop offset="0.5" stopColor="#BDBDBD" stopOpacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                         <p className={css`font-size: 11px; color: grey;`}>Please make your check payable to Pleasant Hill Instructional Garden</p>
                     </div>
                     <div id="other-donations-contact" className={css`display: flex; justify-content: space-between; align-items: center; height: 50%;`}>

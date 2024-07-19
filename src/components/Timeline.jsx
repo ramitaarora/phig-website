@@ -13,7 +13,7 @@ export default function Timeline({ date, firstImage, secondImage, header, descri
             <div className={css`position: relative; top: 70px; @media (max-width: 800px) { display: none; }`}>
                 <svg width="23" height="700" viewBox="0 0 23 700" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="11.2857" cy="11.5432" r="11.1429" fill="#D9D9D9" />
-                    <line x1="11.6857" y1="23" x2="11.6857" y2="700" stroke="#D9D9D9" stroke-width="1.37143" />
+                    <line x1="11.6857" y1="23" x2="11.6857" y2="700" stroke="#D9D9D9" strokeWidth="1.37143" />
                 </svg>
             </div>
             <div className={css`margin-left: 40px; width: 50%; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; @media (max-width: 800px) { width: 70%; margin: 2% auto; } @media (max-width: 550px) { width: 100%; margin: 2% auto; text-align: center; }`}>
