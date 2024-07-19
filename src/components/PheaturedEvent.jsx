@@ -17,8 +17,8 @@ export default function PheaturedEvent() {
 
                 <div id="event-date" className={css`background-color: white; position: relative; top: -150px; width: 35%; padding: 30px; border: 1px solid lightgrey; border-radius: 10px; box-shadow: 0px 0px 20px grey; display: flex; flex-direction: column; justify-content: space-evenly; @media (max-width: 800px) { display: none; }`}>
 
-                    <div className={css`display: flex; margin-bottom: 10px;`}>
-                        <div className={css`margin-right: 20px; border: 2px solid lightgrey; padding: 20px; border-radius: 15px; text-align: center;`}>
+                    <div className={css`display: flex; margin-bottom: 10px; align-items: center;`}>
+                        <div className={css`margin-right: 20px; border: 2px solid lightgrey; padding: 20px; border-radius: 15px; text-align: center; height: fit-content;`}>
                             <h2>28</h2>
                             <p>APR</p>
                         </div>
@@ -52,10 +52,10 @@ export default function PheaturedEvent() {
 
             <div className={css`@media (max-width: 800px) { padding: 5%; width: 100%; margin: 0 auto; }`}>
 
-                <div id="event-date" className={css`background-color: white; padding: 30px; border: 1px solid lightgrey; border-radius: 10px; box-shadow: 0px 0px 20px grey; display: flex; justify-content: space-evenly; @media (min-width: 800px) { display: none; width: 100%; }`}>
+                <div id="event-date" className={css`background-color: white; padding: 30px; border: 1px solid lightgrey; border-radius: 10px; box-shadow: 0px 0px 20px grey; display: flex; justify-content: space-evenly; @media (min-width: 800px) { display: none; width: 100%; } @media (max-width: 550px) { flex-direction: column; }`}>
 
-                    <div className={css`display: flex; margin-bottom: 10px;`}>
-                        <div className={css`margin-right: 20px; border: 2px solid lightgrey; padding: 20px; border-radius: 15px; text-align: center;`}>
+                    <div className={css`display: flex; margin-bottom: 10px; align-items: center;`}>
+                        <div className={css`margin-right: 20px; border: 2px solid lightgrey; padding: 20px; border-radius: 15px; text-align: center; height: fit-content;`}>
                             <h2>28</h2>
                             <p>APR</p>
                         </div>

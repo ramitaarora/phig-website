@@ -12,7 +12,7 @@ export default function NurseryResource({ name, description, image, link, locati
                     <div className='phone-number'>
                         <span className='phone-icon'>📞  </span>{phone}
                     </div>
-                    <a className='learnmore' href={link} target="_blank">Learn More</a>
+                    <a className='learnmore' href={link} target="_blank" rel="noreferrer">Learn More</a>
                     <div className="arrow"></div>
                 </div>
                 <div className='nurseryres2'>

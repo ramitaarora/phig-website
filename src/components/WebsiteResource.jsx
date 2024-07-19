@@ -7,7 +7,7 @@ export default function WebsiteResource({ name, description, image, link }) {
             <div className={css`width: 70%;`}>
                 <h3 className='title'>{name}</h3>
                 <p className='description'>{description}</p>
-                <a className='learnmore' href={link} target="_blank">Learn More</a>
+                <a className='learnmore' href={link} target="_blank" rel="noreferrer">Learn More</a>
                 <div className="arrow"></div>
             </div>
         </div>
