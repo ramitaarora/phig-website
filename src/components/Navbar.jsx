@@ -89,7 +89,7 @@ const Navbar = () => {
           </svg>
         </div>
 
-        <div id="hamburger-menu" className={css`display: ${menuVisibility}; color: white; z-index: 999; position: absolute; height: 100vh; width: 50vw; top: 0; right: 0; border-radius: 20px; padding: 5%; background: linear-gradient(90deg, var(--secondary) 0%, var(--header-color) 100%);`}>
+        <div id="hamburger-menu" className={css`display: ${menuVisibility}; color: white; z-index: 999; position: absolute; height: 100vh; width: 400px; top: 0; right: 0; border-radius: 20px; padding: 5%; background: linear-gradient(90deg, var(--secondary) 0%, var(--header-color) 100%);`}>
           <div className={css`display: flex; width: 100%; justify-content: space-between; align-items: flex-start;`}>
             <div className={css`cursor: pointer;`} onClick={hamburgerMenu}>
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="var(--enabled)" className="bi bi-arrow-right" viewBox="0 0 16 16">

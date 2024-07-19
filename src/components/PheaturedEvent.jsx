@@ -9,7 +9,7 @@ export default function PheaturedEvent() {
             </div>
 
             <div className={css`display: flex; justify-content: space-between; margin: 0 80px; @media (max-width: 800px) { flex-direction: column; }`}>
-                <div id="overlay-header" className={css`background-color: rgba(255, 255, 255, 0.95); position: relative; top: -50px; display: flex; justify-content: center; align-items: center; width: 60%; text-align: center; padding: 20px; height: 100px; box-shadow: 2px 2px 2px lightgrey; width: 60%;@media (max-width: 800px) { width: 100%; }`}>
+                <div id="overlay-header" className={css`background-color: rgba(255, 255, 255, 0.95); position: relative; top: -50px; display: flex; justify-content: center; align-items: center; width: 60%; text-align: center; padding: 20px; height: 100px; box-shadow: 2px 2px 2px lightgrey; width: 60%; @media (max-width: 800px) { width: 100%; } @media (max-width: 550px) { display: none; }`}>
                     <p className={css`border-right: 1px solid lightgrey; color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Master Gardeners' Composting Workshop</p>
                     <p className={css`border-right: 1px solid lightgrey; color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Hands-on Demonstrations</p>
                     <p className={css`color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Limited Availability Garden Tour</p>
