@@ -74,7 +74,7 @@ export default function VolunteerApplication() {
     }
 
     return (
-        <div id="volunteer-app" className={css`margin: 50px auto; width: 500px;`}>
+        <div id="volunteer-app" className={css`margin: 50px auto; width: 500px; @media (max-width: 600px) { margin: 50px 5%; width: fit-content; }`}>
             <header className={css`text-align: center;`}>
                 <h1>Volunteer Application</h1>
                 <p className={css`margin-top: 15px;`}>We sincerely appreciate you taking the time to fill out this form and for volunteering. It means a lot to us!</p>
@@ -102,7 +102,7 @@ export default function VolunteerApplication() {
                 <input type="tel" id="phone" placeholder="Phone Number" value={phone} onChange={event => setPhone(event.target.value)} className='form-input' required/>
 
                 <div className={css`display: flex; justify-content: space-between; align-items: center;`}>
-                    <div className={css`display: flex; flex-direction: column;`}>
+                    <div className={css`display: flex; flex-direction: column; align-items: center;`}>
                         <label htmlFor="age">Age</label>
                         <input type="text" id="age" placeholder="Age" value={age} className='form-input' onChange={event => setAge(event.target.value)} required/>
                     </div>

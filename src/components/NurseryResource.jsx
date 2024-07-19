@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 
 export default function NurseryResource({ name, description, image, link, location, days, hours, phone }) {
     return (
-        <div id="nursery-resource" className={css`display: flex; justify-content: space-evenly`}>
+        <div id="nursery-resource" className={css`display: flex; justify-content: space-evenly;`}>
             <div className='nurseryresourseimagediv'>
                 <img className='nurseryresourseimage' src={image} alt={name} title={name} loading="lazy" />
             </div>
