@@ -35,7 +35,7 @@ body {
 }
 
 #news-feed {
-    margin: 30px 250px;
+    margin: 30px 10%;
 }
 
 .news-feed-article {
@@ -65,9 +65,6 @@ body {
     margin: 0 0 60px 60px;
 }
 
-#article {
-    margin: 130px 25vw;
-}
 
 .article-header {
     display: flex;

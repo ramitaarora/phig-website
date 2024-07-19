@@ -34,7 +34,7 @@ const AboutPage = () => {
 
                 </div>
 
-                <div className={css`margin: 5% 0; background-color: #E9FEFF; display: flex;`}>
+                <div id="garden-today-banner" className={css`margin: 5% 0; background-color: #E9FEFF; display: flex; @media (max-width: 900px) { flex-direction: column; }`}>
                     <div className={css`padding: 5%; margin: auto;`}>
                         <h1>The Garden Today</h1>
                         <p className={css`margin-top: 50px;`}>A former wasteland transformed into a thriving wildlife habitat and water-conserving garden through the collaborative efforts of volunteers, students, scouts, and community members in Pleasant Hill. Established in 2007 as a landscape design class project, the garden promotes sustainable practices, featuring drought-tolerant and native plants, and serves as a valuable learning resource.</p>

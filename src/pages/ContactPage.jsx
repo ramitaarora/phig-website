@@ -10,15 +10,12 @@ export default function ContactPage() {
     
     return (
         <div>
-            {/*<header className={css`text-align: center; height: 100px; padding: 50px;`}>
-                <h1>Contact Us</h1>
-    </header>*/}
-            <main className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; padding: 50px;`}>
+            <main className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; padding: 50px; @media (max-width: 768px) { flex-direction: column; }`}>
                 <ContactPageForm />
                 <div id="directions">
                     <h2>How to Reach Us</h2>
                     <div className="direction-list-items">
-                        <p>From Hwy 680</p>
+                        <p>From Hwy 680:</p>
                         <ul>
                             <li>Exit Treat Blvd</li>
                             <li>Follow signs to Oak Park Blvd</li>
@@ -33,7 +30,7 @@ export default function ContactPage() {
                 </div>
             </main>
 
-            <iframe className={css`border: none; padding: 20px;`} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.6651644328053!2d-122.07075562449964!3d37.93825207194467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561423f4a8d93%3A0xcae1de5ca389745d!2sPleasant%20Hill%20Instructional%20Garden!5e0!3m2!1sen!2sus!4v1713025721627!5m2!1sen!2sus" width="100%" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title="phig-map" className={css`border: none; padding: 20px;`} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3146.6651644328053!2d-122.07075562449964!3d37.93825207194467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808561423f4a8d93%3A0xcae1de5ca389745d!2sPleasant%20Hill%20Instructional%20Garden!5e0!3m2!1sen!2sus!4v1713025721627!5m2!1sen!2sus" width="100%" height="400" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             <WeatherStation />
         </div>
     )

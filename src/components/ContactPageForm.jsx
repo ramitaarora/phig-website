@@ -63,29 +63,18 @@ export default function ContactPageForm() {
         <div id="contact-form" className="contact-page-form">
             <h2>Get in Touch</h2>
             <form action="#" method="post" onSubmit={handleSubmit}>
-                <div className={css`width: 100%; display: flex; justify-content: space-between; align-items: center;`}>
-                    <input className='form-input' type="text" id="first-name" name="first-name" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder="First Name" required />
-                    <input className='form-input' type="text" id="last-name" name="last-name" value={lastName} onChange={e => setLastName(e.target.value)} placeholder="Last Name" required />
-                </div>
-                <div className={css`width: 100%;`}>
-                    <input className='form-input contact-form-input' type="email" id="email" name="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" required />
-                </div>
+                <input className='form-input' type="text" id="first-name" name="first-name" value={firstName} onChange={e => setFirstName(e.target.value)} placeholder="First Name" required />
+                <input className='form-input' type="text" id="last-name" name="last-name" value={lastName} onChange={e => setLastName(e.target.value)} placeholder="Last Name" required />
+                <input className='form-input contact-form-input' type="email" id="email" name="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" required />
+
                 <div className={css`width: 100%;`}>
                     <input className='form-input contact-form-input' type="text" id="phone" name="phone" value={phone} onChange={e => setPhone(e.target.value)} placeholder="Phone Number" required />
                     <p className={css`font-size: 10px; color: grey;`}>*Only used if email is unreachable</p>
                 </div>
-                {/* <div>
-                    <label htmlFor="country">Country of Residence  </label>
-                    <select id="country" name="country" value={country} onChange={e => setCountry(e.target.value)} required>
-                        <option value="USA">USA</option>
-                        <option value="UK">UK</option>
-                        <option value="India">India</option>
-                    </select>
-                </div> */ }
-                <div>
-                    <textarea className='form-input' id="message" name="message" rows="4" cols="50" value={text} onChange={e => setText(e.target.value)} placeholder="Message" required></textarea>
-                </div>
-                <input type="submit" className="dark-button"/>
+
+                <textarea className='form-input' id="message" name="message" rows="4" cols="80" value={text} onChange={e => setText(e.target.value)} placeholder="Message" required></textarea>
+
+                <input type="submit" className="dark-button" />
             </form>
             <div id="error-messages">
                 {errorMessage.length ? (

@@ -75,9 +75,9 @@ export default function DonationPage() {
                 <p className={css`position: relative; top: -50px;`}>Our volunteer team is growing every day and helping you learn ways to keep our planet healthy. Plant with us and track our progress!</p>
             </header>
 
-            <div id="quick-donate" className={css`border-radius: 50% 50% 0 0; display: flex; justify-content: space-evenly; border-radius: 20% 20% 0 0; position: relative; top: -105px; background-color: white; height: 500px;`}>
-                <div id="quick-donate-image" className={css`width: 30%; display: flex; flex-direction: column;`}>
-                    <div id="tag" className={css`background-color: darkgreen; color: white; padding: 10px 15px; border-radius: 10px; position: relative; left: -100px; top: 35px; transform: rotate(350deg); text-align: center; width: fit-content;`}>
+            <div id="quick-donate" className={css`border-radius: 50% 50% 0 0; display: flex; justify-content: space-evenly; border-radius: 20% 20% 0 0; position: relative; top: -105px; background-color: white; height: 500px; @media (max-width: 800px) { flex-direction: column; height: fit-content; }`}>
+                <div id="quick-donate-image" className={css`width: 30%; display: flex; flex-direction: column; @media (max-width: 800px) { width: 100%; }`}>
+                    <div id="tag" className={css`background-color: darkgreen; color: white; padding: 10px 15px; border-radius: 10px; position: relative; left: -30%; top: 35px; transform: rotate(350deg); text-align: center; width: fit-content; @media (max-width: 800px) { display: none; }`}>
                         <p>$10 donated =</p>
                         <p>1 new stage</p>
                     </div>
@@ -85,7 +85,7 @@ export default function DonationPage() {
                         <img src={`./images/donation/plant-growth-${plantGrowth}.png`} className={css`height: ${plantHeight}px;`} alt="seed-grows" loading="lazy" />
                     </div>
                 </div>
-                <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 0px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white; width: 400px; height: 100%;`}>
+                <form id="quick-donate-form" className={css`padding: 20px; border: 1px solid lightgrey; border-radius: 15px; box-shadow: 0px 5px 10px lightgrey; text-align: center; position: relative; top: -20px; background-color: white; width: 400px; height: 100%; @media (max-width: 800px) { position: static !important; top: 0; margin: 0 auto;}`}>
                     <h2 className={css`margin: 10px;`}>Join #PHIG</h2>
                     <div id="quick-form-buttons" className={css`display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; margin-top: 20px;`}>
                         <button onClick={updateAmount}>$1</button>
@@ -102,26 +102,27 @@ export default function DonationPage() {
                 </form>
             </div>
 
-            <div id="other-donations" className={css`padding: 0 50px; background-color: white; margin-top: 0; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; max-width: 100%;`}>
-                <div id="other-donations-container" className={css`background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 30%, rgba(232, 232, 232, 0.7) 60%), url('./images/homepage/leaf-background.jpeg') center/cover; background-position: top right; background-repeat: no-repeat; margin: 0 auto; width: 45%; padding: 40px; height: 500px; box-shadow: 5px 5px 5px lightgrey;`}>
+            <div id="other-donations" className={css`padding: 0 50px; background-color: white; margin-top: 0; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; max-width: 100%; @media (max-width: 1000px) { flex-direction: column; }`}>
+                <div id="other-donations-container" className={css`background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 30%, rgba(232, 232, 232, 0.7) 60%), url('./images/homepage/leaf-background.jpeg') center/cover; background-position: top right; background-repeat: no-repeat; margin: 0 auto; width: 45%; padding: 40px; height: 500px; box-shadow: 5px 5px 5px lightgrey; @media (max-width: 1000px) { width: 80%; margin: 10px auto; }`}>
                     <div id="other-donations-header" className={css`text-align: center; padding: 20px; height: 50%; display: flex; flex-direction: column; justify-content: space-evenly;`}>
                         <h2 className={css`color: #8D9E42`}>Support Our Mission</h2>
                         <p className={css`font-size: 14px;`}>We welcome donations by credit/debit card, PayPal, check, domestic or international wire, or stock transfer. We accept automatic monthly donations via Credit Card and Paypal.</p>
-                        <svg width="224" height="1" viewBox="0 0 224 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line x1="93" y1="0.5" x2="224" y2="0.499989" stroke="url(#paint0_linear_0_1)" />
-                            <line x1="93" y1="0.5" x2="4.37114e-08" y2="0.500008" stroke="url(#paint1_linear_0_1)" />
-                            <defs>
-                                <linearGradient id="paint0_linear_0_1" x1="144.494" y1="1" x2="245.833" y2="1.00001" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#D6D6D6" />
-                                    <stop offset="0.5" stop-color="#BDBDBD" stop-opacity="0" />
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_0_1" x1="56.4434" y1="-5.62336e-06" x2="-15.5" y2="-5.2717e-06" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#D6D6D6" />
-                                    <stop offset="0.5" stop-color="#BDBDBD" stop-opacity="0" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-
+                        <div className={css`margin: 0 auto;`}>
+                            <svg width="224" height="1" viewBox="0 0 224 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="93" y1="0.5" x2="224" y2="0.499989" stroke="url(#paint0_linear_0_1)" />
+                                <line x1="93" y1="0.5" x2="4.37114e-08" y2="0.500008" stroke="url(#paint1_linear_0_1)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_0_1" x1="144.494" y1="1" x2="245.833" y2="1.00001" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#D6D6D6" />
+                                        <stop offset="0.5" stopColor="#BDBDBD" stopOpacity="0" />
+                                    </linearGradient>
+                                    <linearGradient id="paint1_linear_0_1" x1="56.4434" y1="-5.62336e-06" x2="-15.5" y2="-5.2717e-06" gradientUnits="userSpaceOnUse">
+                                        <stop stopColor="#D6D6D6" />
+                                        <stop offset="0.5" stopColor="#BDBDBD" stopOpacity="0" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
                         <p className={css`font-size: 11px; color: grey;`}>Please make your check payable to Pleasant Hill Instructional Garden</p>
                     </div>
                     <div id="other-donations-contact" className={css`display: flex; justify-content: space-between; align-items: center; height: 50%;`}>
@@ -157,7 +158,7 @@ export default function DonationPage() {
                     </div>
                 </div>
 
-                <div id="top-contributors-container" className={css`margin: 0 auto; width: 45%; padding: 40px; height: 500px; background-color: var(--header-color); border-radius: 20px; color: var(--primary); line-height: 35px;`}>
+                <div id="top-contributors-container" className={css`margin: 0 auto; width: 45%; padding: 40px; height: 500px; background-color: var(--header-color); border-radius: 20px; color: var(--primary); line-height: 35px; @media (max-width: 1000px) { width: 80%; margin: 10px auto; }`}>
                     <div id="top-contributors-header" className={css`display: flex; justify-content: space-between;`}>
                         <div>
                             <h2>Top Contributors</h2>

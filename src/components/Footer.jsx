@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
     return (
         <footer className={css`background-color: #081821; color: white; padding: 50px; line-height: 40px;`}>
-            <div id="footer-links" className={css`display: flex; justify-content: space-evenly; margin: 30px;`}>
+            <div id="footer-links" className={css`display: flex; justify-content: space-evenly; margin: 30px; flex-wrap: wrap;`}>
 
                 <div id="about-nav">
                     <h2>About PHIG</h2>
@@ -36,7 +36,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div id="copyright" className={css`text-align: center; margin-top: 100px;`}>
+            <div id="copyright" className={css`text-align: center; margin-top: 10%;`}>
                 <p>PHIG (Pleasant Hill Instructional Garden) P.O.Box 23454, Pleasant Hill, CA 94523</p>
                 <p>925-482-6670</p>
                 <p>Tax-exempt 501 (c)(3)</p>

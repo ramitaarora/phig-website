@@ -63,6 +63,7 @@ footer li {
   border: 1px solid #cecece;
   border-radius: 8.5px;
   padding: 11px;
+  width: 100%;
 }
 
 .form-input:active {
@@ -261,7 +262,31 @@ nav a svg {
   display: block;
 }
 
+#mobile-nav {
+  display: none;
+}
+
+#hamburger,
+#hamburger svg #hamburger path {
+  cursor: pointer;
+}
+
+#hamburger-menu a:hover {
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--enabled) 100%);
+}
+
 /* Homepage Styles */
+
+#home-banner-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 10%;
+  color: var(--primary);
+}
 
 #each-homepage-card {
   margin: 10px auto;
@@ -305,6 +330,19 @@ nav a svg {
   color: var(--lightgreen);
 }
 
+#each-homepage-card {
+  margin-bottom: 30px;
+}
+
+.react-multi-carousel-dot button {
+  border-color: var(--secondary) !important;
+  border-width: 1px !important;
+}
+
+.react-multi-carousel-dot--active button {
+  background: var(--secondary) !important;
+}
+
 #pheatured-event-header h2,
 #pheatured-event-header p {
   position: relative;
@@ -316,15 +354,30 @@ nav a svg {
   display: flex;
   align-items: center;
   margin: 15px 0;
-  padding-right: 25px;
 }
 
 .each-book img {
-  height: 80px;
-  width: 50px;
+  height: 120px;
+  width: 80px;
   object-position: center;
   object-fit: contain;
-  margin-right: 15px;
+}
+
+.each-book-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 120px;
+  width: 20%;
+}
+
+.each-book-text {
+  margin-left: 15px;
+  width: 80%;
+}
+
+.each-book-text a {
+  display: block;
 }
 
 .view-amazon-button {
@@ -355,6 +408,19 @@ nav a svg {
 #homepage-each-goal img {
   height: 50px;
   margin-right: 10px;
+}
+
+#pheatured-book-image {
+  min-height: 300px;
+  min-width: 200px;
+  max-height: 300px;
+  max-width: 200px;
+  box-shadow: 5px 5px 5px 5px lightgrey;
+  margin-bottom: 30px;
+}
+
+#article {
+  margin: 5% 20%;
 }
 
 /* Volunteer Page */
@@ -419,8 +485,8 @@ nav a svg {
 }
 
 .donation-time {
-  background-color: black; 
-  color: white; 
+  background-color: black;
+  color: white;
   padding: 2px 7px;
   border-radius: 10px;
 }
@@ -440,8 +506,8 @@ nav a svg {
 }
 
 .top-contributor-level {
-  display: flex; 
-  align-items: center; 
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -533,12 +599,12 @@ nav a svg {
 }
 
 .about-page-contact {
-   margin: 0 auto;
-   background-color: var(--header-color);
-   color: var(--primary);
-   width: 50%;
-   padding: 50px;
-   height: 900px;
+  margin: 0 auto;
+  background-color: var(--header-color);
+  color: var(--primary);
+  width: 80%;
+  padding: 50px;
+  height: 900px;
 }
 
 .about-page-contact form {
@@ -566,7 +632,7 @@ nav a svg {
 .contact-page-form {
   padding: 20px;
   height: 700px;
-  width: 40%;
+  width: 45%;
 }
 
 .direction-list-items li {
@@ -579,8 +645,8 @@ nav a svg {
 
 .contact-page-form h2,
 #directions h2 {
-  border-bottom: 1px solid var(--success); 
-  margin-bottom: 50px; 
+  border-bottom: 1px solid var(--success);
+  margin-bottom: 50px;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -589,7 +655,7 @@ nav a svg {
   border: 1px lightgrey solid;
   border-radius: 10px;
   box-shadow: 2px 2px 2px 2px lightgrey;
-  padding: 50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -647,4 +713,133 @@ footer a:hover {
 #resources a:hover {
   position: relative;
   top: -5px;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 1000px) {
+  .each-book {
+    margin: 0 15px;
+  }
+
+  .each-book img,
+  .each-book-image {
+    width: 45px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* General */
+  #desktop-nav,
+  #weather-icon {
+    display: none;
+  }
+
+  #mobile-nav {
+    display: flex;
+  }
+
+  /* Homepage */
+
+  #home-banner {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #home-banner-text {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #homepage-each-goal {
+    width: 45%;
+  }
+
+  /* Pheatured Book */
+
+  .each-book {
+    width: 33%;
+  }
+
+  .each-book img,
+  .each-book-image {
+    width: 42px;
+  }
+
+  .ph4b,
+  .view-amazon-button {
+    display: none;
+  }
+
+  /* Approach Page */
+
+  .approach-col {
+    width: 80%;
+    margin: 10px;
+  }
+
+  .approach-border {
+    top: 0px;
+  }
+
+  /* Contact Page */
+
+  #directions,
+  .contact-page-form {
+    width: 100%;
+    height: fit-content;
+  }
+
+  /* Article Page */
+
+  #article {
+    margin: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  /* Homepage */
+  .each-book {
+    width: 100%;
+  }
+
+  .each-book img,
+  .each-book-image {
+    width: 60px;
+  }
+
+  .ph4b,
+  .view-amazon-button {
+    display: block;
+  }
+
+  #pheatured-book-image {
+    margin: 0 auto;
+  }
+
+  #homepage-each-goal {
+    width: 100%;
+  }
+
+  .about-page-contact {
+    width: 100%;
+  }
+
+  /* Footer */
+  #footer-links {
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+  }
+
+  #about-nav,
+  #get-involved,
+  #footer-social {
+    margin: 10px auto;
+    text-align: center;
+  }
 }
