@@ -16,7 +16,7 @@ const AboutPage = () => {
                 <p className={css`line-height: 30px; margin: 30px 20%; 30px 20%;`}>To educate students, staff, and community members in the need for water conservation with a demonstration garden using no pesticides, water recycling methods, drought tolerant and native plantings.</p>
             </header>
 
-            <main className={css`border-radius: 100px 100px 0 0; position: relative; top: -105px; background-color: white;`}>
+            <main className={css`border-radius: 100px 100px 0 0; position: relative; top: -105px; background-color: white; @media (max-width: 800px) { top: -60px; }`}>
                 <div id="timeline" className={css`padding: 50px; 200px;`}>
                     {timelineData.map((timelineItem, index) => (
                         <div key={index}>

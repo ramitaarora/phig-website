@@ -271,8 +271,12 @@ nav a svg {
   cursor: pointer;
 }
 
-#hamburger-menu a:hover {
+#hamburger-menu-content a:hover {
   background: linear-gradient(90deg, rgba(0,0,0,0) 0%, var(--enabled) 100%);
+}
+
+.mobile-nav-content {
+  margin-left: 20px;
 }
 
 /* Homepage Styles */

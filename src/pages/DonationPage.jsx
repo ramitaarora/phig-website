@@ -70,9 +70,9 @@ export default function DonationPage() {
 
     return (
         <section id="donation-page">
-            <header className={css`height: 400px; width: 100%; background-color: #081821; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; line-height: 60px; margin-bottom: 30px;`}>
+            <header className={css`height: 400px; width: 100%; background-color: #081821; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 30px; padding: 8%;`}>
                 <h1 className={css`position: relative; top: -50px;`}>Donate and watch your PHIG tree grow!</h1>
-                <p className={css`position: relative; top: -50px;`}>Our volunteer team is growing every day and helping you learn ways to keep our planet healthy. Plant with us and track our progress!</p>
+                <p className={css`position: relative; top: -50px; margin-top: 30px;`}>Our volunteer team is growing every day and helping you learn ways to keep our planet healthy. Plant with us and track our progress!</p>
             </header>
 
             <div id="quick-donate" className={css`border-radius: 50% 50% 0 0; display: flex; justify-content: space-evenly; border-radius: 20% 20% 0 0; position: relative; top: -105px; background-color: white; height: 500px; @media (max-width: 800px) { flex-direction: column; height: fit-content; }`}>
