@@ -22,7 +22,7 @@ export default function Leaderboard() {
 
             <div id="leaderboard-list">
                 {contributors ? contributors.map((contributor, index) => (
-                    <div id="each-contributer" key={index} className={css`display: flex; justify-content: space-between; align-items: center; box-shadow: 5px 5px 5px lightgrey; margin: 15px auto; border-radius: 15px; padding: 10px; height: 50px;`}>
+                    <div id="each-contributer" key={index} className={css`display: flex; justify-content: space-between; align-items: center; box-shadow: 5px 5px 5px lightgrey; margin: 15px auto; border-radius: 15px; padding: 10px; border: 1px solid lightgrey;`}>
                         <div className={css`display: flex; justify-content: space-between; align-items: center;`}>
                             <img src="./images/homepage/dollar-sign.png" alt="dollar-sign" className={css`height: 70px;margin-left: -20px`}/>
                             <h4 style={{fontWeight:'500'}}>{contributor.name}</h4>

@@ -129,7 +129,7 @@ export default function VolunteerPage() {
 
             <main>
                 <section id="why-volunteer" className={css`display: flex; justify-content: space-evenly; height: 600px; margin: 5%; align-items: center; @media (max-width: 800px) { flex-direction: column; height: fit-content; }`}>
-                    <div id="volunteer-left" className={css`display: flex; flex-direction: column; justify-content: space-evenly; padding: 0 50px; width: 60%; height: 100%; @media (max-width: 800px) { flex-direction: column; height: 600px; width: 100%;}`}>
+                    <div id="volunteer-left" className={css`display: flex; flex-direction: column; justify-content: space-evenly; padding: 0 50px; width: 60%; height: 100%; @media (max-width: 800px) { flex-direction: column; height: fit-content; width: 100%;}`}>
                         <h2>Why volunteer with us?</h2>
                         <p><span>Water Conservation:</span> Contribute to water conservation efforts by learning and implementing eco-friendly watering techniques. Help spread awareness about responsible water usage in gardening.</p>
                         <p><span>Wildlife Protection:</span> Create safe havens for local wildlife by incorporating wildlife-friendly elements into your garden. From pollinator-friendly plants to bird-friendly feeders, be a vital part of nurturing biodiversity.</p>

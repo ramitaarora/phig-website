@@ -91,7 +91,7 @@ const Navbar = () => {
 
         <div id="hamburger-menu" className={css`display: ${menuVisibility}; color: white; z-index: 999; position: absolute; height: 100vh; width: 400px; max-width: 100vw; top: 0; right: 0; border-radius: 20px; padding: 5%; background: linear-gradient(90deg, var(--secondary) 0%, var(--header-color) 100%); font-size: 16px;`}>
 
-          <div className={css`display: flex; width: 90%; justify-content: space-between; align-items: flex-start;`}>
+          <div id="hamburger-menu-header" className={css`display: flex; width: 90%; justify-content: space-between; align-items: flex-start;`}>
             <div className={css`cursor: pointer;`} onClick={hamburgerMenu}>
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="var(--enabled)" className="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
@@ -101,7 +101,7 @@ const Navbar = () => {
               <img src="/images/homepage/logo.png" alt='PHIG-logo' className={css`height: 60px;`} />
             </Link>
           </div>
-          <div id="hamburger-menu-content" className={css`margin: 50px; width: 100%; height: 60%; line-height: 40px;`}>
+          <div id="hamburger-menu-content" className={css`margin: 5%; width: 100%; line-height: 40px;`}>
 
             <div>
               <Link to="/contact" onClick={hamburgerMenu}>
@@ -147,8 +147,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className={css`width: 100%;`}>
-            <Link to='/donate' className={css`margin: 0 25%;`} onClick={hamburgerMenu}>
+          <div id="hamburger-donate-button" className={css`width: 100%; `}>
+            <Link to='/donate' className={css`margin: 5% 25%;`} onClick={hamburgerMenu}>
               <button className="gradient-button">
                 <img src="/images/donation/donate-hand.png" alt="donate" height="30px" width="30px" className={css`margin-right: 10px;`} />
                 Donate

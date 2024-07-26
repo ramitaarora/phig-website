@@ -1,31 +1,46 @@
 import { css } from '@emotion/css';
 
 export default function PheaturedEvent() {
+    const pheaturedEventData = {
+        name: 'Community Service Day 2024',
+        subtitle: 'Hosted by Pleasant Hill Instructional Garden',
+        image: './images/homepage/earth-day-event.jpeg',
+        subtext_one: "Cleaned up neighborhoods, schools, parks, and creeks",
+        subtext_two: "Landscaped parks and organic gardens",
+        subtext_three: "Repaired over 1,000 bicycles for donation to children",
+        event_date: "21",
+        event_month: "SEPT",
+        event_fullDate: "Saturday September 21, 2024",
+        event_time: "9:00 AM - 12:00 PM",
+        link: "https://www.pleasanthillca.gov/514/Community-Service-Day",
+        flyer: "./downloads/EarthDay_2024_flyer.pdf"
+    };
+    
     return (
         <div id="pheatured-event">
-            <div id="pheatured-event-header" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url('./images/homepage/earth-day-event.jpeg'); height: 500px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; color: white`}>
-                <h2>Earth Day 2024</h2>
-                <p>Hosted by Pleasant Hill Instructional Garden</p>
+            <div id="pheatured-event-header" className={css`background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.45)), url(${pheaturedEventData.image}); height: 500px; width: 100%; background-position: center; background-repeat: no-repeat; background-size: cover; color: white`}>
+                <h2>{pheaturedEventData.name}</h2>
+                <p>{pheaturedEventData.subtitle}</p>
             </div>
 
             <div className={css`display: flex; justify-content: space-between; margin: 0 80px; @media (max-width: 800px) { flex-direction: column; }`}>
                 <div id="overlay-header" className={css`background-color: rgba(255, 255, 255, 0.95); position: relative; top: -50px; display: flex; justify-content: center; align-items: center; width: 60%; text-align: center; padding: 20px; height: 100px; box-shadow: 2px 2px 2px lightgrey; width: 60%; @media (max-width: 800px) { width: 100%; } @media (max-width: 550px) { display: none; }`}>
-                    <p className={css`border-right: 1px solid lightgrey; color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Master Gardeners' Composting Workshop</p>
-                    <p className={css`border-right: 1px solid lightgrey; color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Hands-on Demonstrations</p>
-                    <p className={css`color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>Limited Availability Garden Tour</p>
+                    <p className={css`border-right: 1px solid lightgrey; color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>{pheaturedEventData.subtext_one}</p>
+                    <p className={css`border-right: 1px solid lightgrey; color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>{pheaturedEventData.subtext_two}</p>
+                    <p className={css`color: #97C159; font-size: 16px; padding: 10px; font-weight: bold;`}>{pheaturedEventData.subtext_three}</p>
                 </div>
 
                 <div id="event-date" className={css`background-color: white; position: relative; top: -150px; width: 35%; padding: 30px; border: 1px solid lightgrey; border-radius: 10px; box-shadow: 0px 0px 20px grey; display: flex; flex-direction: column; justify-content: space-evenly; @media (max-width: 800px) { display: none; }`}>
 
                     <div className={css`display: flex; margin-bottom: 10px; align-items: center;`}>
                         <div className={css`margin-right: 20px; border: 2px solid lightgrey; padding: 20px; border-radius: 15px; text-align: center; height: fit-content;`}>
-                            <h2>28</h2>
-                            <p>APR</p>
+                            <h2>{pheaturedEventData.event_date}</h2>
+                            <p>{pheaturedEventData.event_month}</p>
                         </div>
                         <div className={css`display: flex; flex-direction: column; justify-content: space-between;`}>
-                            <h2>Sunday April 28, 2024</h2>
+                            <h2>{pheaturedEventData.event_fullDate}</h2>
                             <div>
-                                <p className={css`color: grey; font-size: 14px;`}>12:30 PM - 4:30 PM</p>
+                                <p className={css`color: grey; font-size: 14px;`}>{pheaturedEventData.event_time}</p>
                                 <p className={css`color: grey; font-size: 14px;`}>Pacific Time</p>
                             </div>
                         </div>
@@ -35,12 +50,12 @@ export default function PheaturedEvent() {
 
                     <div className={css`text-align: center;`}>
                         <p style={{ color: 'grey', fontSize: 'small' }}>A <span style={{ color: 'black', fontSize: 'small' }}>confirmation email</span> with more details will be provided after registration.</p>
-                        <a href="https://www.eventbrite.com/e/earth-day-2024-free-fun-family-friendly-educational-tickets-833927518657?aff=oddtdtcreator" target="_blank" rel="noreferrer">
+                        <a href={pheaturedEventData.link} target="_blank" rel="noreferrer">
                             <button className="event-button">
-                                Register with EventBrite
+                                Register
                             </button>
                         </a>
-                        <a href="./downloads/EarthDay_2024_flyer.pdf" download>
+                        <a href={pheaturedEventData.flyer} download>
                             <button className="event-button">
                                 Download Flyer
                             </button>
@@ -56,13 +71,13 @@ export default function PheaturedEvent() {
 
                     <div className={css`display: flex; margin-bottom: 10px; align-items: center;`}>
                         <div className={css`margin-right: 20px; border: 2px solid lightgrey; padding: 20px; border-radius: 15px; text-align: center; height: fit-content;`}>
-                            <h2>28</h2>
-                            <p>APR</p>
+                            <h2>{pheaturedEventData.event_date}</h2>
+                            <p>{pheaturedEventData.event_month}</p>
                         </div>
                         <div className={css`display: flex; flex-direction: column; justify-content: space-between;`}>
-                            <h2>Sunday April 28, 2024</h2>
+                            <h2>{pheaturedEventData.event_fullDate}</h2>
                             <div>
-                                <p className={css`color: grey; font-size: 14px;`}>12:30 PM - 4:30 PM</p>
+                                <p className={css`color: grey; font-size: 14px;`}>{pheaturedEventData.time}</p>
                                 <p className={css`color: grey; font-size: 14px;`}>Pacific Time</p>
                             </div>
                         </div>
@@ -72,12 +87,12 @@ export default function PheaturedEvent() {
 
                     <div className={css`text-align: center;`}>
                         <p style={{ color: 'grey', fontSize: 'small' }}>A <span style={{ color: 'black', fontSize: 'small' }}>confirmation email</span> with more details will be provided after registration.</p>
-                        <a href="https://www.eventbrite.com/e/earth-day-2024-free-fun-family-friendly-educational-tickets-833927518657?aff=oddtdtcreator" target="_blank" rel="noreferrer">
+                        <a href={pheaturedEventData.link} target="_blank" rel="noreferrer">
                             <button className="event-button">
-                                Register with EventBrite
+                                Register
                             </button>
                         </a>
-                        <a href="./downloads/EarthDay_2024_flyer.pdf" download>
+                        <a href={pheaturedEventData.flyer} download>
                             <button className="event-button">
                                 Download Flyer
                             </button>

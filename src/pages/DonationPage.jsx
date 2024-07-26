@@ -102,7 +102,7 @@ export default function DonationPage() {
                 </form>
             </div>
 
-            <div id="other-donations" className={css`padding: 0 50px; background-color: white; margin-top: 0; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; max-width: 100%; @media (max-width: 1000px) { flex-direction: column; }`}>
+            {/*<div id="other-donations" className={css`padding: 0 50px; background-color: white; margin-top: 0; display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; max-width: 100%; @media (max-width: 1000px) { flex-direction: column; }`}>
                 <div id="other-donations-container" className={css`background: radial-gradient(circle, rgba(255, 255, 255, 0.7) 30%, rgba(232, 232, 232, 0.7) 60%), url('./images/homepage/leaf-background.jpeg') center/cover; background-position: top right; background-repeat: no-repeat; margin: 0 auto; width: 45%; padding: 40px; height: 500px; box-shadow: 5px 5px 5px lightgrey; @media (max-width: 1000px) { width: 80%; margin: 10px auto; }`}>
                     <div id="other-donations-header" className={css`text-align: center; padding: 20px; height: 50%; display: flex; flex-direction: column; justify-content: space-evenly;`}>
                         <h2 className={css`color: #8D9E42`}>Support Our Mission</h2>
@@ -239,7 +239,7 @@ export default function DonationPage() {
 
                     </div>
                 </div>
-            </div>
+            </div>*/}
 
             <div id="donate-materials" className={css`margin: 50px auto;`}>
                 <h2>Or Help By Donating</h2>
