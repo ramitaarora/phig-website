@@ -98,7 +98,7 @@ export default function DonationPage() {
                         <button onClick={updateAmount}>$200</button>
                     </div>
                     <input type="text" placeholder='Custom amount' value={amount} onChange={event => setAmount(event.target.value)} className='form-input' style={{ width: '94%', margin: '20px auto 0 auto' }} />
-                    <Link to="/pay"><input type="submit" value="Next" className='green-button' style={{ margin: '30px auto 0 auto' }} /></Link>
+                    <Link to="/"><input type="submit" value="Next" className='green-button' style={{ margin: '30px auto 0 auto' }} /></Link>
                 </form>
             </div>
 
