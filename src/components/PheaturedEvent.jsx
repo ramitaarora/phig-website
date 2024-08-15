@@ -1,10 +1,11 @@
 import { css } from '@emotion/css';
 
 export default function PheaturedEvent() {
+    // Change featured event image according to file type
     const pheaturedEventData = {
         name: 'Community Service Day 2024',
         subtitle: 'Hosted by Pleasant Hill Instructional Garden',
-        image: './images/homepage/earth-day-event.jpeg',
+        image: './images/homepage/pheatured-event.jpg',
         subtext_one: "Cleaned up neighborhoods, schools, parks, and creeks",
         subtext_two: "Landscaped parks and organic gardens",
         subtext_three: "Repaired over 1,000 bicycles for donation to children",
@@ -13,7 +14,9 @@ export default function PheaturedEvent() {
         event_fullDate: "Saturday September 21, 2024",
         event_time: "9:00 AM - 12:00 PM",
         link: "https://www.pleasanthillca.gov/514/Community-Service-Day",
-        flyer: "./downloads/EarthDay_2024_flyer.pdf"
+        flyer: "./downloads/EarthDay_2024_flyer.pdf",
+        description_one: "The City of Pleasant Hill is looking for neighborhood projects for this year's 20th Annual Community Service Day. If you have a project you would like to lead, please fill out the online form so that it can be added to the project list. As this is our 20th annual, we would like to find as many different projects as possible to give volunteers a wide selection of choices.",
+        description_two: "Launched in 2005 by Mayor Michael Harris and coordinated by the Civic Action Commission, CSD is a day where members of the community of all ages come together to volunteer their time for a variety of worthy causes and projects."
     };
     
     return (
@@ -103,8 +106,8 @@ export default function PheaturedEvent() {
                 <div id="event-details" className={css`position: relative; top: -100px; margin: 80px; line-height: 35px; @media (max-width: 800px) { font-size: 16px; margin: 20px; width: 100%; margin: 0; top: 100px; } `}>
                     <h3 style={{ fontWeight: 'bold', marginBottom: '20px', marginTop: '-80px' }}>Details</h3>
                     {/* <button>Garden History</button> */}
-                    <p>This year is the 54rd anniversary of Earth Day. Small efforts can make a difference to help the Earth, reduce our impact on climate change, and improve sustainable practices in your garden. </p>
-                    <p>PHIG & community partners share how we can better provide healthy communities, restorative gardens for pollinators, conserve water use and our environment; and reduce our carbon footprint by composting and planting native plants. Expert talks, informative displays, garden tour and hands-on demonstrations to understand how small efforts can make a difference to help the Earth, reduce our impact on climate change, and improve sustainable practices in your garden and community. Register in advance for the garden tour!</p>
+                    <p>{pheaturedEventData.description_one}</p>
+                    <p className={css`margin-top: 30px;`}>{pheaturedEventData.description_two}</p>
                 </div>
 
             </div>

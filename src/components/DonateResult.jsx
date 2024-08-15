@@ -17,7 +17,7 @@ export default function DonateResult({ name, subtitle, picture, description }) {
                     <img src="./images/donation/wish.png" alt="wish" className={css`height: 25px; margin-right: 10px;`}/>
                     <p>Wish</p>
                 </div>
-                <Link to="/pay"><button className='green-button' style={{ padding: '5px 20px'}}>
+                <Link to="/"><button className='green-button' style={{ padding: '5px 20px'}}>
                     <p>Donate</p>
                     <img src="./images/donation/donate-hand.png" alt="donate-hand" className={css`height: 30px; margin-left: 10px;`}/>
                 </button></Link>

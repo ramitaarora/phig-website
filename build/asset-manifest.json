@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4f220e76.css",
-    "main.js": "/static/js/main.639474bb.js",
+    "main.js": "/static/js/main.008122a1.js",
     "static/media/newsletter-image.jpeg": "/static/media/newsletter-image.700dfff0d03b875ab83c.jpeg",
     "static/media/our-approach-mask.png": "/static/media/our-approach-mask.c28348bcb59b49d6a380.png",
     "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
@@ -9,10 +9,10 @@
     "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/index.html",
     "main.4f220e76.css.map": "/static/css/main.4f220e76.css.map",
-    "main.639474bb.js.map": "/static/js/main.639474bb.js.map"
+    "main.008122a1.js.map": "/static/js/main.008122a1.js.map"
   },
   "entrypoints": [
     "static/css/main.4f220e76.css",
-    "static/js/main.639474bb.js"
+    "static/js/main.008122a1.js"
   ]
 }
